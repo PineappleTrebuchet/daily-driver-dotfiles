@@ -1,0 +1,157 @@
+/*
+ * ORIGINAL DOTFILES: https://github.com/ErikReider/SwayNotificationCenter/discussions/183#discussioncomment-8022846
+ */
+
+/* @define-color cc-bg #272E33; */
+/* @define-color noti-border-color #2E383C; */
+/* @define-color noti-bg #414B50; */
+/* @define-color noti-bg-darker #374145; */
+/* @define-color text-color #D3C6AA; */
+/* @define-color text-color-disabled #D3C6AA; */
+@define-color cc-bg #1a1a1a;
+@define-color noti-border-color #262626;
+@define-color noti-bg #404040;
+@define-color noti-bg-darker #282828;
+@define-color text-color #bfbfbf;
+@define-color text-color-disabled #bfbfbf;
+@define-color accent-color #33adff;
+
+:root {
+  --border-radius: 0px;
+}
+ 
+* {
+    font-family: JetBrainsMonoNerdFont;
+    font-weight: normal;
+	font-size: 14px;
+	color: @text-color;
+}
+ 
+.control-center .notification-row:focus,
+.control-center .notification-row:hover {
+    opacity: 1;
+    background: @noti-bg-darker;
+}
+ 
+.notification-row {
+    outline: none;
+    margin: 20px;
+    padding: 0;
+}
+ 
+.notification {
+    background: @cc-bg;
+    border: 1px solid @noti-border-color;
+    margin: 0px;
+}
+
+/* .notification-content { */
+/*     background: @cc-bg; */
+/*     padding: 7px; */
+/*     border-radius: 0px; */
+/*     border: 1px solid @noti-border-color; */
+/*     margin: 0; */
+/* } */
+
+.notification-group {
+    background: @noti-bg-darker;
+}
+ 
+.close-button {
+    color: @accent-color !important;
+    background: transparent;
+    text-shadow: none;
+    padding: 0;
+    border-radius: 0px;
+    margin-top: 6px;
+    margin-right: 6px;
+}
+
+.notification-action {
+    color: @accent-color;
+    border-top: none;
+    border-radius: 0px;
+    background: @noti-bg;
+}
+ 
+.notification-default-action:hover,
+.notification-action:hover {
+    background: @cc-bg;
+} 
+ 
+.summary {
+	padding-top: 7px;
+    font-size: 14px;
+}
+ 
+.body {
+    font-size: 13px;
+}
+ 
+.control-center {
+    background: @cc-bg;
+    border: 1px solid @noti-border-color;
+    border-radius: 0px;
+}
+ 
+.blank-window {
+    background: alpha(black, 0.25);
+}
+ 
+.widget-title {
+    background: @noti-bg-darker;
+    padding: 5px 10px;
+    margin: 10px 10px 5px 10px;
+    font-size: 1.5rem;
+    border-radius: 0px;
+}
+ 
+.widget-title>button {
+    font-size: 1rem;
+    text-shadow: none;
+    background: @noti-bg;
+    box-shadow: none;
+    border-radius: 0px;
+}
+ 
+.widget-title>button:hover {
+    background: @accent-color;
+    color: @cc-bg;
+}
+ 
+.widget-dnd {
+    background: @noti-bg-darker;
+    padding: 5px 10px;
+    margin: 5px 10px 10px 10px;
+    border-radius: 0px;
+    font-size: large;
+}
+ 
+.widget-dnd>switch {
+    border-radius: 0px;
+    background: @noti-bg;
+}
+ 
+.widget-dnd>switch:checked {
+    background: @accent-color;
+}
+ 
+.widget-dnd>switch slider {
+    background: @cc-bg;
+    border-radius: 0px;
+}
+ 
+.widget-dnd>switch:checked slider {
+    background: @cc-bg;
+    border-radius: 0px;
+}
+ 
+.widget-label {
+    margin: 10px 10px 5px 10px;
+    color: @text-color;
+}
+ 
+.widget-label>label {
+    font-size: 1rem;
+    color: @text-color;
+}

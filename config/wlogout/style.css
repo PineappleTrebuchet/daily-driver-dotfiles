@@ -1,0 +1,88 @@
+@define-color border-color #262626;
+@define-color active-color #33adff;
+
+* {
+	background-image: none;
+	box-shadow: none;
+	font-family: JetBrainsMonoNerdFont;
+	font-size: 18px;
+	transition: none;
+}
+
+window {
+	background-color: alpha(black, 0.25);
+}
+
+button {
+    border-radius: 0;
+    border-color: transparent;
+    color: #bfbfbf;
+	background-color: #0d0d0d;
+	border-style: solid;
+	border-width: 1px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 25%;
+}
+
+button:focus, button:active {
+	outline-style: none;
+}
+
+#lock {
+    background-image: image(url("/home/cocotreb/.config/wlogout/icons/lock.png"));
+    border-left: 1px solid @border-color;
+    border-top: 1px solid @border-color;
+}
+#lock:focus, #lock:active {
+    background-image: image(url("/home/cocotreb/.config/wlogout/icons/lock1.png"));
+    color: @active-color;
+}
+
+#logout {
+    background-image: image(url("/home/cocotreb/.config/wlogout/icons/logout.png"));
+    border-top: 1px solid @border-color;
+}
+#logout:focus, #logout:active {
+    background-image: image(url("/home/cocotreb/.config/wlogout/icons/logout1.png"));
+    color: @active-color;
+}
+
+#suspend {
+    background-image: image(url("/home/cocotreb/.config/wlogout/icons/suspend.png"));
+    border-top: 1px solid @border-color;
+    border-right: 1px solid @border-color;
+}
+#suspend:focus, #suspend:active {
+    background-image: image(url("/home/cocotreb/.config/wlogout/icons/suspend1.png"));
+    color: @active-color;
+}
+
+#hibernate {
+    background-image: image(url("/home/cocotreb/.config/wlogout/icons/hibernate.png"));
+    border-bottom: 1px solid @border-color;
+    border-left: 1px solid @border-color;
+}
+#hibernate:focus, #hibernate:active {
+    background-image: image(url("/home/cocotreb/.config/wlogout/icons/hibernate1.png"));
+    color: @active-color;
+}
+
+#shutdown {
+    background-image: image(url("/home/cocotreb/.config/wlogout/icons/shutdown.png"));
+    border-bottom: 1px solid @border-color;
+}
+#shutdown:focus, #shutdown:active {
+    background-image: image(url("/home/cocotreb/.config/wlogout/icons/shutdown1.png"));
+    color: @active-color;
+}
+
+#reboot {
+    background-image: image(url("/home/cocotreb/.config/wlogout/icons/reboot.png"));
+    border-bottom: 1px solid @border-color;
+    border-right: 1px solid @border-color;
+}
+#reboot:focus, #reboot:active {
+    background-image: image(url("/home/cocotreb/.config/wlogout/icons/reboot1.png"));
+    color: @active-color;
+}

@@ -1,0 +1,115 @@
+@define-color font-color #bfbfbf;
+@define-color black #0d0d0d;
+@define-color grey #262626;
+@define-color light-grey #404040;
+
+@define-color red #950000;
+
+* {
+  font-family: "JetBrainsMonoNerdFont";
+  font-size: 16px;
+  /*padding: 1px 0px 2px 0px;*/
+}
+
+
+window#waybar { 
+  background-color: @black; 
+  color: @font-color;
+  /* border-bottom: 1px solid @grey; */
+}
+
+tooltip {
+	border-radius: 0px;
+	border: none;
+}
+
+#custom-spacer{
+	color: @light-grey;
+	font-size: 19px;
+}
+
+#workspaces {
+	margin: 0px 2px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+#workspaces button {
+	transition: none;
+	background: transparent;
+	border: none;
+	padding: 0px 8px 0px 8px;
+ 	min-width: 1px;
+	color: @font-color;
+	border-radius: 0px;
+}
+
+#workspaces button.focused { 
+	background-color: @grey;
+	color: @font-color;
+	border-radius: 0px;
+}
+#workspaces button.urgent{
+	color: @red;
+	font-weight: bold;
+}
+
+/*kys default hover effects*/
+#workspaces button:hover {
+	box-shadow: inherit;
+	text-shadow: inherit;
+	transition: none;
+	border-radius: 0px;
+}
+
+#mode {
+	color: @red;
+	padding: 0px 5px 0px 5px;
+	margin: 0px 5px 0px 5px;
+}
+
+#power-profiles-daemon, #cpu, #memory, #network, #temperature, #backlight, #pulseaudio, #battery {
+	margin: 0px 10px 0px 10px;
+}
+
+#tray {
+	margin: 0px 6px 0px 6px;
+	color: @green;
+}
+
+#clock {
+	margin: 0px 100px 0px 100px;
+}
+
+#idle_inhibitor {
+	min-width:30px;
+	padding: 0px 7px 0px 7px;
+}
+
+#scratchpad {
+  padding: 0px 4px 0px 4px;
+}
+
+#window {
+  padding: 0px 4px 0px 4px;
+}
+
+#battery.critical:not(.charging) {
+  color: @red;
+}
+
+#temperature.critical {
+  color: @red;
+}
+
+#network.disconnected {
+  color: @red;
+}
+
+#pulseaudio.muted{
+  color: @red;
+}
+
+#custom-cava {
+	color: @font-color;
+	margin: 0px 8px 0px 8px;
+}

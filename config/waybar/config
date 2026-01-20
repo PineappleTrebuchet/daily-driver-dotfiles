@@ -1,0 +1,162 @@
+{
+"layer": "top",	
+"position": "top",
+"height": 28,
+"modules-left": [
+    "idle_inhibitor",
+    "sway/workspaces",
+    "niri/workspaces",
+    "sway/scratchpad",
+    "tray",
+    "sway/mode",
+    "sway/window",
+    "niri/window"
+],
+"modules-center": ["clock",],
+"modules-right": [
+    "power-profiles-daemon",
+    //"custom/spacer",
+    "network",
+    //"custom/spacer",
+    "memory",
+    //"custom/spacer",
+    "cpu",
+    //"custom/spacer",
+    "temperature",
+    //"custom/spacer",
+    "backlight",
+    //"custom/spacer",
+    "pulseaudio",
+    //"custom/spacer",
+    "battery",
+],	
+"custom/spacer": {
+    "format":"|",
+    "tooltip": false
+},
+"sway/workspaces": {
+	/*"persistent-workspaces": {
+	    "1": [],
+	    "2": [],
+	    "3": [],
+	    "4": [],
+	    "5": [],
+	},*/
+    "disable-scroll": true,
+    "disable-markup": true,
+    "format": "{index}",
+},
+
+"sway/scratchpad": {
+    "format": "[{count}]"
+},
+
+"sway/window": {
+    "format": "{}",
+    "tooltip": false,
+    //"max-length": 45
+},
+"niri/window": {
+    "format": "{}",
+    "tooltip": false,
+    //"max-length": 45
+},
+"tray": {
+    "icon-size": 19,
+    "spacing": 8
+},
+
+"clock": {
+    "format": "{:%a %m-%d %r}",
+    "interval": 1,
+    "tooltip": false
+},
+
+"memory": {
+    "format": "{used}gib",
+    "tooltip-format": "{percentage}% used",
+    "interval": 3
+},
+
+"cpu": {
+    "format": "cpu:{usage}%", 
+    "interval": 3
+},
+
+"battery": {
+    "bat": "BAT0",
+    "states": {
+        "full": 99,
+        "critical": 20
+    },
+    "events": {
+        "on-discharging-critical": "notify-send -u critical 'WARNING: Critical Battery!'",
+    },
+    "format": "bat:{capacity}%",
+    "format-charging": " bat:{capacity}%",
+    "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+    "interval": 15
+},
+
+"power-profiles-daemon": {
+    "format": "{icon}",
+    "tooltip-format": "Profile: {profile}\nDriver: {driver}",
+    "format-icons": {       
+        "default": "bal",
+        "performance": "per",
+        "balanced:": "bal",
+        "power-saver": "sav"
+    }
+},
+
+"network": {
+    "format-wifi": "wifi-up",
+    "tooltip-format-wifi": "{essid} ({signalStrength}%)\n↓{bandwidthDownBits} ↑{bandwidthUpBits}",
+    "format-ethernet": "ethernet",
+    "tooltip-format-ethernet": "{ifname}: {ipaddr}/{cidr}",
+    "format-disconnected": "WIFI-DOWN",
+    "tooltip-disconnected": false,
+    "family": "ipv4",
+    "interval": 3,
+    "on-click": "nm-connection-editor;"
+},
+
+"temperature": {
+	"thermal-zone": 0,
+	"format": "{temperatureC}°C",
+	"format-icons":[""],
+	"interval": 3
+},
+
+"backlight": {
+    "device": "intel_backlight",
+    "format": "bri:{percent}%",
+    "format-icons": ["☾", "☼︎", "☀︎"],
+    "interval": 60
+},
+
+"pulseaudio": {
+    "format": "vol:{volume}%",
+    //"format-bluetooth": "vol:{volume}%",
+    "format-muted":"mute[{volume}%]",
+    "interval": 60,
+    "on-click": "pavucontrol",
+    "format-icons": {
+    "default": ["󰕿", "󰖀", "󰕾"]
+    }, 
+},
+
+//this cava module for some reason causes my CPU temperature to explode
+"custom/cava": {
+    "format": "{}",
+    "exec": "~/.config/waybar/scripts/cava.sh"
+},
+
+"idle_inhibitor": {
+"format": "{icon}",
+"format-icons": {
+    "activated": "ON",
+    "deactivated": "OFF"
+    }
+},
+}
