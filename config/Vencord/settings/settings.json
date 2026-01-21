@@ -409,7 +409,7 @@
                         "id": "w59l7zxwvu",
                         "name": "Arcade Friends",
                         "color": 3066993,
-                        "collapsed": true,
+                        "collapsed": false,
                         "channels": [
                             "1441930799413723170",
                             "1449535209178398820",
@@ -654,7 +654,7 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1768930074160
+        "settingsSyncVersion": 1769014943975
     },
     "uiElements": {
         "chatBarButtons": {},

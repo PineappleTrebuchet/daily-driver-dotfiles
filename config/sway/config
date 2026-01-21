@@ -61,30 +61,15 @@ output * bg ~/Pictures/Backgrounds/Lava_EndeavourOS.png fill
     bindsym $mod+$up focus up
     bindsym $mod+$right focus right
 
-    # bindsym $mod+Left focus left
-    # bindsym $mod+Down focus down
-    # bindsym $mod+Up focus up
-    # bindsym $mod+Right focus right
-
     bindsym $mod+Shift+$left move left 40px
     bindsym $mod+Shift+$down move down 40px
     bindsym $mod+Shift+$up move up 40px
     bindsym $mod+Shift+$right move right 40px
 
-    # bindsym $mod+Shift+Left move left 40px
-    # bindsym $mod+Shift+Down move down 40px
-    # bindsym $mod+Shift+Up move up 40px
-    # bindsym $mod+Shift+Right move right 40px
-
     bindsym $mod+Ctrl+$left move left 20px
     bindsym $mod+Ctrl+$down move down 20px
     bindsym $mod+Ctrl+$up move up 20px
     bindsym $mod+Ctrl+$right move right 20px
-
-    # bindsym $mod+Ctrl+Left move left 20px
-    # bindsym $mod+Ctrl+Down move down 20px
-    # bindsym $mod+Ctrl+Up move up 20px
-    # bindsym $mod+Ctrl+Right move right 20px
 
 # Workspaces:
 #
@@ -137,20 +122,10 @@ mode "resize" {
     bindsym $up resize shrink height 40px
     bindsym $right resize grow width 40px
 
-    # bindsym Left resize shrink width 40px
-    # bindsym Down resize grow height 40px
-    # bindsym Up resize shrink height 40px
-    # bindsym Right resize grow width 40px
-
     bindsym Shift+$left resize shrink width 20px
     bindsym Shift+$down resize grow height 20px
     bindsym Shift+$up resize shrink height 20px
     bindsym Shift+$right resize grow width 20px
-
-    # bindsym Shift+Left resize shrink width 20px
-    # bindsym Shift+Down resize grow height 20px
-    # bindsym Shift+Up resize shrink height 20px
-    # bindsym Shift+Right resize grow width 20px
 
     bindsym Return mode "default"
     bindsym Escape mode "default"

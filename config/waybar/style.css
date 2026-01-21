@@ -1,13 +1,13 @@
-@define-color font-color #bfbfbf;
-@define-color black #0d0d0d;
+@define-color font-color #e6e6e6;
+@define-color black #1a1a1a;
 @define-color grey #262626;
 @define-color light-grey #404040;
 
-@define-color red #950000;
+@define-color red #ff0000;
 
 * {
-  font-family: "JetBrainsMonoNerdFont";
-  font-size: 16px;
+  font-family: "System-ui";
+  font-size: 15px;
   /*padding: 1px 0px 2px 0px;*/
 }
 
@@ -81,7 +81,7 @@ tooltip {
 }
 
 #idle_inhibitor {
-	min-width:30px;
+	min-width:25px;
 	padding: 0px 7px 0px 7px;
 }
 

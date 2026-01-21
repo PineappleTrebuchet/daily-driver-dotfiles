@@ -12,6 +12,6 @@ return {
   { import = "astrocommunity.code-runner.compiler-nvim" },
   { import = "astrocommunity.pack.python"},
   { import = "astrocommunity.pack.cpp"},
-  { import = "astrocommunity.lsp.garbage-day-nvim"},
-  { import = "astrocommunity.file-explorer.yazi-nvim"}
+  { import = "astrocommunity.lsp.garbage-day-nvim" },
+  { import = "astrocommunity.file-explorer.yazi-nvim" },
 }
