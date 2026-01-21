@@ -93,6 +93,7 @@
     },
     "format": "{icon} {capacity}%",
     "format-normal": "{icon} {capacity}%",
+    "format-full": "󱟢 {capacity}%",
     "format-charging": "󱐥 {capacity}%",
     "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
     "interval": 10

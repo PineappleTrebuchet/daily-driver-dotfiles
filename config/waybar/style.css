@@ -2,20 +2,17 @@
 @define-color black #1a1a1a;
 @define-color grey #262626;
 @define-color light-grey #404040;
-
 @define-color red #ff0000;
 
 * {
   font-family: "System-ui";
   font-size: 15px;
-  /*padding: 1px 0px 2px 0px;*/
 }
 
 
 window#waybar { 
   background-color: @black; 
   color: @font-color;
-  /* border-bottom: 1px solid @grey; */
 }
 
 tooltip {
@@ -29,7 +26,7 @@ tooltip {
 }
 
 #workspaces {
-	margin: 0px 2px 0px 0px;
+	margin: 0px 3px 0px 0px;
 	padding: 0px 0px 0px 0px;
 }
 
@@ -50,7 +47,6 @@ tooltip {
 }
 #workspaces button.urgent{
 	color: @red;
-	font-weight: bold;
 }
 
 /*kys default hover effects*/
@@ -72,7 +68,7 @@ tooltip {
 }
 
 #tray {
-	margin: 0px 6px 0px 6px;
+	margin: 0px 6px 0px 2px;
 	color: @green;
 }
 
@@ -86,7 +82,8 @@ tooltip {
 }
 
 #scratchpad {
-  padding: 0px 4px 0px 4px;
+  padding: 0px 4px 0px 0px;
+  font-family: "JetBrainsMonoNerdFont";
 }
 
 #window {
