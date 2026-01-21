@@ -156,9 +156,9 @@ bindsym $mod+r mode "resize"
 # Colors and Aesthetic:
 #
 client.focused          #33adff #285577 #ffffff #33adff #33adff 
-client.focused_inactive #333333 #222222 #888888 #292d2e #222222
-client.unfocused        #333333 #222222 #888888 #292d2e #222222
-client.urgent           #ff0000 #222222 #888888 #ff0000 #ff0000
+client.focused_inactive #333333 #222222 #ffffff #292d2e #222222
+client.unfocused        #333333 #222222 #ffffff #292d2e #222222
+client.urgent           #ff0000 #222222 #ffffff #ff0000 #ff0000
 
 default_border pixel 1
 default_floating_border pixel 1
