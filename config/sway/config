@@ -10,7 +10,7 @@ set $menu fuzzel
 
 #Background
 #
-output * bg ~/Pictures/Backgrounds/Lava_EndeavourOS.png fill
+output * bg $HOME/Pictures/Backgrounds/Lava_EndeavourOS.png fill
 #exec_always swaybg -c 2E383C
 
 # Example configuration:
@@ -20,8 +20,8 @@ output * bg ~/Pictures/Backgrounds/Lava_EndeavourOS.png fill
 # Swayidle
 #
   exec swayidle -w \
-    timeout 300 'swaylock -f' \
-    timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"'
+    timeout 300 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
+    timeout 330 'swaylock -f' \
 
 # Input configuration
 #
@@ -29,7 +29,7 @@ output * bg ~/Pictures/Backgrounds/Lava_EndeavourOS.png fill
         dwt enabled
         tap enabled
         natural_scroll enabled
-        middle_emulation enabled
+        #middle_emulation enabled
         accel_profile "flat"
         pointer_accel 0.6
     }
@@ -175,7 +175,7 @@ bar {
 xwayland enable
 focus_follows_mouse no
 title_align center
-exec swaync
+exec sh -c "$HOME/.config/swaync/swaync.sh"
 seat seat0 xcursor_theme phinger-cursors-dark 24
 exec_always autotiling
 exec --no-startup-id /usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh

@@ -20,3 +20,4 @@ require "polish"
 require('Comment').setup()
 -- require('java').setup()
 -- require("lspconfig").jdtls.setup({})
+vim.cmd("colorscheme carbonfox")
