@@ -10,7 +10,7 @@ set $menu fuzzel
 
 #Background
 #
-output * bg $HOME/Pictures/Backgrounds/Lava_EndeavourOS.png fill
+output * bg $HOME/Pictures/Backgrounds/autumn-river-stream.jpg fill
 #exec_always swaybg -c 2E383C
 
 # Example configuration:
@@ -153,14 +153,17 @@ bindsym $mod+r mode "resize"
     bindsym Print exec grim -l 9 "$HOME/Pictures/Screenshots/$(date +'%m%d%y_%H%M%S').png" && notify-send "Screenshot taken!" -u low
     bindsym XF86SelectiveScreenshot exec sh -c "slurp | grim -l 9 -g - $HOME/Pictures/Screenshots/$(date +'%m%d%y_%H%M%S').png && notify-send 'Screensnip taken!' -u low"
 
+    # Change power profiles daemon mode
+    bindsym F8 exec $HOME/.config/sway/scripts/toggle-profiles.sh
+
 # Colors and Aesthetic:
 #
-client.focused          #33adff #285577 #ffffff #33adff #33adff 
+client.focused          #0099ff #2d5f86 #ffffff #0099ff #0099ff
 client.focused_inactive #333333 #222222 #ffffff #292d2e #222222
 client.unfocused        #333333 #222222 #ffffff #292d2e #222222
 client.urgent           #ff0000 #222222 #ffffff #ff0000 #ff0000
 
-default_border pixel 1
+default_border pixel 2
 default_floating_border pixel 1
 gaps inner 4
 
@@ -181,10 +184,15 @@ exec_always autotiling
 exec --no-startup-id /usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh
 exec --no-startup-id /usr/lib/xdg-desktop-portal -r
 font pango:JetBrainsMonoNerdFont 10
-# Force qt theme to use gtk
-exec export QT_QPA_PLATFORMTHEME=gtk3
 output * scale 1
 # for_window [title=".*"] floating enable
+
+# Force floating windows on specific applications
+# 
+for_window [title="File Operation Progress"] floating enable
+for_window [title="Confirm to replace files"] floating enable
+for_window [title="nwg-look"] floating enable
+for_window [title="Qalculate!"] floating enable
 
 # END
 include /etc/sway/config.d/*

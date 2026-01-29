@@ -1,11 +1,11 @@
 @define-color font-color #e6e6e6;
-@define-color black #1a1a1a;
-@define-color grey #262626;
+@define-color black #0d0d0d;
+@define-color grey #242424;
 @define-color light-grey #404040;
 @define-color red #ff0000;
 
 * {
-  font-family: "System-ui";
+  font-family: "Inter Regular";
   font-size: 15px;
 }
 

@@ -15,7 +15,7 @@
 }
  
 * {
-    font-family: "Sans Regular";
+    font-family: "Inter Regular";
     font-weight: normal;
 	font-size: 14px;
 	color: @text-color;
@@ -75,11 +75,11 @@
  
 .summary {
 	padding-top: 7px;
-    font-size: 14px;
+    /* font-size: 14px; */
 }
  
 .body {
-    font-size: 13px;
+    /* font-size: 13px; */
 }
  
 .control-center {
@@ -96,12 +96,12 @@
     background: @noti-bg-darker;
     padding: 5px 10px;
     margin: 10px 10px 5px 10px;
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     border-radius: 0px;
 }
  
 .widget-title>button {
-    font-size: 1rem;
+    /* font-size: 1rem; */
     text-shadow: none;
     background: @noti-bg;
     box-shadow: none;
@@ -118,7 +118,7 @@
     padding: 5px 10px;
     margin: 5px 10px 10px 10px;
     border-radius: 0px;
-    font-size: large;
+    /* font-size: large; */
 }
  
 .widget-dnd>switch {
@@ -146,6 +146,6 @@
 }
  
 .widget-label>label {
-    font-size: 1rem;
+    /* font-size: 1rem; */
     color: @text-color;
 }
