@@ -161,7 +161,7 @@ bindsym $mod+r mode "resize"
 client.focused          #0099ff #2d5f86 #ffffff #0099ff #0099ff
 client.focused_inactive #333333 #222222 #ffffff #292d2e #222222
 client.unfocused        #333333 #222222 #ffffff #292d2e #222222
-client.urgent           #ff0000 #222222 #ffffff #ff0000 #ff0000
+client.urgent           #ff0000 #990000 #ffffff #ff0000 #ff0000
 
 default_border pixel 2
 default_floating_border pixel 1
@@ -187,12 +187,13 @@ font pango:JetBrainsMonoNerdFont 10
 output * scale 1
 # for_window [title=".*"] floating enable
 
-# Force floating windows on specific applications
+# Force floating windows on specific windows:
 # 
 for_window [title="File Operation Progress"] floating enable
 for_window [title="Confirm to replace files"] floating enable
 for_window [title="nwg-look"] floating enable
 for_window [title="Qalculate!"] floating enable
+for_window [title="zoom"] floating enable
 
 # END
 include /etc/sway/config.d/*

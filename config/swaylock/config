@@ -3,8 +3,8 @@ timestr=%I:%M %p
 datestr=%a %b %d
 
 font=SpaceMonoNerdFont
-#image=~/Pictures/Backgrounds/mist_forest_1.png
-screenshots
+image=~/Pictures/Backgrounds/autumn-river-stream.jpg
+#screenshots
 effect-blur=6x3
 effect-vignette=0.75:0.75
 ignore-empty-password
@@ -13,10 +13,10 @@ indicator
 indicator-radius=275
 indicator-thickness=18
 
-#inside-color=#00000000
-#inside-clear-color=#00000000
-#inside-ver-color=#00000000
-#inside-wrong-color=#00000000
+inside-color=#000000CC
+inside-clear-color=#000000CC
+inside-ver-color=#000000CC
+inside-wrong-color=#000000CC
 
 line-uses-inside
 
@@ -24,18 +24,18 @@ text-clear=Cleared
 text-ver=...
 text-wrong=Incorrect
 
-#text-color=#a7c080
-#text-clear-color=#a7c080
-#text-ver-color=#a7c080
-#text-wrong-color=#a7c080
-#text-caps-lock-color=#a7c080
+text-color=#e6e6e6
+text-clear-color=#e6e6e6
+text-ver-color=#e6e6e6
+text-wrong-color=#e6e6e6
+text-caps-lock-color=#e6e6e6
 
-#ring-color=#a7c08000
-#ring-clear-color=#a7c08000
-#ring-ver-color=#a7c08000
-#ring-wrong-color=#a7c08000
+ring-color=#e6e6e600
+ring-clear-color=#e6e6e600
+ring-ver-color=#e6e6e600
+ring-wrong-color=#e6e6e600
 
-#bs-hl-color=#a7c080
-#key-hl-color=#a7c080
+bs-hl-color=#e6e6e6
+key-hl-color=#e6e6e6
 
-#separator-color=#a7c08000
+#separator-color=#e6e6e600

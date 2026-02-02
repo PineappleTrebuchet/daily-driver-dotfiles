@@ -208,7 +208,8 @@
             "originalImagesInChat": false
         },
         "FixSpotifyEmbeds": {
-            "enabled": true
+            "enabled": false,
+            "volume": 0
         },
         "FixYoutubeEmbeds": {
             "enabled": true
@@ -669,7 +670,7 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1769285974279
+        "settingsSyncVersion": 1769803292342
     },
     "uiElements": {
         "chatBarButtons": {},

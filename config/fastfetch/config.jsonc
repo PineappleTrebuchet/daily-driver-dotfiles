@@ -19,6 +19,6 @@
     "memory",
     "poweradapter",
     "break",
-    "colors"
+    // "colors"
   ]
 }

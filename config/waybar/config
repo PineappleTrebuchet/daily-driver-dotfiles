@@ -138,7 +138,7 @@
 
 "pulseaudio": {
     "format": "{icon} {volume}%",
-    "format-bluetooth": "󰂯 {volume}%",
+    //"format-bluetooth": "󰂯 {volume}%",
     "format-muted":"󰝟 {volume}%",
     "interval": 60,
     "on-click": "pavucontrol",
