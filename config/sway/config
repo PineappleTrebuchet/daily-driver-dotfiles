@@ -51,7 +51,6 @@ output * bg $HOME/Pictures/Backgrounds/autumn-river-stream.jpg fill
     bindsym $mod+Shift+r reload
     bindsym $mod+Shift+e exec wlogout -m 375
     bindsym $mod+m exec killall -SIGUSR1 waybar
-    # Notification center popup
     bindsym $mod+n exec swaync-client -t -sw
 
 # Moving around:

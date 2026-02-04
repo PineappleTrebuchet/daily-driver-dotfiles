@@ -2,7 +2,7 @@
 padding = {x = 8, y = 8}
 title = "cocotreb@tpt14g5:~"
 dynamic_title = true
-opacity = 0.88
+opacity = 0.86
 dimensions = { columns = 95, lines = 30 }
 
 [font]

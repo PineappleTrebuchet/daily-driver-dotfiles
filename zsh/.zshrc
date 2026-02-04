@@ -1,16 +1,3 @@
-# # The following lines were added by compinstall
-#
-# zstyle ':completion:*' completer _complete _ignored
-# zstyle ':completion:*' list-colors ''
-# zstyle ':completion:*' matcher-list '' 'm:{[:lower:]}={[:upper:]}'
-# zstyle ':completion:*' menu select=long
-# zstyle ':completion:*' original true
-# zstyle ':completion:*' select-prompt %SScrolling active: current selection at %p%s
-# zstyle :compinstall filename '~/.zshrc'
-#
-# autoload -Uz compinit
-# compinit
-# # End of lines added by compinstall
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
 HISTSIZE=1000
@@ -66,13 +53,13 @@ zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # You can also set it to another string to have that shown instead of the default red dots.
 # e.g. COMPLETION_WAITING_DOTS="%F{yellow}waiting...%f"
 # Caution: this setting can cause issues with multiline prompts in zsh < 5.7.1 (see #5765)
-# COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -92,7 +79,7 @@ HIST_STAMPS="mm/dd/yyyy"
 
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
-plugins=(git colored-man-pages)
+plugins=(git colored-man-pages ufw)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -117,4 +104,3 @@ export QT_QPA_PLATFORMTHEME='gtk3'
 alias vbox="VBoxManage"
 alias pcsx2="net.pcsx2.PCSX2"
 alias optk="OpenTaiko-Hub"
-alias vim="nvim"

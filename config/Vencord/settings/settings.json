@@ -419,7 +419,7 @@
                         "id": "xxwt6kcmycp",
                         "name": "High School Friends",
                         "color": 15158332,
-                        "collapsed": true,
+                        "collapsed": false,
                         "channels": [
                             "1212598489088008213",
                             "886040876298694729",
@@ -431,7 +431,10 @@
                             "1183742570438869032",
                             "1319755347908624425",
                             "1293277680602447873",
-                            "888537474261987389"
+                            "888537474261987389",
+                            "1129706482183720970",
+                            "931717094259708004",
+                            "931716662200266834"
                         ]
                     }
                 ]
@@ -670,7 +673,7 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1769803292342
+        "settingsSyncVersion": 1770078076756
     },
     "uiElements": {
         "chatBarButtons": {},
