@@ -106,6 +106,7 @@
     background: @noti-bg;
     box-shadow: none;
     border-radius: 0px;
+    padding: 2px 20px 2px 20px;
 }
  
 .widget-title>button:hover {
@@ -123,7 +124,7 @@
  
 .widget-dnd>switch {
     border-radius: 0px;
-    padding: 2px 3px 2px 3px;
+    padding: 2px 2px 2px 2px;
     background: @noti-bg;
 }
  
