@@ -163,7 +163,7 @@ client.unfocused        #333333 #222222 #ffffff #292d2e #222222
 client.urgent           #ff0000 #990000 #ffffff #ff0000 #ff0000
 
 default_border pixel 2
-default_floating_border pixel 1
+default_floating_border pixel 2
 gaps inner 4
 
 # Waybar:
@@ -182,7 +182,7 @@ seat seat0 xcursor_theme phinger-cursors-dark 24
 exec_always autotiling
 exec --no-startup-id /usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh
 exec --no-startup-id /usr/lib/xdg-desktop-portal -r
-font pango:JetBrainsMonoNerdFont 10
+font pango:"Inter Regular" 9.5
 output * scale 1
 # for_window [title=".*"] floating enable
 
@@ -193,6 +193,7 @@ for_window [title="Confirm to replace files"] floating enable
 for_window [title="nwg-look"] floating enable
 for_window [title="Qalculate!"] floating enable
 for_window [title="zoom"] floating enable
+for_window [title="Waterfox - Choose a profile"] floating enable
 
 # END
 include /etc/sway/config.d/*

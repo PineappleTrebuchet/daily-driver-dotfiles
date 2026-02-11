@@ -30,10 +30,10 @@ text-ver-color=#e6e6e6
 text-wrong-color=#e6e6e6
 text-caps-lock-color=#e6e6e6
 
-ring-color=#e6e6e600
-ring-clear-color=#e6e6e600
-ring-ver-color=#e6e6e600
-ring-wrong-color=#e6e6e600
+ring-color=#000000CC
+ring-clear-color=#000000CC
+ring-ver-color=#000000CC
+ring-wrong-color=#000000CC
 
 bs-hl-color=#e6e6e6
 key-hl-color=#e6e6e6
