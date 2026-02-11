@@ -3,11 +3,9 @@ local user='%{$fg[green]%}%n%{$reset_color%}'
 local at='%{$fg[green]%}@%{$reset_color%}'
 local host='%{$fg[green]%}%m%{$reset_color%}'
 
-local current_dir='%{$fg[blue]%}%~%{$reset_color%}'
+local current_dir='%{$fg[cyan]%}%3~%{$reset_color%}'
 local git_branch='%{$fg[blue]%}$(git_prompt_info)%{$reset_color%}'
 
-#RPS1="${return_code}"
-#RPROMPT=""
 PROMPT="┌[${user}${at}${host}] ${current_dir}
 └${git_branch}$ "
 RPS1="${return_code}"
