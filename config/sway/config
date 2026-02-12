@@ -182,7 +182,7 @@ seat seat0 xcursor_theme phinger-cursors-dark 24
 exec_always autotiling
 exec --no-startup-id /usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh
 exec --no-startup-id /usr/lib/xdg-desktop-portal -r
-font pango:"Inter Regular" 9.5
+font pango:"Inter Regular" 10
 output * scale 1
 # for_window [title=".*"] floating enable
 

@@ -6,8 +6,8 @@
     "idle_inhibitor",
     "sway/workspaces",
     "niri/workspaces",
-    "sway/scratchpad",
     "tray",
+    "sway/scratchpad",
     "sway/mode",
     "sway/window",
     "niri/window"
@@ -46,7 +46,7 @@
 },
 
 "sway/scratchpad": {
-    "format": "[{count}]"
+    "format": " {count}"
 },
 
 "sway/window": {

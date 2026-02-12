@@ -6,7 +6,7 @@
 
 * {
   font-family: "Inter Regular";
-  font-size: 15px;
+  font-size: 16.5px;
 }
 
 
@@ -82,8 +82,9 @@ tooltip {
 }
 
 #scratchpad {
-  padding: 0px 4px 0px 0px;
-  font-family: "JetBrainsMonoNerdFont";
+  padding: 0px 4px 0px 4px;
+  /* font-size: 16; */
+  /* font-family: "JetBrainsMonoNerdFont"; */
 }
 
 #window {
