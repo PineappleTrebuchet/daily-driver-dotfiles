@@ -29,9 +29,14 @@ output * bg $HOME/Pictures/Backgrounds/autumn-river-stream.jpg fill
         dwt enabled
         tap enabled
         natural_scroll enabled
-        #middle_emulation enabled
+        middle_emulation disabled
         accel_profile "flat"
         pointer_accel 0.6
+    }
+
+    input type:keyboard {
+        repeat_delay 450
+        repeat_rate 30
     }
 
     input 2:10:TPPS/2_Elan_TrackPoint {
@@ -129,6 +134,7 @@ mode "resize" {
     bindsym Return mode "default"
     bindsym Escape mode "default"
     bindsym $mod+r mode "default"
+    bindsym space mode "default"
 }
 bindsym $mod+r mode "resize"
 
@@ -158,8 +164,8 @@ bindsym $mod+r mode "resize"
 # Colors and Aesthetic:
 #
 client.focused          #0099ff #2d5f86 #ffffff #0099ff #0099ff
-client.focused_inactive #333333 #222222 #ffffff #292d2e #222222
-client.unfocused        #333333 #222222 #ffffff #292d2e #222222
+client.focused_inactive #292d2e #1a1a1a #ffffff #292d2e #1a1a1a
+client.unfocused        #292d2e #1a1a1a #ffffff #292d2e #1a1a1a
 client.urgent           #ff0000 #990000 #ffffff #ff0000 #ff0000
 
 default_border pixel 2
