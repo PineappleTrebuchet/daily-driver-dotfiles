@@ -12,21 +12,31 @@
     "sway/window",
     "niri/window"
 ],
+
 "modules-center": ["clock",],
 "modules-right": [
     "power-profiles-daemon",
+    "custom/spacer",
     "network",
+    "custom/spacer",
     "memory",
+    "custom/spacer",
     "cpu",
+    "custom/spacer",
     "temperature",
+    "custom/spacer",
     "backlight",
+    "custom/spacer",
     "pulseaudio",
+    "custom/spacer",
     "battery",
 ],	
+
 "custom/spacer": {
-    "format":"|",
+    "format":"/",
     "tooltip": false
 },
+
 "sway/workspaces": {
 	/*"persistent-workspaces": {
 	    "1": [],
@@ -46,7 +56,7 @@
 },
 
 "sway/scratchpad": {
-    "format": " {count}"
+    "format": "[{count}]"
 },
 
 "sway/window": {
@@ -54,30 +64,32 @@
     "tooltip": false,
     //"max-length": 45
 },
+
 "niri/window": {
     "format": "{}",
     "tooltip": false,
     //"max-length": 45
 },
+
 "tray": {
     "icon-size": 19,
     "spacing": 8
 },
 
 "clock": {
-    "format": "  {:%a %m/%d  󰥔  %r}",
+    "format": "{:%a %m/%d, %r}",
     "interval": 1,
     "tooltip": false
 },
 
 "memory": {
-    "format": "{used}GiB",
+    "format": "{used}gib",
     "tooltip-format": "{percentage}% used",
     "interval": 3
 },
 
 "cpu": {
-    "format": "  {usage}%", 
+    "format": "cpu {usage}%", 
     "interval": 3
 },
 
@@ -92,8 +104,8 @@
         "on-discharging-critical": "notify-send -u critical 'WARNING: Critical Battery!'",
     },
     "format": "{icon} {capacity}%",
-    "format-normal": "{icon} {capacity}%",
-    "format-full": "󱟢 {capacity}%",
+    "format-normal": "bat {capacity}%",
+    //"format-full": "󱟢 {capacity}%",
     "format-charging": "󱐥 {capacity}%",
     "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
     "interval": 10
@@ -111,11 +123,11 @@
 },
 
 "network": {
-    "format-wifi": "󰖩  {essid} ({signalStrength}%)",
-    "tooltip-format-wifi": "↓{bandwidthDownBits}  ↑{bandwidthUpBits}",
-        "format-ethernet": "󰈀 Ethernet",
+    "format-wifi": "{ifname} ({signalStrength}%)",
+    "tooltip-format-wifi": "{essid}\n↓{bandwidthDownBits}  ↑{bandwidthUpBits}",
+        "format-ethernet": "ethernet",
     "tooltip-format-ethernet": "{ifname}: {ipaddr}/{cidr}",
-    "format-disconnected": "󰖪  down",
+    "format-disconnected": "down",
     "tooltip-disconnected": false,
     "family": "ipv4",
     "interval": 3,
@@ -124,22 +136,22 @@
 
 "temperature": {
 	"thermal-zone": 0,
-	"format": "{icon} {temperatureC}°C",
+	"format": "{temperatureC}°C",
 	"format-icons":[""],
 	"interval": 3
 },
 
 "backlight": {
     "device": "intel_backlight",
-    "format": "{icon} {percent}%",
+    "format": "bri {percent}%",
     "format-icons": ["☾", "☼︎", "☀︎"],
     "interval": 60
 },
 
 "pulseaudio": {
-    "format": "{icon} {volume}%",
+    "format": "vol {volume}%",
     //"format-bluetooth": "󰂯 {volume}%",
-    "format-muted":"󰝟 {volume}%",
+    "format-muted":"mute {volume}%",
     "interval": 60,
     "on-click": "pavucontrol",
     "format-icons": {
@@ -156,8 +168,8 @@
 "idle_inhibitor": {
 "format": "{icon}",
 "format-icons": {
-    "activated": "",
-    "deactivated": ""
+    "activated": "on",
+    "deactivated": "off"
     }
 },
 }
