@@ -16,24 +16,17 @@
 "modules-center": ["clock",],
 "modules-right": [
     "power-profiles-daemon",
-    "custom/spacer",
     "network",
-    "custom/spacer",
     "memory",
-    "custom/spacer",
     "cpu",
-    "custom/spacer",
     "temperature",
-    "custom/spacer",
     "backlight",
-    "custom/spacer",
     "pulseaudio",
-    "custom/spacer",
     "battery",
 ],	
 
 "custom/spacer": {
-    "format":"/",
+    "format":"|",
     "tooltip": false
 },
 
@@ -56,7 +49,7 @@
 },
 
 "sway/scratchpad": {
-    "format": "[{count}]"
+    "format": " {count}"
 },
 
 "sway/window": {
@@ -77,19 +70,19 @@
 },
 
 "clock": {
-    "format": "{:%a %m/%d, %r}",
+    "format": "  {:%a %m/%d  󰥔  %r}",
     "interval": 1,
     "tooltip": false
 },
 
 "memory": {
-    "format": "{used}gib",
+    "format": "{used}GiB",
     "tooltip-format": "{percentage}% used",
     "interval": 3
 },
 
 "cpu": {
-    "format": "cpu {usage}%", 
+    "format": "  {usage}%", 
     "interval": 3
 },
 
@@ -104,8 +97,8 @@
         "on-discharging-critical": "notify-send -u critical 'WARNING: Critical Battery!'",
     },
     "format": "{icon} {capacity}%",
-    "format-normal": "bat {capacity}%",
-    //"format-full": "󱟢 {capacity}%",
+    "format-normal": "{icon} {capacity}%",
+    "format-full": "󱟢 {capacity}%",
     "format-charging": "󱐥 {capacity}%",
     "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
     "interval": 10
@@ -123,11 +116,11 @@
 },
 
 "network": {
-    "format-wifi": "{ifname} ({signalStrength}%)",
-    "tooltip-format-wifi": "{essid}\n↓{bandwidthDownBits}  ↑{bandwidthUpBits}",
-        "format-ethernet": "ethernet",
+    "format-wifi": "󰖩  {essid} ({signalStrength}%)",
+    "tooltip-format-wifi": "↓{bandwidthDownBits}  ↑{bandwidthUpBits}",
+        "format-ethernet": "󰈀 Ethernet",
     "tooltip-format-ethernet": "{ifname}: {ipaddr}/{cidr}",
-    "format-disconnected": "down",
+    "format-disconnected": "󰖪  down",
     "tooltip-disconnected": false,
     "family": "ipv4",
     "interval": 3,
@@ -136,22 +129,22 @@
 
 "temperature": {
 	"thermal-zone": 0,
-	"format": "{temperatureC}°C",
+	"format": "{icon} {temperatureC}°C",
 	"format-icons":[""],
 	"interval": 3
 },
 
 "backlight": {
     "device": "intel_backlight",
-    "format": "bri {percent}%",
+    "format": "{icon} {percent}%",
     "format-icons": ["☾", "☼︎", "☀︎"],
     "interval": 60
 },
 
 "pulseaudio": {
-    "format": "vol {volume}%",
+    "format": "{icon} {volume}%",
     //"format-bluetooth": "󰂯 {volume}%",
-    "format-muted":"mute {volume}%",
+    "format-muted":"󰝟 {volume}%",
     "interval": 60,
     "on-click": "pavucontrol",
     "format-icons": {
@@ -168,8 +161,8 @@
 "idle_inhibitor": {
 "format": "{icon}",
 "format-icons": {
-    "activated": "on",
-    "deactivated": "off"
+    "activated": "",
+    "deactivated": ""
     }
 },
 }
