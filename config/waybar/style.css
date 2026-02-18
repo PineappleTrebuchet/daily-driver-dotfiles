@@ -1,11 +1,11 @@
 @define-color font-color #e6e6e6;
 @define-color black #0d0d0d;
-@define-color grey #202020;
+@define-color grey #242424;
 @define-color light-grey #404040;
 @define-color red #ff0000;
 
 * {
-  font-family: "Inter Regular";
+  font-family: "BlexMonoNerdFont";
   font-size: 16px;
 }
 
@@ -43,10 +43,12 @@ tooltip {
 	background-color: @grey;
 	border-radius: 0px;
 }
+
 #workspaces button.focused { 
 	background-color: #265273;
 	border-radius: 0px;
 }
+
 #workspaces button.urgent{
 	color: @red;
 }
@@ -75,10 +77,6 @@ tooltip {
 	margin: 0px 6px 0px 2px;
 }
 
-/* #clock { */
-/* 	margin: 0px 100px 0px 100px; */
-/* } */
-
 #idle_inhibitor {
 	min-width:22px;
 	padding: 0px 7px 0px 7px;
@@ -86,27 +84,9 @@ tooltip {
 
 #scratchpad {
   padding: 0px 4px 0px 4px;
-  /* font-size: 16; */
-  /* font-family: "JetBrainsMonoNerdFont"; */
 }
 
-#window {
-  padding: 0px 4px 0px 4px;
-}
-
-#battery.critical:not(.charging) {
-  color: @red;
-}
-
-#temperature.critical {
-  color: @red;
-}
-
-#network.disconnected {
-  color: @red;
-}
-
-#pulseaudio.muted{
+#battery.critical:not(.charging), #temperature.critical, #network.disconnected, #pulseaudio.muted {
   color: @red;
 }
 

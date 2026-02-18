@@ -84,12 +84,12 @@
 },
 
 "clock#date": {
-    "format": "  {:%a %m/%d}",
+    "format": " {:%a %m/%d}",
     "interval": 1,
     "tooltip": false
 },
 "clock#time": {
-    "format": "󰥔  {:%r}",
+    "format": "󰥔 {:%r}",
     "interval": 1,
     "tooltip": false
 },
@@ -101,7 +101,7 @@
 },
 
 "cpu": {
-    "format": "  {usage}%", 
+    "format": " {usage}%", 
     "interval": 3
 },
 
@@ -135,19 +135,19 @@
 },
 
 "network#general": {
-    "format-wifi": "󰖩  {essid} ({signalStrength}%)",
+    "format-wifi": "󰖩 {essid} ({signalStrength}%)",
     "format-ethernet": "󰈀 Ethernet",
-    "tooltip-format-ethernet": "{ifname}: {ipaddr}/{cidr}",
+    "tooltip-format": "{ifname}: {ipaddr}/{cidr}",
     "format-disconnected": "󰖪  down",
-    "tooltip-disconnected": false,
     "family": "ipv4",
     "interval": 3,
     "on-click": "nm-connection-editor;"
 },
 
 "network#bandwidth": {
-    "format": "↓{bandwidthDownBits}  ↑{bandwidthUpBits}",
+    "format": "↓{bandwidthDownBits} ↑{bandwidthUpBits}",
     "interval": 3,
+    "tooltip": false
 },
 
 "temperature": {
@@ -159,8 +159,8 @@
 
 "backlight": {
     "device": "intel_backlight",
-    "format": "{icon}{percent}%",
-    "format-icons": ["☾", "☼︎ ", "☀︎ ", "󰖨  "],
+    "format": "{icon} {percent}%",
+    "format-icons": ["☾", "☼︎", "☀︎", "󰖨"],
     "interval": 60
 },
 
@@ -182,7 +182,7 @@
 },
 
 "idle_inhibitor": {
-"format": "{icon}",
+"format": "{icon} ",
 "format-icons": {
     "activated": "",
     "deactivated": ""
