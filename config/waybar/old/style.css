@@ -1,6 +1,6 @@
 @define-color font-color #e6e6e6;
 @define-color black #0d0d0d;
-@define-color grey #202020;
+@define-color grey #242424;
 @define-color light-grey #404040;
 @define-color red #ff0000;
 
@@ -21,9 +21,9 @@ tooltip {
 }
 
 #custom-spacer{
+	font-family: "JetBrainsMonoNerdFont";
 	color: @light-grey;
 	font-size: 15px;
-	font-family:"JetBrainsMonoNerdFont";
 }
 
 #workspaces {
@@ -34,17 +34,16 @@ tooltip {
 #workspaces button {
 	transition: none;
 	background: transparent;
+	border: none;
 	padding: 0px 8px 0px 8px;
  	min-width: 1px;
+	color: @font-color;
 	border-radius: 0px;
 }
 
-#workspaces button:not(.empty) { 
-	background-color: @grey;
-	border-radius: 0px;
-}
 #workspaces button.focused { 
-	background-color: #265273;
+	background-color: @grey;
+	color: @font-color;
 	border-radius: 0px;
 }
 #workspaces button.urgent{
@@ -65,19 +64,18 @@ tooltip {
 	margin: 0px 5px 0px 5px;
 }
 
-#power-profiles-daemon, #cpu, #memory, #network,
-#temperature, #backlight, #pulseaudio, #battery,
-#custom-uptime, #clock {
-	margin: 0px 7px 0px 7px;
+#power-profiles-daemon, #cpu, #memory, #network, #temperature, #backlight, #pulseaudio, #battery {
+	margin: 0px 8px 0px 8px;
 }
 
 #tray {
 	margin: 0px 6px 0px 2px;
+	color: @green;
 }
 
-/* #clock { */
-/* 	margin: 0px 100px 0px 100px; */
-/* } */
+#clock {
+	margin: 0px 100px 0px 100px;
+}
 
 #idle_inhibitor {
 	min-width:22px;

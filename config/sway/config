@@ -10,7 +10,7 @@ set $menu fuzzel
 
 #Background
 #
-output * bg $HOME/Pictures/Backgrounds/autumn-river-stream.jpg fill
+output * bg $HOME/Pictures/Backgrounds/thinkpad/1280-ThinkPad_Colors.bmp fill
 #exec_always swaybg -c 2E383C
 
 # Example configuration:
@@ -31,12 +31,12 @@ output * bg $HOME/Pictures/Backgrounds/autumn-river-stream.jpg fill
         natural_scroll enabled
         middle_emulation disabled
         accel_profile "flat"
-        pointer_accel 0.6
+        pointer_accel 0.65
     }
 
     input type:keyboard {
         repeat_delay 450
-        repeat_rate 30
+        repeat_rate 35
     }
 
     input 2:10:TPPS/2_Elan_TrackPoint {

@@ -1,4 +1,4 @@
-@define-color border-color #262626;
+@define-color border-color #202020;
 @define-color active-color #005c99;
 
 * {
@@ -14,10 +14,10 @@ window {
 }
 
 button {
-    border-radius: 0;
-    border-color: transparent;
-    color: #bfbfbf;
-	background-color: #1a1a1a;
+  border-radius: 0;
+  border-color: transparent;
+  color: #bfbfbf;
+	background-color: #0d0d0d;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 25%;

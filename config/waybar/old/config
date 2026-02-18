@@ -3,41 +3,26 @@
 "position": "top",
 "height": 25,
 "modules-left": [
+    "idle_inhibitor",
     "sway/workspaces",
     "niri/workspaces",
-    "custom/spacer",
-    "memory",
-    "custom/spacer",
-    "cpu",
-    "custom/spacer",
-    "temperature",
-    "custom/spacer",
-    "power-profiles-daemon",
-    "custom/spacer",
-    "network#bandwidth",
-    "custom/spacer",
     "tray",
     "sway/scratchpad",
-    "sway/mode"
+    "sway/mode",
+    "sway/window",
+    "niri/window"
 ],
 
-"modules-center": [],
+"modules-center": ["clock",],
 "modules-right": [
-    "network#general",
-    "custom/spacer",
-    "custom/uptime",
-    "custom/spacer",
+    "power-profiles-daemon",
+    "network",
+    "memory",
+    "cpu",
+    "temperature",
     "backlight",
-    "custom/spacer",
     "pulseaudio",
-    "custom/spacer",
     "battery",
-    "custom/spacer",
-    "clock#date",
-    "custom/spacer",
-    "clock#time",
-    "custom/spacer",
-    "idle_inhibitor",
 ],	
 
 "custom/spacer": {
@@ -45,32 +30,21 @@
     "tooltip": false
 },
 
-"custom/uptime": {
-    "exec": "uptime -p",
-    "format": "{}",
-    "tooltip": false,
-    "interval": 30,
-},
-
 "sway/workspaces": {
-	"persistent-workspaces": {
+	/*"persistent-workspaces": {
 	    "1": [],
 	    "2": [],
 	    "3": [],
 	    "4": [],
 	    "5": [],
-	    "6": [],
-	    "7": [],
-	    "8": [],
-	    "9": [],
-	},
+	},*/
     "disable-scroll": true,
     "disable-markup": true,
     "format": "{index}",
     //"format": "{icon}",
     "format-icons": {
-        "default": " ",
-        "focused": "*"
+        "default": "󰄰",
+        "focused": "󰐾"
     }
 },
 
@@ -78,18 +52,25 @@
     "format": " {count}"
 },
 
+"sway/window": {
+    "format": "{}",
+    "tooltip": false,
+    //"max-length": 45
+},
+
+"niri/window": {
+    "format": "{}",
+    "tooltip": false,
+    //"max-length": 45
+},
+
 "tray": {
     "icon-size": 19,
     "spacing": 8
 },
 
-"clock#date": {
-    "format": "  {:%a %m/%d}",
-    "interval": 1,
-    "tooltip": false
-},
-"clock#time": {
-    "format": "󰥔  {:%r}",
+"clock": {
+    "format": "  {:%a %m/%d  󰥔  %r}",
     "interval": 1,
     "tooltip": false
 },
@@ -134,20 +115,16 @@
     }
 },
 
-"network#general": {
+"network": {
     "format-wifi": "󰖩  {essid} ({signalStrength}%)",
-    "format-ethernet": "󰈀 Ethernet",
+    "tooltip-format-wifi": "↓{bandwidthDownBits}  ↑{bandwidthUpBits}",
+        "format-ethernet": "󰈀 Ethernet",
     "tooltip-format-ethernet": "{ifname}: {ipaddr}/{cidr}",
     "format-disconnected": "󰖪  down",
     "tooltip-disconnected": false,
     "family": "ipv4",
     "interval": 3,
     "on-click": "nm-connection-editor;"
-},
-
-"network#bandwidth": {
-    "format": "↓{bandwidthDownBits}  ↑{bandwidthUpBits}",
-    "interval": 3,
 },
 
 "temperature": {
@@ -159,8 +136,8 @@
 
 "backlight": {
     "device": "intel_backlight",
-    "format": "{icon}{percent}%",
-    "format-icons": ["☾", "☼︎ ", "☀︎ ", "󰖨  "],
+    "format": "{icon} {percent}%",
+    "format-icons": ["☾", "☼︎", "☀︎"],
     "interval": 60
 },
 

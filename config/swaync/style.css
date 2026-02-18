@@ -2,11 +2,10 @@
  * ORIGINAL DOTFILES: https://github.com/ErikReider/SwayNotificationCenter/discussions/183#discussioncomment-8022846
  */
 
-@define-color cc-bg #1a1a1a;
-@define-color noti-border-color #262626;
-@define-color noti-group #222222;
-@define-color noti-bg #404040;
-@define-color noti-bg-darker #282828;
+@define-color cc-bg #0d0d0d;
+@define-color noti-border-color #1a1a1a;
+@define-color noti-bg #303030;
+@define-color noti-bg-darker #202020;
 @define-color text-color #e6e6e6;
 @define-color text-color-disabled #e6e6e6;
 @define-color accent-color #33adff;
@@ -49,7 +48,7 @@
 /* } */
 
 .notification-group {
-    background: @noti-group;
+    background: @noti-bg-darker;
 }
  
 .close-button {
@@ -80,7 +79,7 @@
 }
  
 .body {
-    /* font-size: 13px; */
+    font-size: 14px;
 }
  
 .control-center {
