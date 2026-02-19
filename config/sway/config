@@ -10,7 +10,7 @@ set $menu fuzzel
 
 #Background
 #
-output * bg $HOME/Pictures/Backgrounds/thinkpad/1280-ThinkPad_Colors.bmp fill
+output * bg $HOME/Pictures/Backgrounds/autumn-river-stream.jpg fill
 #exec_always swaybg -c 2E383C
 
 # Example configuration:

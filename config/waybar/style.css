@@ -20,12 +20,6 @@ tooltip {
 	border: none;
 }
 
-#custom-spacer{
-	font-family: "JetBrainsMonoNerdFont";
-	color: @light-grey;
-	font-size: 15px;
-}
-
 #workspaces {
 	margin: 0px 3px 0px 0px;
 	padding: 0px 0px 0px 0px;
@@ -64,8 +58,9 @@ tooltip {
 	margin: 0px 5px 0px 5px;
 }
 
-#power-profiles-daemon, #network, #backlight, #pulseaudio, #battery {
-	margin: 0px 12px 0px 12px;
+#power-profiles-daemon, #network, #backlight,
+#pulseaudio, #battery, #cpu, #memory {
+	margin: 0px 14px 0px 14px;
 }
 
 #tray {
@@ -82,7 +77,7 @@ tooltip {
 }
 
 #scratchpad {
-  padding: 0px 4px 0px 4px;
+  padding: 0px 3px 0px 3px;
   /* font-size: 16; */
   /* font-family: "JetBrainsMonoNerdFont"; */
 }

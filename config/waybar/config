@@ -15,15 +15,12 @@
 "modules-right": [
     "power-profiles-daemon",
     "network",
+    "memory", 
+    "cpu", 
     "backlight",
     "pulseaudio",
     "battery",
 ],	
-
-"custom/spacer": {
-    "format":"|",
-    "tooltip": false
-},
 
 "sway/workspaces": {
     "disable-scroll": true,
@@ -43,7 +40,7 @@
 
 "tray": {
     "icon-size": 19,
-    "spacing": 12
+    "spacing": 9
 },
 
 "clock": {
@@ -82,9 +79,9 @@
 },
 
 "network": {
-    "format-wifi": "󰖩  {essid} ({signalStrength}%)",
-    "tooltip-format-wifi": "↓{bandwidthDownBits}  ↑{bandwidthUpBits}",
-    "format-ethernet": "󰈀 Ethernet",
+    "format-wifi": "󰖩  WiFi",
+    "tooltip-format-wifi": "{essid} ({signalStrength}%)\n↓{bandwidthDownBits}  ↑{bandwidthUpBits}",
+    "format-ethernet": "󰈀 Eth",
     "tooltip-format-ethernet": "{ifname}: {ipaddr}/{cidr}",
     "format-disconnected": "󰖪  down",
     "tooltip-disconnected": false,
@@ -98,6 +95,17 @@
     "format": "{icon} {percent}%",
     "format-icons": ["☾", "☼︎", "☀︎", "󰖨 "],
     "interval": 60
+},
+
+"cpu": {
+    "format": "  {usage}%", 
+    "interval": 3
+},
+
+"memory": {
+    "format": "{used}GiB",
+    "tooltip-format": "{percentage}% used",
+    "interval": 3
 },
 
 "pulseaudio": {

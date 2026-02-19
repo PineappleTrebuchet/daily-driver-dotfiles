@@ -39,13 +39,8 @@ tooltip {
 	border-radius: 0px;
 }
 
-#workspaces button:not(.empty) { 
-	background-color: @grey;
-	border-radius: 0px;
-}
-
 #workspaces button.focused { 
-	background-color: #265273;
+	background-color: @grey;
 	border-radius: 0px;
 }
 
@@ -73,8 +68,15 @@ tooltip {
 	margin: 0px 7px 0px 7px;
 }
 
+#power-profiles-daemon.performance {
+	color: #ffff00;
+}
+#power-profiles-daemon.power-saver {
+	color: #00ff00;
+}
+
 #tray {
-	margin: 0px 6px 0px 2px;
+	margin: 0px 6px 0px 6px;
 }
 
 #idle_inhibitor {
