@@ -3,41 +3,21 @@
 "position": "top",
 "height": 25,
 "modules-left": [
+    "idle_inhibitor",
     "sway/workspaces",
-    "niri/workspaces",
-    "custom/spacer",
-    "memory",
-    "custom/spacer",
-    "cpu",
-    "custom/spacer",
-    "temperature",
-    "custom/spacer",
-    "power-profiles-daemon",
-    "custom/spacer",
-    "network#bandwidth",
-    "custom/spacer",
     "tray",
     "sway/scratchpad",
-    "sway/mode"
+    "sway/window",
+    "sway/mode",
 ],
 
-"modules-center": [],
+"modules-center": ["clock",],
 "modules-right": [
-    "network#general",
-    "custom/spacer",
-    "custom/uptime",
-    "custom/spacer",
+    "power-profiles-daemon",
+    "network",
     "backlight",
-    "custom/spacer",
     "pulseaudio",
-    "custom/spacer",
     "battery",
-    "custom/spacer",
-    "clock#date",
-    "custom/spacer",
-    "clock#time",
-    "custom/spacer",
-    "idle_inhibitor",
 ],	
 
 "custom/spacer": {
@@ -45,64 +25,31 @@
     "tooltip": false
 },
 
-"custom/uptime": {
-    "exec": "uptime -p",
-    "format": "{}",
-    "tooltip": false,
-    "interval": 30,
-},
-
 "sway/workspaces": {
-	"persistent-workspaces": {
-	    "1": [],
-	    "2": [],
-	    "3": [],
-	    "4": [],
-	    "5": [],
-	    "6": [],
-	    "7": [],
-	    "8": [],
-	    "9": [],
-	},
     "disable-scroll": true,
     "disable-markup": true,
     "format": "{index}",
-    //"format": "{icon}",
-    "format-icons": {
-        "default": " ",
-        "focused": "*"
-    }
 },
 
 "sway/scratchpad": {
     "format": " {count}"
 },
 
+"sway/window": {
+    "format": "{}",
+    "tooltip": false,
+    "max-length": 45
+},
+
 "tray": {
     "icon-size": 19,
-    "spacing": 8
+    "spacing": 12
 },
 
-"clock#date": {
-    "format": " {:%a %m/%d}",
+"clock": {
+    "format": "  {:%a %m/%d  󰥔  %r}",
     "interval": 1,
     "tooltip": false
-},
-"clock#time": {
-    "format": "󰥔 {:%r}",
-    "interval": 1,
-    "tooltip": false
-},
-
-"memory": {
-    "format": "{used}GiB",
-    "tooltip-format": "{percentage}% used",
-    "interval": 3
-},
-
-"cpu": {
-    "format": " {usage}%", 
-    "interval": 3
 },
 
 "battery": {
@@ -134,33 +81,22 @@
     }
 },
 
-"network#general": {
-    "format-wifi": "󰖩 {essid} ({signalStrength}%)",
+"network": {
+    "format-wifi": "󰖩  {essid} ({signalStrength}%)",
+    "tooltip-format-wifi": "↓{bandwidthDownBits}  ↑{bandwidthUpBits}",
     "format-ethernet": "󰈀 Ethernet",
-    "tooltip-format": "{ifname}: {ipaddr}/{cidr}",
+    "tooltip-format-ethernet": "{ifname}: {ipaddr}/{cidr}",
     "format-disconnected": "󰖪  down",
+    "tooltip-disconnected": false,
     "family": "ipv4",
     "interval": 3,
     "on-click": "nm-connection-editor;"
 },
 
-"network#bandwidth": {
-    "format": "↓{bandwidthDownBits} ↑{bandwidthUpBits}",
-    "interval": 3,
-    "tooltip": false
-},
-
-"temperature": {
-	"thermal-zone": 0,
-	"format": "{icon} {temperatureC}°C",
-	"format-icons":[""],
-	"interval": 3
-},
-
 "backlight": {
     "device": "intel_backlight",
     "format": "{icon} {percent}%",
-    "format-icons": ["☾", "☼︎", "☀︎", "󰖨"],
+    "format-icons": ["☾", "☼︎", "☀︎", "󰖨 "],
     "interval": 60
 },
 
@@ -182,7 +118,7 @@
 },
 
 "idle_inhibitor": {
-"format": "{icon} ",
+"format": "{icon}",
 "format-icons": {
     "activated": "",
     "deactivated": ""

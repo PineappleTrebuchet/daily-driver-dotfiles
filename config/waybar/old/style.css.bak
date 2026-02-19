@@ -5,7 +5,7 @@
 @define-color red #ff0000;
 
 * {
-  font-family: "Inter Regular";
+  font-family: "BlexMonoNerdFont";
   font-size: 16px;
 }
 
@@ -21,9 +21,9 @@ tooltip {
 }
 
 #custom-spacer{
-	font-family: "JetBrainsMonoNerdFont";
 	color: @light-grey;
 	font-size: 15px;
+	font-family:"JetBrainsMonoNerdFont";
 }
 
 #workspaces {
@@ -34,18 +34,21 @@ tooltip {
 #workspaces button {
 	transition: none;
 	background: transparent;
-	border: none;
 	padding: 0px 8px 0px 8px;
  	min-width: 1px;
-	color: @font-color;
+	border-radius: 0px;
+}
+
+#workspaces button:not(.empty) { 
+	background-color: @grey;
 	border-radius: 0px;
 }
 
 #workspaces button.focused { 
-	background-color: @grey;
-	color: @font-color;
+	background-color: #265273;
 	border-radius: 0px;
 }
+
 #workspaces button.urgent{
 	color: @red;
 }
@@ -64,17 +67,14 @@ tooltip {
 	margin: 0px 5px 0px 5px;
 }
 
-#power-profiles-daemon, #cpu, #memory, #network, #temperature, #backlight, #pulseaudio, #battery {
-	margin: 0px 8px 0px 8px;
+#power-profiles-daemon, #cpu, #memory, #network,
+#temperature, #backlight, #pulseaudio, #battery,
+#custom-uptime, #clock {
+	margin: 0px 7px 0px 7px;
 }
 
 #tray {
 	margin: 0px 6px 0px 2px;
-	color: @green;
-}
-
-#clock {
-	margin: 0px 100px 0px 100px;
 }
 
 #idle_inhibitor {
@@ -84,27 +84,9 @@ tooltip {
 
 #scratchpad {
   padding: 0px 4px 0px 4px;
-  /* font-size: 16; */
-  /* font-family: "JetBrainsMonoNerdFont"; */
 }
 
-#window {
-  padding: 0px 4px 0px 4px;
-}
-
-#battery.critical:not(.charging) {
-  color: @red;
-}
-
-#temperature.critical {
-  color: @red;
-}
-
-#network.disconnected {
-  color: @red;
-}
-
-#pulseaudio.muted{
+#battery.critical:not(.charging), #temperature.critical, #network.disconnected, #pulseaudio.muted {
   color: @red;
 }
 
