@@ -6,8 +6,8 @@ opacity = 0.86
 dimensions = { columns = 95, lines = 28 }
 
 [font]
-normal = {family = "BlexMonoNerdFont"}
-size = 13
+normal = {family = "JetBrainsMonoNerdFont"}
+size = 14
 
 # XTerm's default colors
 
