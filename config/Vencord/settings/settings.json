@@ -373,7 +373,7 @@
             "enabled": false
         },
         "petpet": {
-            "enabled": false
+            "enabled": true
         },
         "PictureInPicture": {
             "enabled": false
@@ -394,19 +394,16 @@
                             "895863607441641493",
                             "1208522787937845349",
                             "885914848582590465",
-                            "1441097642217046176",
                             "1232817939024056371",
                             "1407133597541859360",
-                            "1414352193594593463",
-                            "1464660804178673699",
-                            "1464653653074772070"
+                            "1414352193594593463"
                         ]
                     },
                     {
                         "id": "w59l7zxwvu",
                         "name": "Arcade Friends",
                         "color": 3066993,
-                        "collapsed": false,
+                        "collapsed": true,
                         "channels": [
                             "1441930799413723170",
                             "1449535209178398820",
@@ -420,7 +417,7 @@
                         "id": "xxwt6kcmycp",
                         "name": "High School Friends",
                         "color": 15158332,
-                        "collapsed": false,
+                        "collapsed": true,
                         "channels": [
                             "1212598489088008213",
                             "886040876298694729",
@@ -438,7 +435,8 @@
                             "931716662200266834"
                         ]
                     }
-                ]
+                ],
+                "1116829053018714232": []
             },
             "pinOrder": 0
         },
@@ -674,7 +672,7 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1771457709621
+        "settingsSyncVersion": 1771557242501
     },
     "uiElements": {
         "chatBarButtons": {},

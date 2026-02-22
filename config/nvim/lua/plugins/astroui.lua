@@ -10,16 +10,24 @@ return {
   "AstroNvim/astroui",
   ---@type AstroUIOpts
   opts = {
-    -- change colorscheme
-    colorscheme = "nightfox",
-    -- AstroUI allows you to easily modify highlight groups easily for any and all colorschemes
+    colorscheme = "industry",
     highlights = {
       init = { -- this table overrides highlights in all themes
-        -- Normal = { bg = transparent },
-      },
-      astrodark = { -- a table of overrides/changes when applying the astrotheme theme
         -- Normal = { bg = "#000000" },
-      },
+      }, 
+      industry = {
+        Normal = { bg = "#121212" },
+        CursorLine = { bg = "#242424" },
+        Visual =  { bg = "#242424" },
+        TabLineFill = { bg = "#000000" },
+        MatchParen = { fg = "NONE", bg = "#404040" },
+        StatusLine = { bg = "#000000" },
+        WinSeparator = { fg = "#a6a6a6", bg = "NONE" },
+        Pmenu = { bg = "#262626" }, 
+        EndOfBuffer = { fg = "#121212" },
+        FoldColumn = { fg = "#00ff00" },
+        CursorLineFold = { bg = "NONE", fg = "#00ff00" }
+      } 
     },
     -- Icons can be configured throughout the interface
     icons = {
