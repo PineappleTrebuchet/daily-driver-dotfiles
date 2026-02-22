@@ -6,7 +6,7 @@
 
 * {
   font-family: "Inter Regular";
-  font-size: 16px;
+  font-size: 18px;
 }
 
 
@@ -59,8 +59,8 @@ tooltip {
 }
 
 #power-profiles-daemon, #network, #backlight,
-#pulseaudio, #battery, #cpu, #memory {
-	margin: 0px 14px 0px 14px;
+#pulseaudio, #battery, #cpu, #memory, #temperature {
+	margin: 0px 12px 0px 12px;
 }
 
 #tray {
@@ -68,7 +68,7 @@ tooltip {
 }
 
 #clock {
-	margin: 0px 100px 0px 100px;
+	margin: 0px 150px 0px 150px;
 }
 
 #idle_inhibitor {
@@ -86,15 +86,14 @@ tooltip {
   padding: 0px 4px 0px 4px;
 }
 
-#battery.critical:not(.charging) {
-  color: @red;
+#power-profiles-daemon.performance {
+	color: #ff8c1a;
+}
+#power-profiles-daemon.power-saver {
+	color: #00ff00;
 }
 
-#network.disconnected {
-  color: @red;
-}
-
-#pulseaudio.muted{
+#battery.critical:not(.charging), #network.disconnected, #pulseaudio.muted, #temperature.critical {
   color: @red;
 }
 

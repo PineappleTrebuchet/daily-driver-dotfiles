@@ -1,7 +1,7 @@
 {
 "layer": "top",	
 "position": "top",
-"height": 25,
+"height": 28,
 "modules-left": [
     "idle_inhibitor",
     "sway/workspaces",
@@ -17,6 +17,7 @@
     "network",
     "memory", 
     "cpu", 
+    "temperature", 
     "backlight",
     "pulseaudio",
     "battery",
@@ -35,7 +36,7 @@
 "sway/window": {
     "format": "{}",
     "tooltip": false,
-    "max-length": 45
+    "max-length": 50
 },
 
 "tray": {
@@ -106,6 +107,13 @@
     "format": "{used}GiB",
     "tooltip-format": "{percentage}% used",
     "interval": 3
+},
+
+"temperature": {
+	"thermal-zone": 0,
+	"format": "{icon} {temperatureC}°C",
+	"format-icons":[""],
+	"interval": 3
 },
 
 "pulseaudio": {
