@@ -8,7 +8,7 @@
 ---@type LazySpec
 return {
   "AstroNvim/astroui",
-  ---@type AstroUIOpts
+  -- -@type AstroUIOpts
   opts = {
     colorscheme = "industry",
     highlights = {
@@ -16,6 +16,7 @@ return {
         -- Normal = { bg = "#000000" },
       }, 
       industry = {
+        -- General editor modifications
         Normal = { bg = "#000000" },
         CursorLine = { bg = "#242424" },
         Visual =  { bg = "#242424" },
@@ -28,8 +29,16 @@ return {
         FoldColumn = { fg = "#00ff00" },
         CursorLineFold = { bg = "NONE", fg = "#00ff00" }, 
         CursorLineNr = { fg = "#00ffff", bold = true },
-        DiagnosticInfo = { fg = "#9933ff" },
-        Comment = { fg = "#0033cc", italic = true },
+
+        -- Code color modifications
+        Comment = { fg = "#7700b3", italic = true },
+        Constant = { fg = "#00ffff" },
+        DiagnosticInfo = { fg = "#0000ff" }, -- todo statements
+        Function = { fg = "#000fff" },
+        Identifier = { fg = "#00ffff" },
+        Statement = { fg = "#ff00ff" },
+        Type = { fg = "#00ff00" },
+        Special = { fg = "#ff0000" },
       } 
     },
     -- Icons can be configured throughout the interface
