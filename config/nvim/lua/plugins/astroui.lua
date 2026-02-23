@@ -16,17 +16,20 @@ return {
         -- Normal = { bg = "#000000" },
       }, 
       industry = {
-        Normal = { bg = "#121212" },
+        Normal = { bg = "#000000" },
         CursorLine = { bg = "#242424" },
         Visual =  { bg = "#242424" },
-        TabLineFill = { bg = "#000000" },
+        TabLineFill = { bg = "#141414" },
         MatchParen = { fg = "NONE", bg = "#404040" },
-        StatusLine = { bg = "#000000" },
+        StatusLine = { bg = "#141414" },
         WinSeparator = { fg = "#a6a6a6", bg = "NONE" },
-        Pmenu = { bg = "#262626" }, 
-        EndOfBuffer = { fg = "#121212" },
+        Pmenu = { bg = "#141414" }, 
+        EndOfBuffer = { fg = "#262626" },
         FoldColumn = { fg = "#00ff00" },
-        CursorLineFold = { bg = "NONE", fg = "#00ff00" }
+        CursorLineFold = { bg = "NONE", fg = "#00ff00" }, 
+        CursorLineNr = { fg = "#00ffff", bold = true },
+        DiagnosticInfo = { fg = "#9933ff" },
+        Comment = { fg = "#0033cc", italic = true },
       } 
     },
     -- Icons can be configured throughout the interface

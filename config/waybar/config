@@ -40,7 +40,7 @@
 },
 
 "tray": {
-    "icon-size": 19,
+    "icon-size": 22, 
     "spacing": 9
 },
 

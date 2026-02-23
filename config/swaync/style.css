@@ -17,7 +17,7 @@
 * {
     font-family: "Inter Regular";
     font-weight: normal;
-	font-size: 15px;
+	font-size: 16px;
 	color: @text-color;
 }
  
@@ -67,12 +67,12 @@
     border-radius: 0px;
     background: @noti-bg;
 }
- 
+
 .notification-default-action:hover,
 .notification-action:hover {
     background: @cc-bg;
 } 
- 
+
 .summary {
 	padding-top: 7px;
     /* font-size: 14px; */
@@ -99,7 +99,7 @@
     /* font-size: 1.5rem; */
     border-radius: 0px;
 }
- 
+
 .widget-title>button {
     /* font-size: 1rem; */
     text-shadow: none;
@@ -108,12 +108,12 @@
     border-radius: 0px;
     padding: 2px 20px 2px 20px;
 }
- 
+
 .widget-title>button:hover {
     background: @accent-color;
     color: @cc-bg;
 }
- 
+
 .widget-dnd {
     background: @noti-bg-darker;
     padding: 5px 10px;
@@ -121,32 +121,32 @@
     border-radius: 0px;
     /* font-size: large; */
 }
- 
+
 .widget-dnd>switch {
     border-radius: 0px;
     padding: 2px 2px 2px 2px;
     background: @noti-bg;
 }
- 
+
 .widget-dnd>switch:checked {
     background: @accent-color;
 }
- 
+
 .widget-dnd>switch slider {
     background: @cc-bg;
     border-radius: 0px;
 }
- 
+
 .widget-dnd>switch:checked slider {
     background: @cc-bg;
     border-radius: 0px;
 }
- 
+
 .widget-label {
     margin: 10px 10px 5px 10px;
     color: @text-color;
 }
- 
+
 .widget-label>label {
     /* font-size: 1rem; */
     color: @text-color;
