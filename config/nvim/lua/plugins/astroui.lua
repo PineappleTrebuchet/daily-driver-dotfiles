@@ -17,14 +17,14 @@ return {
       }, 
       industry = {
         -- General editor modifications
-        Normal = { bg = "#000000" },
-        CursorLine = { bg = "#242424" },
-        Visual =  { bg = "#242424" },
-        TabLineFill = { bg = "#141414" },
+        Normal = { bg = "#0d0d0d" },
+        CursorLine = { bg = "#222222" },
+        Visual =  { bg = "#222222" },
+        TabLineFill = { bg = "#181818" },
         MatchParen = { fg = "NONE", bg = "#404040" },
-        StatusLine = { bg = "#141414" },
+        StatusLine = { bg = "#181818" },
         WinSeparator = { fg = "#a6a6a6", bg = "NONE" },
-        Pmenu = { bg = "#141414" }, 
+        Pmenu = { bg = "#181818" }, 
         EndOfBuffer = { fg = "#262626" },
         FoldColumn = { fg = "#00ff00" },
         CursorLineFold = { bg = "NONE", fg = "#00ff00" }, 
@@ -32,13 +32,16 @@ return {
 
         -- Code color modifications
         Comment = { fg = "#7700b3", italic = true },
-        Constant = { fg = "#00ffff" },
-        DiagnosticInfo = { fg = "#0000ff" }, -- todo statements
-        Function = { fg = "#000fff" },
+        Constant = { fg = "#00ff00" },
+        DiagnosticInfo = { fg = "#7700b3" }, -- todo statements
+        Function = { fg = "#ffff00" },
         Identifier = { fg = "#00ffff" },
         Statement = { fg = "#ff00ff" },
-        Type = { fg = "#00ff00" },
+        Type = { fg = "#00ff00", bold = true },
         Special = { fg = "#ff0000" },
+
+        -- Markdown modifications
+        ColorColumn = { bg = "#222222" },
       } 
     },
     -- Icons can be configured throughout the interface
