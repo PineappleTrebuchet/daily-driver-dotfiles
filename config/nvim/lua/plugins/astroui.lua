@@ -17,31 +17,39 @@ return {
       }, 
       industry = {
         -- General editor modifications
-        Normal = { bg = "#0d0d0d" },
         CursorLine = { bg = "#222222" },
-        Visual =  { bg = "#222222" },
-        TabLineFill = { bg = "#181818" },
-        MatchParen = { fg = "NONE", bg = "#404040" },
-        StatusLine = { bg = "#181818" },
-        WinSeparator = { fg = "#a6a6a6", bg = "NONE" },
-        Pmenu = { bg = "#181818" }, 
-        EndOfBuffer = { fg = "#262626" },
-        FoldColumn = { fg = "#00ff00" },
         CursorLineFold = { bg = "NONE", fg = "#00ff00" }, 
         CursorLineNr = { fg = "#00ffff", bold = true },
+        EndOfBuffer = { fg = "#262626" },
+        FoldColumn = { fg = "#00ff00" },
+        Folded = { bg = "#000033"},
+        MatchParen = { fg = "NONE", bg = "#404040" },
+        NonText = { fg = "#006666" }, 
+        Normal = { bg = "#0d0d0d" },
+        Pmenu = { bg = "#181818" }, 
+        StatusLine = { bg = "#181818" },
+        TabLineFill = { bg = "#181818" },
+        Visual =  { bg = "#222222" },
+        WinSeparator = { fg = "#cccccc", bg = "NONE" },
 
         -- Code color modifications
-        Comment = { fg = "#7700b3", italic = true },
-        Constant = { fg = "#00ff00" },
-        DiagnosticInfo = { fg = "#7700b3" }, -- todo statements
+        Comment = { fg = "#0000e6", italic = true },
+        Constant = { fg = "#9933ff" },
+        Debug = { fg = "#ff0000" },
+        DiagnosticInfo = { fg = "#00ff00" }, -- todo statements
+        DiagnosticWarn = { fg = "#ff6600" },
+        DiagnosticHint = { fg = "#0000e6" },
+        -- DiagnosticOk = { fg = "#00ff00" },
         Function = { fg = "#ffff00" },
         Identifier = { fg = "#00ffff" },
         Statement = { fg = "#ff00ff" },
         Type = { fg = "#00ff00", bold = true },
         Special = { fg = "#ff0000" },
+        CursorLineSign = { bg = "NONE" },
 
         -- Markdown modifications
         ColorColumn = { bg = "#222222" },
+        Title = {fg = "#ff00ff"}
       } 
     },
     -- Icons can be configured throughout the interface
