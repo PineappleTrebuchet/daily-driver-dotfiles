@@ -157,8 +157,8 @@ bindsym $mod+r mode "resize"
     bindsym --locked Shift+XF86MonBrightnessUp exec brightnessctl set 1%+
 
     # Screenshots
-    bindsym Print exec grim -l 9 "$HOME/Pictures/Screenshots/$(date +'%m%d%y_%H%M%S').png" && notify-send "Screenshot taken!" -u low
-    bindsym XF86SelectiveScreenshot exec sh -c "slurp | grim -l 9 -g - $HOME/Pictures/Screenshots/$(date +'%m%d%y_%H%M%S').png && notify-send 'Screensnip taken!' -u low"
+    bindsym Print exec $HOME/.config/sway/scripts/screenshot.sh
+    bindsym XF86SelectiveScreenshot exec $HOME/.config/sway/scripts/screen-snip.sh
 
     # Change power profiles daemon mode
     bindsym F8 exec $HOME/.config/sway/scripts/toggle-profiles.sh
