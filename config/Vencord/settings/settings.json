@@ -403,7 +403,7 @@
                         "id": "w59l7zxwvu",
                         "name": "Arcade Friends",
                         "color": 3066993,
-                        "collapsed": true,
+                        "collapsed": false,
                         "channels": [
                             "1441930799413723170",
                             "1449535209178398820",
@@ -417,7 +417,7 @@
                         "id": "xxwt6kcmycp",
                         "name": "High School Friends",
                         "color": 15158332,
-                        "collapsed": true,
+                        "collapsed": false,
                         "channels": [
                             "1212598489088008213",
                             "886040876298694729",
@@ -672,7 +672,7 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1771557242501
+        "settingsSyncVersion": 1772322010150
     },
     "uiElements": {
         "chatBarButtons": {},

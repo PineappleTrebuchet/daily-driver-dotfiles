@@ -10,14 +10,14 @@ return {
   "AstroNvim/astroui",
   -- -@type AstroUIOpts
   opts = {
-    colorscheme = "industry",
+    colorscheme = "fruitpunch",
     highlights = {
       init = { -- this table overrides highlights in all themes
         -- Normal = { bg = "#000000" },
       }, 
       industry = {
         -- General editor modifications
-        CursorLine = { bg = "#222222" },
+        CursorLine = { bg = "#232323" },
         CursorLineFold = { bg = "NONE", fg = "#00ff00" }, 
         CursorLineNr = { fg = "#00ffff", bold = true },
         EndOfBuffer = { fg = "#262626" },
@@ -26,10 +26,10 @@ return {
         MatchParen = { fg = "NONE", bg = "#404040" },
         NonText = { fg = "#006666" }, 
         Normal = { bg = "#0d0d0d" },
-        Pmenu = { bg = "#181818" }, 
-        StatusLine = { bg = "#181818" },
-        TabLineFill = { bg = "#181818" },
-        Visual =  { bg = "#222222" },
+        Pmenu = { bg = "#191919" }, 
+        StatusLine = { bg = "#191919" },
+        TabLineFill = { bg = "#191919" },
+        Visual =  { bg = "#232323" },
         WinSeparator = { fg = "#cccccc", bg = "NONE" },
 
         -- Code color modifications

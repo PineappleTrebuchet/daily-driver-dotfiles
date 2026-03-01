@@ -17,7 +17,7 @@
 * {
     font-family: "Inter Regular";
     font-weight: normal;
-	font-size: 16px;
+	font-size: 18px;
 	color: @text-color;
 }
  
@@ -37,18 +37,17 @@
     background: @cc-bg;
     border: 1px solid @noti-border-color;
     margin: 0px;
+    /* min-height: 10px; */
+    padding: 5px;
 }
 
-/* .notification-content { */
-/*     background: @cc-bg; */
-/*     padding: 7px; */
-/*     border-radius: 0px; */
-/*     border: 1px solid @noti-border-color; */
-/*     margin: 0; */
-/* } */
+.notification .time {
+  font-size: 13px;
+}
 
 .notification-group {
-    background: @noti-bg-darker;
+    /* background: @noti-bg-darker; */
+    background: transparent;
 }
  
 .close-button {
@@ -74,34 +73,33 @@
 } 
 
 .summary {
-	padding-top: 7px;
-    /* font-size: 14px; */
+	padding-top: 5px;
+    font-size: 18px;
 }
- 
+
 .body {
-    font-size: 14px;
+    font-size: 16px;
 }
- 
+
 .control-center {
     background: @cc-bg;
     border: 1px solid @noti-border-color;
     border-radius: 0px;
 }
- 
+
 .blank-window {
-    /* background: alpha(black, 0.25); */
+    background: alpha(black, 0.25);
 }
- 
+
 .widget-title {
-    background: @noti-bg-darker;
+    /* background: @noti-bg-darker; */
+    background: transparent;
     padding: 5px 10px;
     margin: 10px 10px 5px 10px;
-    /* font-size: 1.5rem; */
     border-radius: 0px;
 }
 
 .widget-title>button {
-    /* font-size: 1rem; */
     text-shadow: none;
     background: @noti-bg;
     box-shadow: none;
@@ -115,11 +113,11 @@
 }
 
 .widget-dnd {
-    background: @noti-bg-darker;
+    /* background: @noti-bg-darker; */
+    background: transparent;
     padding: 5px 10px;
     margin: 5px 10px 10px 10px;
     border-radius: 0px;
-    /* font-size: large; */
 }
 
 .widget-dnd>switch {
@@ -141,13 +139,13 @@
     background: @cc-bg;
     border-radius: 0px;
 }
-
-.widget-label {
-    margin: 10px 10px 5px 10px;
-    color: @text-color;
-}
-
-.widget-label>label {
-    /* font-size: 1rem; */
-    color: @text-color;
-}
+/**/
+/* .widget-label { */
+/*     margin: 10px 10px 5px 10px; */
+/*     color: @text-color; */
+/* } */
+/**/
+/* .widget-label>label { */
+/*     /* font-size: 1rem; */ */
+/*     color: @text-color; */
+/* } */

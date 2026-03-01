@@ -8,10 +8,10 @@ set $right l
 set $term alacritty
 set $menu fuzzel
 
-#Background
+# Wallpaper
 #
-output * bg $HOME/Pictures/Backgrounds/autumn-river-stream.jpg fill
-#exec_always swaybg -c 2E383C
+exec_always wpaperd
+# output * bg $HOME/Pictures/Backgrounds/tide-pool-beach.jpg fill
 
 # Example configuration:
 # output HDMI-A-1 resolution 1920x1080 position 1920,0
@@ -43,7 +43,7 @@ output * bg $HOME/Pictures/Backgrounds/autumn-river-stream.jpg fill
 
     input 2:10:TPPS/2_Elan_TrackPoint {
         accel_profile "flat"
-        pointer_accel 0.2
+        pointer_accel 0.1
     }
  
 # You can also configure each device individually.
