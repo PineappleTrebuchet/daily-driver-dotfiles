@@ -26,6 +26,7 @@ hi(0, "NonText",        { fg = "#009900" })
 hi(0, "MatchParen",     { fg = "NONE", bg = "#404040" })
 hi(0, "Visual",         { bg = "#232323" })
 hi(0, "FoldColumn",     { fg = "#00ff00", bg = "#0d0d0d" })
+hi(0, "Directory",     { fg = "#0000ff", bg = "#0d0d0d" })
 
 -- Command line
 hi(0, "ModeMsg",     { fg = "#00ffff", bg = "#0d0d0d" })
@@ -45,9 +46,9 @@ hi(0, "WinBar",      { bg = "#0d0d0d", fg = "#f2f2f2" })
 hi(0, "Pmenu", { bg = "#191919",  fg = "#f2f2f2" })
 
 -- Syntax
-hi(0, "Comment",    { fg = "#4444ff" })
-hi(0, "String",     { fg = "#9933ff", italic = true })
-hi(0, "Constant",   { fg = "#9933ff" })
+hi(0, "Comment",    { fg = "#5555ee" })
+hi(0, "String",     { fg = "#9933ff" })
+hi(0, "Constant",   { fg = "#0000ff" })
 hi(0, "Variable",   { link = "Constant"})
 hi(0, "Identifier", { fg = "#00ffff" })
 hi(0, "Function",   { fg = "#ffff00" })

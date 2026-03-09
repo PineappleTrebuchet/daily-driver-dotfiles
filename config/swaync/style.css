@@ -38,6 +38,7 @@
     border: 1px solid @noti-border-color;
     margin: 0px;
     padding: 5px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
 }
 
 .notification .time {
@@ -84,10 +85,11 @@
     background: @cc-bg;
     border: 1px solid @noti-border-color;
     border-radius: 0px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
 }
 
 .blank-window {
-    background: alpha(black, 0.25);
+    /* background: alpha(black, 0.25); */
 }
 
 .widget-title {

@@ -10,7 +10,8 @@ set $menu fuzzel
 
 # Wallpaper
 #
-output * bg $HOME/Pictures/Backgrounds/red-tulips.jpg fill
+# output * bg $HOME/Pictures/Backgrounds/red-tulips.jpg fill
+exec wpaperd -d
 
 # Example configuration:
 # output HDMI-A-1 resolution 1920x1080 position 1920,0

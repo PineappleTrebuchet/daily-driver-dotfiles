@@ -1,0 +1,8 @@
+[default]
+duration = "10m"
+mode = "center"
+sorting = "random"
+transition-time = 2000
+[any]
+path = "~/Pictures/Backgrounds/wpaperd/"
+[default.transition.fade]
