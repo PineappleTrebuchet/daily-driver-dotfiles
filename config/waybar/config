@@ -5,9 +5,11 @@
 "modules-left": [
     "idle_inhibitor",
     "sway/workspaces",
+    "niri/workspaces",
     "tray",
     "sway/scratchpad",
     "sway/window",
+    "niri/window",
     "sway/mode",
 ],
 

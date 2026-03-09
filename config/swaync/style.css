@@ -3,7 +3,7 @@
  */
 
 @define-color cc-bg #0d0d0d;
-@define-color noti-border-color #1a1a1a;
+@define-color noti-border-color #202020;
 @define-color noti-bg #303030;
 @define-color noti-bg-darker #202020;
 @define-color text-color #e6e6e6;
@@ -37,7 +37,6 @@
     background: @cc-bg;
     border: 1px solid @noti-border-color;
     margin: 0px;
-    /* min-height: 10px; */
     padding: 5px;
 }
 

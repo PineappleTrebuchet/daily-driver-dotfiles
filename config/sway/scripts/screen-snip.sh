@@ -4,5 +4,8 @@
 
 SELECTION=$(slurp)
 
-grim -l 9 -g "$SELECTION" - | wl-copy --type image/png
-grim -l 9 -g "$SELECTION" $HOME/Pictures/Screenshots/$(date +'%m%d%y_%H%M%S').png && notify-send 'Screensnip taken!' -u low
+OUTPUT="$HOME/Pictures/Screenshots/$(date +'%y%m%d_%H%M%S').png"
+
+grim -l 3 -g "$SELECTION" "$OUTPUT" \
+  && wl-copy --type image/png < "$OUTPUT" \
+  && notify-send 'Screensnip taken!' -u low
