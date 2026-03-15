@@ -292,9 +292,6 @@
         "MessageLogger": {
             "enabled": false
         },
-        "MessageTags": {
-            "enabled": false
-        },
         "MutualGroupDMs": {
             "enabled": false
         },
@@ -403,7 +400,7 @@
                         "id": "w59l7zxwvu",
                         "name": "Arcade Friends",
                         "color": 3066993,
-                        "collapsed": false,
+                        "collapsed": true,
                         "channels": [
                             "1441930799413723170",
                             "1449535209178398820",
@@ -660,6 +657,12 @@
         },
         "MoreQuickReactions": {
             "enabled": false
+        },
+        "NoDefaultHangStatus": {
+            "enabled": false
+        },
+        "CustomCommands": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -672,7 +675,7 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1772687199168
+        "settingsSyncVersion": 1773416601371
     },
     "uiElements": {
         "chatBarButtons": {},
