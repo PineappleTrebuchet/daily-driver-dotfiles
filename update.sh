@@ -22,6 +22,7 @@ cp ~/.config/Vencord config/ -r
 cp ~/.config/waybar config/ -r
 cp ~/.config/wlogout config/ -r
 cp ~/.config/wpaperd config/ -r
+cp ~/.config/yazi config/ -r
 
 cp ~/.zshrc zsh/ -r
 cp ~/.oh-my-zsh/themes/cocos-theme.zsh-theme zsh/ -r

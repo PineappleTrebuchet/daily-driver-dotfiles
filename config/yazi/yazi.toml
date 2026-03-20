@@ -1,0 +1,15 @@
+[opener]
+runwin = [
+	{ run = "/usr/bin/wine %s", orphan = true, for = "unix" }
+]
+runsh = [
+	{ run = "/usr/bin/sh %s", desc = "Run", block = true, for = "unix" }
+]
+
+
+[open]
+prepend_rules = [
+	{ url = "*.toml", use = "edit" }, # TODO: add Reval and Show EXIF tools
+	{ url = "*.exe", use = "runwin" },
+	{ url = "*.sh", use = ["edit", "runsh"] },
+]
