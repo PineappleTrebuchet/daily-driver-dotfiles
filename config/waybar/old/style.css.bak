@@ -5,7 +5,7 @@
 @define-color red #ff0000;
 
 * {
-  font-family: "BlexMonoNerdFont";
+  font-family: "JetBrainsMonoNerdFont";
   font-size: 16px;
 }
 

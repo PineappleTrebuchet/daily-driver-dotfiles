@@ -19,6 +19,10 @@ inside-ver-color=#000000CC
 inside-wrong-color=#000000CC
 
 line-uses-inside
+#line-color=#e6e6e6
+#line-clear-color=#e6e6e6
+#line-ver-color=#e6e6e6
+#line-wrong-color=#e6e6e6
 
 text-clear=Cleared
 text-ver=...
@@ -38,4 +42,4 @@ ring-wrong-color=#000000CC
 bs-hl-color=#e6e6e6
 key-hl-color=#e6e6e6
 
-#separator-color=#e6e6e600
+separator-color=#e6e6e600
