@@ -654,7 +654,8 @@
             "enabled": true
         },
         "AutoDNDWhilePlaying": {
-            "enabled": true
+            "enabled": true,
+            "statusToSet": "dnd"
         },
         "MoreQuickReactions": {
             "enabled": false
@@ -676,7 +677,7 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1773799799099
+        "settingsSyncVersion": 1774043236324
     },
     "uiElements": {
         "chatBarButtons": {},

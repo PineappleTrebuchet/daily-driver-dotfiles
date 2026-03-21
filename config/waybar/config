@@ -43,7 +43,7 @@
 
 "tray": {
     "icon-size": 22, 
-    "spacing": 9
+    "spacing": 8
 },
 
 "clock": {

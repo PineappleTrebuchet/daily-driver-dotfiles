@@ -36,8 +36,8 @@ hi(0, "ModeMsg",     { fg = "#00ffff", bg = "#0d0d0d" })
 hi(0, "MoreMsg",     { fg = "#ffff00", bg = "#0d0d0d" })
 
 -- Splits & borders
-hi(0, "WinSeparator",    { fg = "#303030",  bg = "NONE" })
-hi(0, "VertSplit",       { fg = "#303030",  bg = "NONE" })
+hi(0, "WinSeparator",    { fg = "#f2f2f2",  bg = "NONE" })
+hi(0, "VertSplit",       { fg = "#f2f2f2",  bg = "NONE" })
 
 -- Status & Tab Line
 hi(0, "StatusLine",  { bg = "#191919",  fg = "#bbbbbb" })
