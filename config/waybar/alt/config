@@ -1,25 +1,23 @@
 {
 "layer": "top",	
-"position": "top",
-"height": 28,
+"position": "left",
+"width": 28,
 "modules-left": [
     "idle_inhibitor",
     "sway/workspaces",
     "niri/workspaces",
     "tray",
     "sway/scratchpad",
-    "sway/window",
-    "niri/window",
     "sway/mode",
 ],
 
 "modules-center": ["clock",],
 "modules-right": [
     "power-profiles-daemon",
-    "network",
-    "memory", 
-    "cpu", 
-    "temperature", 
+    //"network",
+    //"memory", 
+    //"cpu", 
+    //"temperature", 
     "backlight",
     "pulseaudio",
     "battery",
@@ -28,7 +26,11 @@
 "workspaces": {
     "disable-scroll": true,
     "disable-markup": true,
-    "format": "{index}",
+    "format": "{icon}",
+    "format-icons": {
+        "default": ".",
+        "focused": "*"
+    }
 },
 
 "sway/scratchpad": {
@@ -49,7 +51,8 @@
 "clock": {
     "format": "  {:%a %m/%d  󰥔  %r}",
     "interval": 1,
-    "tooltip": false
+    "tooltip": false,
+    "rotate": 90
 },
 
 "battery": {
@@ -62,10 +65,10 @@
     "events": {
         "on-discharging-critical": "notify-send -u critical 'WARNING: Critical Battery!'",
     },
-    "format": "{icon} {capacity}%",
-    "format-normal": "{icon} {capacity}%",
-    "format-full": "󱟢 {capacity}%",
-    "format-charging": "󱐥 {capacity}%",
+    "format": "{icon}",
+    "format-normal": "{icon}",
+    "format-full": "󱟢",
+    "format-charging": "󱐥",
     "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
     "interval": 10
 },
@@ -74,19 +77,19 @@
     "format": "{icon}",
     "tooltip-format": "Profile: {profile}\nDriver: {driver}",
     "format-icons": {       
-        "default": "bal",
-        "performance": "per",
-        "balanced:": "bal",
-        "power-saver": "sav"
-    }
+        "default": "",
+        "performance": "󰓅",
+        "balanced:": "",
+        "power-saver": ""
+    },
 },
 
 "network": {
-    "format-wifi": "󰖩  WiFi",
+    "format-wifi": "󰖩",
     "tooltip-format-wifi": "{essid} ({signalStrength}%)\n↓{bandwidthDownBits}  ↑{bandwidthUpBits}",
-    "format-ethernet": "󰈀 Eth",
+    "format-ethernet": "󰈀",
     "tooltip-format-ethernet": "{ifname}: {ipaddr}/{cidr}",
-    "format-disconnected": "󰖪  down",
+    "format-disconnected": "󰖪",
     "tooltip-disconnected": false,
     "family": "ipv4",
     "interval": 3,
@@ -95,7 +98,7 @@
 
 "backlight": {
     "device": "intel_backlight",
-    "format": "{icon} {percent}%",
+    "format": "{icon}",
     "format-icons": ["☾", "☼︎", "☀︎", "󰖨 "],
     "interval": 60
 },
@@ -119,9 +122,10 @@
 },
 
 "pulseaudio": {
-    "format": "{icon} {volume}%",
+    "format": "{icon}",
     //"format-bluetooth": "󰂯 {volume}%",
-    "format-muted":"󰝟 {volume}%",
+    "format-muted":"󰝟",
+    "tooltip-format": "{volume}%",
     "interval": 60,
     "on-click": "pavucontrol",
     "format-icons": {

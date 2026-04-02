@@ -59,17 +59,26 @@
     margin-right: 6px;
 }
 
+/* TODO: fix the color of notification-action buttons. */
 .notification-action {
-    color: @accent-color;
+    background-color: @noti-bg;
+    color: @text-color;
     border-top: none;
     border-radius: 0px;
-    background: @noti-bg;
+}
+
+.notification-action>label {
+    color: @text-color;
 }
 
 .notification-default-action:hover,
 .notification-action:hover {
     background: @cc-bg;
 } 
+
+.notification-action:hover>label {
+    color: @cc-bg;
+}
 
 .summary {
 	padding-top: 5px;

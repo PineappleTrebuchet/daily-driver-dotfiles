@@ -171,7 +171,7 @@ bindsym $mod+r mode "resize"
 # Colors and Aesthetic:
 #
 client.focused          #0099ff #2d5f86 #ffffff #0099ff #0099ff
-client.focused_inactive #262626 #1a1a1a #ffffff #262626 #262626
+client.focused_inactive #505050 #333333 #ffffff #262626 #262626
 client.unfocused        #262626 #1a1a1a #ffffff #262626 #262626
 client.urgent           #ff0000 #990000 #ffffff #ff0000 #ff0000
 
@@ -199,7 +199,7 @@ font pango:"Inter Regular" 10
 output * scale 1
 # for_window [title=".*"] floating enable
 
-# Force floating windows on specific windows:
+# Force floating mode on specific windows:
 # 
 for_window [title="File Operation Progress"] floating enable
 for_window [title="Confirm to replace files"] floating enable

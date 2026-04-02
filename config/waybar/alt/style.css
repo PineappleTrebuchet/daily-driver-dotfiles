@@ -5,8 +5,8 @@
 @define-color red #ff0000;
 
 * {
-  font-family: "JetBrainsMonoNerdFont";
-  font-size: 16px;
+  font-family: "Inter Regular";
+  font-size: 19px;
 }
 
 
@@ -20,12 +20,6 @@ tooltip {
 	border: none;
 }
 
-#custom-spacer{
-	color: @light-grey;
-	font-size: 15px;
-	font-family:"JetBrainsMonoNerdFont";
-}
-
 #workspaces {
 	margin: 0px 3px 0px 0px;
 	padding: 0px 0px 0px 0px;
@@ -34,16 +28,18 @@ tooltip {
 #workspaces button {
 	transition: none;
 	background: transparent;
+	border: none;
 	padding: 0px 8px 0px 8px;
  	min-width: 1px;
+	color: @font-color;
 	border-radius: 0px;
 }
 
 #workspaces button.focused { 
-	background-color: @grey;
+	/* background-color: @grey; */
+	color: @font-color;
 	border-radius: 0px;
 }
-
 #workspaces button.urgent{
 	color: @red;
 }
@@ -58,37 +54,46 @@ tooltip {
 
 #mode {
 	color: @red;
-	padding: 0px 5px 0px 5px;
-	margin: 0px 5px 0px 5px;
+	margin: 0px 6px 0px 6px;
 }
 
-#power-profiles-daemon, #cpu, #memory, #network,
-#temperature, #backlight, #pulseaudio, #battery,
-#custom-uptime, #clock {
-	margin: 0px 7px 0px 7px;
-}
-
-#power-profiles-daemon.performance {
-	color: #ffff00;
-}
-#power-profiles-daemon.power-saver {
-	color: #00ff00;
+#power-profiles-daemon, #network, #backlight,
+#pulseaudio, #battery, #cpu, #memory, #temperature {
+	margin: 12px 0px 12px 0px;
 }
 
 #tray {
 	margin: 0px 6px 0px 6px;
 }
 
+#clock {
+	/* margin: 0px 175px 0px 175px; */
+	margin: 175px 0px 175px 0px;
+}
+
 #idle_inhibitor {
 	min-width:22px;
-	padding: 0px 7px 0px 7px;
+	padding: 7px 0px 7px 0px;
 }
 
 #scratchpad {
+  padding: 0px 3px 0px 3px;
+  /* font-size: 16; */
+  /* font-family: "JetBrainsMonoNerdFont"; */
+}
+
+#window {
   padding: 0px 4px 0px 4px;
 }
 
-#battery.critical:not(.charging), #temperature.critical, #network.disconnected, #pulseaudio.muted {
+#power-profiles-daemon.performance {
+	color: #ff8c1a;
+}
+#power-profiles-daemon.power-saver {
+	color: #00ff00;
+}
+
+#battery.critical:not(.charging), #network.disconnected, #pulseaudio.muted, #temperature.critical {
   color: @red;
 }
 
