@@ -10,7 +10,7 @@
     "notification-icon-size": 64,
     "notification-body-image-height": 100,
     "notification-body-image-width": 200,
-    "ignore-gtk-theme": true,
+    "ignore-gtk-theme": false,
     "timeout": 3,
     "timeout-low": 2,
     "timeout-critical": 0,
@@ -24,6 +24,7 @@
     "hide-on-clear": true,
     "hide-on-action": true,
     "script-fail-notify": true,
+    "cssPriority": "user",
     "widgets": [
         "title",
         "dnd",
@@ -32,12 +33,12 @@
     ],
     "widget-config": {
         "title": {
-            "text": "Notifications",
+            "text": "   Notifications",
             "clear-all-button": true,
             "button-text": "Clear"
         },
         "dnd": {
-            "text": "Do Not Disturb"
+            "text": "   Do Not Disturb"
         },
         "label": {
             "max-lines": 1,

@@ -193,7 +193,7 @@ title_align center
 exec sh -c "$HOME/.config/swaync/swaync.sh"
 seat seat0 xcursor_theme phinger-cursors-dark 24
 exec_always autotiling
-exec --no-startup-id /usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh
+exec --no-startup-id /usr/bin/gnome-keyring-daemon --start
 exec --no-startup-id /usr/lib/xdg-desktop-portal -r
 font pango:"Inter Regular" 10
 output * scale 1
@@ -207,6 +207,8 @@ for_window [title="nwg-look"] floating enable
 for_window [title="Qalculate!"] floating enable
 for_window [title="zoom"] floating enable
 for_window [title="Waterfox - Choose a profile"] floating enable
+
+## 
 
 # END
 include /etc/sway/config.d/*

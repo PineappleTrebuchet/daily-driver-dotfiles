@@ -4,5 +4,5 @@ mode = "center"
 sorting = "random"
 transition-time = 2000
 [any]
-path = "~/Pictures/Backgrounds/wpaperd/"
+path = "~/Pictures/Backgrounds/nature/"
 [default.transition.fade]

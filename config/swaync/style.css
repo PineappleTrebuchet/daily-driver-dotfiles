@@ -13,26 +13,26 @@
 :root {
   --border-radius: 0px;
 }
- 
+
 * {
     font-family: "Inter Regular";
     font-weight: normal;
 	font-size: 18px;
 	color: @text-color;
 }
- 
+
 .control-center .notification-row:focus,
 .control-center .notification-row:hover {
     opacity: 1;
     background: @noti-bg-darker;
 }
- 
+
 .notification-row {
     outline: none;
     margin: 20px;
     padding: 0;
 }
- 
+
 .notification {
     background: @cc-bg;
     border: 1px solid @noti-border-color;
@@ -59,7 +59,7 @@
     margin-right: 6px;
 }
 
-/* TODO: fix the color of notification-action buttons. */
+/* TODO: fix the color of notification-action buttons*/
 .notification-action {
     background-color: @noti-bg;
     color: @text-color;
