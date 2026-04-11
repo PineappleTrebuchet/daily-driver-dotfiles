@@ -7,11 +7,12 @@ return {
   "AstroNvim/astrocommunity",
   -- { import = "astrocommunity.pack.java" }, -- add Java language support
   -- { import = "astrocommunity.lsp.nvim-java" }, -- opt-in to nvim-java for LSP
-  -- import/override with your plugins folder
+  { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.markdown-and-latex.render-markdown-nvim" },
   { import = "astrocommunity.code-runner.compiler-nvim" },
-  { import = "astrocommunity.pack.python"},
-  { import = "astrocommunity.pack.cpp"},
+  { import = "astrocommunity.pack.python" },
+  { import = "astrocommunity.pack.cpp" },
   { import = "astrocommunity.lsp.garbage-day-nvim" },
   { import = "astrocommunity.file-explorer.yazi-nvim" },
+  -- import/override with your plugins folder
 }
