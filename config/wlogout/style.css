@@ -22,6 +22,7 @@ button {
 	background-position: center;
 	background-size: 25%;
 	margin: 5px;
+	padding: 5px;
 	border: 1px solid @border-color;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
 }

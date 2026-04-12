@@ -25,4 +25,4 @@ end
 
 require "lazy_setup"
 require "polish"
-require('Comment').setup()
+require("Comment").setup()

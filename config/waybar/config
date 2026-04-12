@@ -84,9 +84,9 @@
 "network": {
     "format-wifi": "󰖩  WiFi",
     "tooltip-format-wifi": "{essid} ({signalStrength}%)\n↓{bandwidthDownBits}  ↑{bandwidthUpBits}",
-    "format-ethernet": "󰈀 Eth",
+    "format-ethernet": "󰈀  Eth",
     "tooltip-format-ethernet": "{ifname}: {ipaddr}/{cidr}",
-    "format-disconnected": "󰖪  down",
+    "format-disconnected": "󰖪  Down",
     "tooltip-disconnected": false,
     "family": "ipv4",
     "interval": 3,

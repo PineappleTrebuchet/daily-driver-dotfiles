@@ -61,7 +61,7 @@ exec wpaperd -d
     bindsym $mod+d exec $menu
     floating_modifier $mod normal
     bindsym $mod+Shift+r reload
-    bindsym $mod+Shift+e exec wlogout -m 375
+    bindsym $mod+Shift+e exec wlogout -m 300
     bindsym $mod+m exec killall -SIGUSR1 waybar
     bindsym $mod+n exec swaync-client -t -sw
 
@@ -207,6 +207,7 @@ for_window [title="nwg-look"] floating enable
 for_window [title="Qalculate!"] floating enable
 for_window [title="zoom"] floating enable
 for_window [title="Waterfox - Choose a profile"] floating enable
+for_window [title="Library"] floating enable
 
 ## 
 

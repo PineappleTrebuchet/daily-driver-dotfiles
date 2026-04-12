@@ -26,8 +26,9 @@ hi(0, "FoldColumn", { fg = "#00ff00", bg = "#0d0d0d" })
 hi(0, "Directory", { fg = "#2222ff", bg = "#0d0d0d" })
 
 -- Indent colors
-hi(0, "NonText", { fg = "#00ff00" })
+hi(0, "NonText", { fg = "#007700" })
 hi(0, "IblScope", { fg = "#00ff00" })
+hi(0, "SnacksIndentScope", { fg = "#00ff00" })
 
 -- Command line
 hi(0, "ModeMsg", { fg = "#00ffff", bg = "#0d0d0d" })
@@ -42,12 +43,12 @@ hi(0, "WinSeparator", { fg = "#f2f2f2", bg = "NONE" })
 hi(0, "VertSplit", { fg = "#f2f2f2", bg = "NONE" })
 
 -- Status & Tab Line
-hi(0, "StatusLine", { bg = "#191919", fg = "#bbbbbb" })
-hi(0, "TabLineFill", { bg = "#191919" })
+hi(0, "StatusLine", { bg = "#151515", fg = "#bbbbbb" })
+hi(0, "TabLineFill", { bg = "#151515" })
 hi(0, "WinBar", { bg = "#0d0d0d", fg = "#f2f2f2" })
 
 -- Pmenu
-hi(0, "Pmenu", { bg = "#191919", fg = "#f2f2f2" })
+hi(0, "Pmenu", { bg = "#151515", fg = "#f2f2f2" })
 
 -- Syntax
 hi(0, "Comment", { fg = "#5555ee", italic = true })
@@ -55,10 +56,10 @@ hi(0, "String", { fg = "#9933ff" })
 hi(0, "Constant", { fg = "#1111ff" })
 hi(0, "Variable", { link = "Constant" })
 hi(0, "Identifier", { fg = "#00ffff" })
-hi(0, "Function", { fg = "#ffff00" })
+hi(0, "Function", { fg = "#00ff00" })
 hi(0, "Statement", { fg = "#ff00ff" })
-hi(0, "Type", { fg = "#00ff00", bold = true })
-hi(0, "PreProc", { fg = "#ffff00" })
+hi(0, "Type", { fg = "#ffff00", bold = true })
+hi(0, "PreProc", { fg = "#00ff00" })
 hi(0, "Special", { fg = "#ff00ff" })
 hi(0, "Debug", { fg = "#ff0000" })
 hi(0, "Error", { fg = "#ff0000", bg = "#330000", bold = true })
@@ -104,7 +105,7 @@ hi(0, "markdownBold", { bold = true })
 hi(0, "markdownItalic", { italic = true })
 
 -- Heirline
-hi(0, "HeirlineNormal", { bg = "#9933ff" })
+hi(0, "HeirlineNormal", { bg = "#00ff00" })
 hi(0, "HeirlineInsert", { bg = "#00ffff" })
 hi(0, "HeirlineVisual", { bg = "#1111ff" })
 hi(0, "HeirlineReplace", { bg = "#ff0000" })
