@@ -1,6 +1,6 @@
 @define-color font-color #e6e6e6;
 @define-color black #0d0d0d;
-@define-color grey #242424;
+@define-color grey #262626;
 @define-color light-grey #404040;
 @define-color red #ff0000;
 
@@ -54,7 +54,7 @@ tooltip {
 
 #mode {
 	color: @red;
-	margin: 0px 6px 0px 6px;
+	margin: 0px 3px 0px 3px;
 }
 
 #power-profiles-daemon, #network, #backlight,
@@ -71,7 +71,7 @@ tooltip {
 }
 
 #idle_inhibitor {
-	min-width:22px;
+	min-width:25px;
 	padding: 0px 7px 0px 7px;
 }
 

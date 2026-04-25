@@ -22,7 +22,7 @@ button {
 	background-position: center;
 	background-size: 25%;
 	margin: 5px;
-	padding: 5px;
+	padding: 2px;
 	border: 1px solid @border-color;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
 }
@@ -34,48 +34,30 @@ button:focus, button:active {
 
 #lock {
     background-image: image(url("/home/cocotreb/.config/wlogout/icons/lock.png"));
+		padding: 2px;
 }
-/* #lock:focus, #lock:active {
-    background-image: image(url("/home/cocotreb/.config/wlogout/icons/lock1.png"));
-    color: @active-color;
-} */
 
 #logout {
     background-image: image(url("/home/cocotreb/.config/wlogout/icons/logout.png"));
+		padding: 2px;
 }
-/* #logout:focus, #logout:active {
-    background-image: image(url("/home/cocotreb/.config/wlogout/icons/logout1.png"));
-    color: @active-color;
-} */
 
 #suspend {
     background-image: image(url("/home/cocotreb/.config/wlogout/icons/suspend.png"));
+		padding: 2px;
 }
-/* #suspend:focus, #suspend:active {
-    background-image: image(url("/home/cocotreb/.config/wlogout/icons/suspend1.png"));
-    color: @active-color;
-} */
 
 #hibernate {
     background-image: image(url("/home/cocotreb/.config/wlogout/icons/hibernate.png"));
+		padding: 2px;
 }
-/* #hibernate:focus, #hibernate:active {
-    background-image: image(url("/home/cocotreb/.config/wlogout/icons/hibernate1.png"));
-    color: @active-color;
-} */
 
 #shutdown {
     background-image: image(url("/home/cocotreb/.config/wlogout/icons/shutdown.png"));
+		padding: 2px;
 }
-/* #shutdown:focus, #shutdown:active {
-    background-image: image(url("/home/cocotreb/.config/wlogout/icons/shutdown1.png"));
-    color: @active-color;
-} */
 
 #reboot {
     background-image: image(url("/home/cocotreb/.config/wlogout/icons/reboot.png"));
+		padding: 2px;
 }
-/* #reboot:focus, #reboot:active {
-    background-image: image(url("/home/cocotreb/.config/wlogout/icons/reboot1.png"));
-    color: @active-color;
-} */

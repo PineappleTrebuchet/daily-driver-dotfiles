@@ -11,7 +11,8 @@ set $menu fuzzel
 # Wallpaper
 #
 # output * bg $HOME/Pictures/Backgrounds/red-tulips.jpg fill
-exec wpaperd -d
+#exec wpaperd -d
+exec swaybg -i ~/Pictures/Backgrounds/nature/moraine-lake2.jpg
 
 # Example configuration:
 # output HDMI-A-1 resolution 1920x1080 position 1920,0
@@ -20,8 +21,8 @@ exec wpaperd -d
 # Swayidle
 #
   exec swayidle -w \
-    timeout 300 'swaylock -f' \
-    timeout 600 'systemctl suspend' \
+    #timeout 300 'swaylock -f' \
+    timeout 300 'systemctl suspend' \
 
 # Input configuration
 #
@@ -61,7 +62,7 @@ exec wpaperd -d
     bindsym $mod+d exec $menu
     floating_modifier $mod normal
     bindsym $mod+Shift+r reload
-    bindsym $mod+Shift+e exec wlogout -m 300
+    bindsym $mod+Shift+e exec wlogout -m 375
     bindsym $mod+m exec killall -SIGUSR1 waybar
     bindsym $mod+n exec swaync-client -t -sw
 
@@ -119,6 +120,7 @@ exec wpaperd -d
     bindsym $mod+Shift+space floating toggle
     bindsym $mod+space focus mode_toggle
     bindsym $mod+a focus parent
+    bindsym $mod+Shift+a focus child
 
 # Scratchpad:
 #

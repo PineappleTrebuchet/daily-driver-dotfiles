@@ -5,8 +5,8 @@
 ---@type LazySpec
 return {
   "AstroNvim/astrocommunity",
-  -- { import = "astrocommunity.pack.java" }, -- add Java language support
-  -- { import = "astrocommunity.lsp.nvim-java" }, -- opt-in to nvim-java for LSP
+  { import = "astrocommunity.pack.java" }, -- add Java language support
+  { import = "astrocommunity.lsp.nvim-java" }, -- opt-in to nvim-java for LSP
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.markdown-and-latex.render-markdown-nvim" },
   { import = "astrocommunity.code-runner.compiler-nvim" },

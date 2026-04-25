@@ -10,7 +10,7 @@
     "notification-icon-size": 64,
     "notification-body-image-height": 100,
     "notification-body-image-width": 200,
-    "ignore-gtk-theme": false,
+    "ignore-gtk-theme": true,
     "timeout": 3,
     "timeout-low": 2,
     "timeout-critical": 0,

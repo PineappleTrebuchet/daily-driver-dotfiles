@@ -7,8 +7,7 @@
 @define-color noti-bg #303030;
 @define-color noti-bg-darker #202020;
 @define-color text-color #e6e6e6;
-@define-color text-color-disabled #e6e6e6;
-@define-color accent-color #33adff;
+@define-color accent-color #0099ff;
 
 :root {
   --border-radius: 0px;
@@ -21,19 +20,31 @@
 	color: @text-color;
 }
 
+/* Control Center */
+/* ============== */
 .control-center .notification-row:focus,
 .control-center .notification-row:hover {
     opacity: 1;
     background: @noti-bg-darker;
 }
 
+.control-center {
+    background: @cc-bg;
+    border: 1px solid @noti-border-color;
+    border-radius: 0px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Notifications */
+/* ============= */
 .notification-row {
     outline: none;
     margin: 20px;
     padding: 0;
 }
 
-.notification {
+.notification, .notification:hover {
     background: @cc-bg;
     border: 1px solid @noti-border-color;
     margin: 0px;
@@ -44,40 +55,19 @@
   font-size: 13px;
 }
 
-.notification-group {
-    /* background: @noti-bg-darker; */
+.notification-group, .notification-default-action:hover,
+.notification-content:hover {
     background: transparent;
 }
  
 .close-button {
-    color: @accent-color !important;
+    color: @accent-color;
     background: transparent;
     text-shadow: none;
     padding: 0;
     border-radius: 0px;
     margin-top: 6px;
     margin-right: 6px;
-}
-
-/* TODO: fix the color of notification-action buttons*/
-.notification-action {
-    background-color: @noti-bg;
-    color: @text-color;
-    border-top: none;
-    border-radius: 0px;
-}
-
-.notification-action>label {
-    color: @text-color;
-}
-
-.notification-default-action:hover,
-.notification-action:hover {
-    background: @cc-bg;
-} 
-
-.notification-action:hover>label {
-    color: @cc-bg;
 }
 
 .summary {
@@ -89,17 +79,36 @@
     font-size: 16px;
 }
 
-.control-center {
-    background: @cc-bg;
-    border: 1px solid @noti-border-color;
+/* Notification Actions */
+/* ==================== */
+.notification-action, .notification-action:hover {
+    background-color: @cc-bg;
+    color: @text-color;
+    border-top: none;
     border-radius: 0px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.notification-action>button {
+    background-color: @noti-bg-darker;
+    color: @text-color;
+}
+
+.notification-action>button:hover {
+    background-color: @noti-bg;
+    color: @text-color;
+}
+
+.notification-action>button:active {
+    background-color: @accent-color;
+    color: @text-color;
 }
 
 .blank-window {
     /* background: alpha(black, 0.25); */
 }
 
+/* Widgets */
+/* ======= */
 .widget-title {
     /* background: @noti-bg-darker; */
     background: transparent;
@@ -110,15 +119,21 @@
 
 .widget-title>button {
     text-shadow: none;
-    background: @noti-bg;
+    background: @noti-bg-darker;
+    color: @cc-bg;
     box-shadow: none;
     border-radius: 0px;
     padding: 2px 20px 2px 20px;
 }
 
 .widget-title>button:hover {
+    background: @noti-bg;
+    color: @text-color;
+}
+
+.widget-title>button:active {
     background: @accent-color;
-    color: @cc-bg;
+    color: @text-color;
 }
 
 .widget-dnd {
@@ -148,13 +163,13 @@
     background: @cc-bg;
     border-radius: 0px;
 }
-/**/
+
 /* .widget-label { */
 /*     margin: 10px 10px 5px 10px; */
 /*     color: @text-color; */
 /* } */
 /**/
 /* .widget-label>label { */
-/*     /* font-size: 1rem; */ */
+/*     font-size: 1rem; */
 /*     color: @text-color; */
 /* } */
