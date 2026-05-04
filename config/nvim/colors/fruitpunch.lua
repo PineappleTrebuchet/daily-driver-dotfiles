@@ -7,23 +7,23 @@ vim.o.background = "dark"
 local hi = vim.api.nvim_set_hl
 
 -- Editor colors
-hi(0, "Normal", { bg = "#0d0d0d", fg = "#f2f2f2" })
+hi(0, "Normal", { bg = "#000000", fg = "#f2f2f2" })
 hi(0, "NormalFloat", { bg = "#191919", fg = "#f2f2f2" })
-hi(0, "CursorLine", { bg = "#262626" })
+hi(0, "CursorLine", { bg = "#242424" })
 hi(0, "CursorLineNr", { fg = "#00ffff", bold = true })
 hi(0, "CursorLineFold", { link = "FoldColumn" })
 hi(0, "CursorLineSign", { bg = "NONE" })
 hi(0, "ColorColumn", { bg = "#330033" })
-hi(0, "SignColumn", { bg = "#0d0d0d" })
-hi(0, "Search", { fg = "#0d0d0d", bg = "#ffff00" })
-hi(0, "IncSearch", { fg = "#0d0d0d", bg = "#00ff00" })
-hi(0, "CurSearch", { fg = "#0d0d0d", bg = "#00ff00" })
+hi(0, "SignColumn", { bg = "#000000" })
+hi(0, "Search", { fg = "#000000", bg = "#ffff00" })
+hi(0, "IncSearch", { fg = "#000000", bg = "#00ff00" })
+hi(0, "CurSearch", { fg = "#000000", bg = "#00ff00" })
 hi(0, "LineNr", { fg = "#00ff00" })
 hi(0, "EndOfBuffer", { fg = "#262626" })
 hi(0, "MatchParen", { fg = "NONE", bg = "#434343", bold = true })
 hi(0, "Visual", { bg = "#434343" })
 hi(0, "Directory", { fg = "#00ffff" })
-hi(0, "FoldColumn", { fg = "#ff00ff", bg = "#0d0d0d" })
+hi(0, "FoldColumn", { fg = "#ff00ff", bg = "#000000" })
 
 -- Indent colors
 hi(0, "NonText", { fg = "#000077" })
@@ -31,11 +31,11 @@ hi(0, "IblScope", { fg = "#0000ff" })
 hi(0, "SnacksIndentScope", { fg = "#0000ff" })
 
 -- Command line
-hi(0, "ModeMsg", { fg = "#00ffff", bg = "#0d0d0d" })
-hi(0, "MoreMsg", { fg = "#ffff00", bg = "#0d0d0d" })
+hi(0, "ModeMsg", { fg = "#00ffff", bg = "#000000" })
+hi(0, "MoreMsg", { fg = "#ffff00", bg = "#000000" })
 hi(0, "ErrorMsg", { fg = "#ff0000" })
 hi(0, "Question", { fg = "#00ffff" })
-hi(0, "MsgArea", { fg = "#f2f2f2", bg = "#0d0d0d" })
+hi(0, "MsgArea", { fg = "#f2f2f2", bg = "#000000" })
 hi(0, "MsgSeparator", { fg = "#ffff00", bg = "#191919" })
 
 -- Splits & borders
@@ -45,7 +45,7 @@ hi(0, "VertSplit", { fg = "#f2f2f2", bg = "NONE" })
 -- Status & Tab Line
 hi(0, "StatusLine", { bg = "#393939", fg = "#ffffff" })
 hi(0, "TabLineFill", { bg = "#393939" })
-hi(0, "WinBar", { bg = "#0d0d0d", fg = "#f2f2f2" })
+hi(0, "WinBar", { bg = "#000000", fg = "#f2f2f2" })
 
 -- Pmenu
 hi(0, "Pmenu", { bg = "#404040", fg = "#f2f2f2" })
@@ -87,9 +87,9 @@ hi(0, "DiagnosticVirtualTextInfo", { fg = "#ff00ff" })
 hi(0, "DiagnosticVirtualTextHint", { fg = "#9933ff" })
 
 -- Git/Gutter and Markdown.nvim
-hi(0, "GitSignsAdd", { fg = "#00ff00", bg = "#0d0d0d" })
-hi(0, "GitSignsChange", { fg = "#6666ff", bg = "#0d0d0d" })
-hi(0, "GitSignsDelete", { fg = "#ff00ff", bg = "#0d0d0d" })
+hi(0, "GitSignsAdd", { fg = "#00ff00", bg = "#000000" })
+hi(0, "GitSignsChange", { fg = "#6666ff", bg = "#000000" })
+hi(0, "GitSignsDelete", { fg = "#ff00ff", bg = "#000000" })
 hi(0, "DiffAdd", { bg = "#009900", fg = "#f2f2f2" })
 hi(0, "DiffChange", { bg = "#002255", fg = "#f2f2f2" })
 hi(0, "DiffDelete", { bg = "#550055", fg = "#f2f2f2" })
@@ -115,7 +115,7 @@ hi(0, "HeirlineTerminal", { bg = "#ffff00" })
 -- Mason
 hi(0, "MasonHeader", { bg = "#ffff00", fg = "#000000" })
 hi(0, "MasonHighlight", { fg = "#00ff00" })
-hi(0, "MasonHighlightBlockBold", { bg = "#00ff00", fg = "#0d0d0d" })
+hi(0, "MasonHighlightBlockBold", { bg = "#00ff00", fg = "#000000" })
 
 -- Dashboard
 hi(0, "DashboardCenter", { fg = "#ff00ff" })
@@ -126,4 +126,5 @@ hi(0, "SnacksDashboardFooter", { fg = "#ffff00" })
 hi(0, "DashboardShortCut", { fg = "#00ffff" })
 
 -- Other
-hi(0, "SnacksPickerDir", { link = "SnacksIndentScope" })
+hi(0, "SnacksPickerDir", { link = "@markup.link" })
+hi(0, "tutorLink", { link = "SnacksIndentScope" })

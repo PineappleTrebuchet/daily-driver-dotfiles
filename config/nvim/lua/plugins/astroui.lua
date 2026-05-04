@@ -7,9 +7,10 @@ return {
   "AstroNvim/astroui",
   ---@type AstroUIOpts
   opts = {
-    colorscheme = "onedark",
+    colorscheme = "tokyonight-night",
     highlights = {
       init = {
+        WinBar = { link = "Normal" },
         -- Normal = { bg = "#000000" },
       },
       onedark = {

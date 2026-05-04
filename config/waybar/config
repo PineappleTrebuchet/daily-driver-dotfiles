@@ -16,8 +16,8 @@
 "modules-center": ["clock",],
 "modules-right": [
     "power-profiles-daemon",
-    "network",
     "memory", 
+    "network",
     "cpu", 
     "temperature", 
     "backlight",
@@ -69,7 +69,7 @@
     // "format-full": "󱟢 {capacity}%",
     "format-charging": "󱐥 {capacity}%",
     "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
-    "interval": 10
+    "interval": 3
 },
 
 "power-profiles-daemon": {

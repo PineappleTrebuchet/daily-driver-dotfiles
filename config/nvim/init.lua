@@ -26,5 +26,3 @@ end
 require "lazy_setup"
 require "polish"
 require("Comment").setup()
-
-vim.lsp.codelens.enable(false) -- Disable codelens

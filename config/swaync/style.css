@@ -16,7 +16,7 @@
 * {
     font-family: "Inter Regular";
     font-weight: normal;
-	font-size: 18px;
+	font-size: 17px;
 	color: @text-color;
 }
 
@@ -52,7 +52,7 @@
 }
 
 .notification .time {
-  font-size: 13px;
+    font-size: 13px;
 }
 
 .notification-group, .notification-default-action:hover,

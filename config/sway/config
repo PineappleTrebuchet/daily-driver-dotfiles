@@ -11,8 +11,8 @@ set $menu fuzzel
 # Wallpaper
 #
 # output * bg $HOME/Pictures/Backgrounds/red-tulips.jpg fill
-#exec wpaperd -d
-exec swaybg -i ~/Pictures/Backgrounds/nature/moraine-lake2.jpg
+exec wpaperd -d
+#exec swaybg -i ~/Pictures/Backgrounds/nature/moraine-lake2.jpg
 
 # Example configuration:
 # output HDMI-A-1 resolution 1920x1080 position 1920,0
