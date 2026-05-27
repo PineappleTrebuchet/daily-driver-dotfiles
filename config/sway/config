@@ -10,9 +10,8 @@ set $menu fuzzel
 
 # Wallpaper
 #
-# output * bg $HOME/Pictures/Backgrounds/red-tulips.jpg fill
+output * bg $HOME/Pictures/Backgrounds/mluka.png fill
 #exec wpaperd -d
-exec swaybg -i ~/Pictures/Backgrounds/mluka.png
 
 # Example configuration:
 # output HDMI-A-1 resolution 1920x1080 position 1920,0
@@ -63,7 +62,7 @@ exec swayidle -w \
     bindsym $mod+d exec $menu
     floating_modifier $mod normal
     bindsym $mod+Shift+r reload
-    bindsym $mod+Shift+e exec wlogout -m 375
+    bindsym $mod+Shift+e exec wlogout -m 325
     bindsym $mod+m exec killall -SIGUSR1 waybar
     bindsym $mod+n exec swaync-client -t -sw
 
@@ -200,7 +199,9 @@ exec --no-startup-id /usr/bin/gnome-keyring-daemon --start
 exec --no-startup-id /usr/lib/xdg-desktop-portal -r
 font pango:"Inter Regular" 10
 output * scale 1
-# for_window [title=".*"] floating enable
+# Force my laptop's built-in monitor be the default
+output eDP-1 position 0 0
+workspace 1 output eDP-1
 
 # Force floating mode on specific windows:
 # 
@@ -213,7 +214,7 @@ for_window [title="zoom"] floating enable
 for_window [title="Waterfox - Choose a profile"] floating enable
 for_window [title="Library"] floating enable
 
-## 
+
 
 # END
 include /etc/sway/config.d/*

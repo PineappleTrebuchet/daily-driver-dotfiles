@@ -96,9 +96,9 @@ layout {
 prefer-no-csd
 spawn-sh-at-startup "~/.config/waybar/scripts/waybar.sh"
 spawn-at-startup "~/.config/swaync/swaync.sh"
-// spawn-sh-at-startup "swaybg -i ~/Pictures/Backgrounds/red-tulips.jpg -m fill"
+spawn-sh-at-startup "swaybg -i ~/Pictures/Backgrounds/mluka.png -m fill"
 spawn-sh-at-startup "swayidle -w timeout 300 'systemctl suspend'"
-spawn-sh-at-startup "wpaperd -d"
+// spawn-sh-at-startup "wpaperd -d"
 hotkey-overlay {
     skip-at-startup
 }

@@ -5,7 +5,7 @@
 	background-image: none;
 	box-shadow: none;
 	font-family: "Inter Regular";
-	font-size: 18px;
+	font-size: 20px;
 	/* transition: none; */
 }
 
@@ -34,30 +34,30 @@ button:focus, button:active {
 
 #lock {
     background-image: image(url("/home/cocotreb/.config/wlogout/icons/lock.png"));
-		padding: 2px;
+		padding: 3px;
 }
 
 #logout {
     background-image: image(url("/home/cocotreb/.config/wlogout/icons/logout.png"));
-		padding: 2px;
+		padding: 3px;
 }
 
 #suspend {
     background-image: image(url("/home/cocotreb/.config/wlogout/icons/suspend.png"));
-		padding: 2px;
+		padding: 3px;
 }
 
 #hibernate {
     background-image: image(url("/home/cocotreb/.config/wlogout/icons/hibernate.png"));
-		padding: 2px;
+		padding: 3px;
 }
 
 #shutdown {
     background-image: image(url("/home/cocotreb/.config/wlogout/icons/shutdown.png"));
-		padding: 2px;
+		padding: 3px;
 }
 
 #reboot {
     background-image: image(url("/home/cocotreb/.config/wlogout/icons/reboot.png"));
-		padding: 2px;
+		padding: 3px;
 }
