@@ -58,7 +58,7 @@
             "enabled": false
         },
         "AnonymiseFileNames": {
-            "enabled": true,
+            "enabled": false,
             "anonymiseByDefault": true,
             "method": 0,
             "randomisedLength": 7
@@ -314,7 +314,7 @@
             "enabled": false
         },
         "NoOnboardingDelay": {
-            "enabled": false
+            "enabled": true
         },
         "NoPendingCount": {
             "enabled": false
@@ -406,14 +406,15 @@
                             "1405333437459464342",
                             "1431798406224810034",
                             "1459410225504194705",
-                            "1445856110946029658"
+                            "1445856110946029658",
+                            "1492712886827487312"
                         ]
                     },
                     {
                         "id": "xxwt6kcmycp",
                         "name": "High School Friends",
                         "color": 15158332,
-                        "collapsed": true,
+                        "collapsed": false,
                         "channels": [
                             "1212598489088008213",
                             "886040876298694729",
@@ -435,7 +436,7 @@
                         "id": "w1g35gly94m",
                         "name": "College Friends",
                         "color": 15844367,
-                        "collapsed": false,
+                        "collapsed": true,
                         "channels": [
                             "1485446208947228703",
                             "1478440359338971391",
@@ -451,7 +452,17 @@
                         ]
                     }
                 ],
-                "1116829053018714232": []
+                "1116829053018714232": [
+                    {
+                        "id": "22apmeuafok",
+                        "name": "MAIN ACCOUNT",
+                        "color": 3447003,
+                        "collapsed": false,
+                        "channels": [
+                            "1116830692882526219"
+                        ]
+                    }
+                ]
             },
             "pinOrder": 0
         },
@@ -648,7 +659,7 @@
             "enabled": false
         },
         "WhoReacted": {
-            "enabled": false
+            "enabled": true
         },
         "XSOverlay": {
             "enabled": false
@@ -665,7 +676,8 @@
         },
         "Settings": {
             "enabled": true,
-            "settingsLocation": "aboveNitro"
+            "settingsLocation": "aboveNitro",
+            "includeVencordInfoWhenCopying": true
         },
         "SupportHelper": {
             "enabled": true
@@ -682,6 +694,30 @@
         },
         "CustomCommands": {
             "enabled": false
+        },
+        "WebRichPresence (arRPC)": {
+            "enabled": false
+        },
+        "WebKeybinds": {
+            "enabled": true
+        },
+        "WebScreenShareFixes": {
+            "enabled": true
+        },
+        "DisableDeepLinks": {
+            "enabled": true
+        },
+        "WebContextMenus": {
+            "enabled": true
+        },
+        "CharacterCounter": {
+            "enabled": false
+        },
+        "NoMiddleClickPaste": {
+            "enabled": false
+        },
+        "ConcatenatedComponentExtractor": {
+            "enabled": true
         }
     },
     "notifications": {
@@ -694,10 +730,11 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1775702977599
+        "settingsSyncVersion": 1779840789093
     },
     "uiElements": {
         "chatBarButtons": {},
         "messagePopoverButtons": {}
-    }
+    },
+    "windowsMaterial": "none"
 }

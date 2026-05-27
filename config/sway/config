@@ -11,8 +11,8 @@ set $menu fuzzel
 # Wallpaper
 #
 # output * bg $HOME/Pictures/Backgrounds/red-tulips.jpg fill
-exec wpaperd -d
-#exec swaybg -i ~/Pictures/Backgrounds/nature/moraine-lake2.jpg
+#exec wpaperd -d
+exec swaybg -i ~/Pictures/Backgrounds/mluka.png
 
 # Example configuration:
 # output HDMI-A-1 resolution 1920x1080 position 1920,0
@@ -20,9 +20,10 @@ exec wpaperd -d
 
 # Swayidle
 #
-  exec swayidle -w \
-    #timeout 300 'swaylock -f' \
-    timeout 300 'systemctl suspend' \
+exec swayidle -w \
+    timeout 300 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
+    timeout 600 'swaylock -f' \
+    before-sleep 'swaylock -f'
 
 # Input configuration
 #
@@ -39,7 +40,7 @@ exec wpaperd -d
     }
 
     input type:pointer {
-        scroll_factor 1.5
+        scroll_factor 1.2
     }
 
     input type:keyboard {
@@ -205,6 +206,7 @@ output * scale 1
 # 
 for_window [title="File Operation Progress"] floating enable
 for_window [title="Confirm to replace files"] floating enable
+for_window [title="Rename "] floating enable
 for_window [title="nwg-look"] floating enable
 for_window [title="Qalculate!"] floating enable
 for_window [title="zoom"] floating enable

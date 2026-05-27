@@ -62,23 +62,25 @@ tooltip {
 	margin: 0px 12px 0px 12px;
 }
 
+#clock.date {
+	margin: 0px 6px 0px 100px;
+}
+
+#clock.time {
+	margin: 0px 100px 0px 6px;
+}
+
 #tray {
 	margin: 0px 6px 0px 6px;
 }
 
-#clock {
-	margin: 0px 175px 0px 175px;
-}
-
 #idle_inhibitor {
-	min-width:25px;
+	min-width: 25px;
 	padding: 0px 7px 0px 7px;
 }
 
 #scratchpad {
   padding: 0px 3px 0px 3px;
-  /* font-size: 16; */
-  /* font-family: "JetBrainsMonoNerdFont"; */
 }
 
 #window {

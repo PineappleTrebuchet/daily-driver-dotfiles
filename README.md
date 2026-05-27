@@ -1,14 +1,28 @@
 # Daily Dotfiles
-My daily driver dotfiles. These are mainly for private use and they aren't very aesthetically pleasing, but the repo is public if you really want to use these for some reason.
-For more aesthetically pleasing dotfiles, check out my old ones [here](https://github.com/PineappleTrebuchet/everforest-dotfiles).
+My daily driver's dotfiles. Very simplistic ones that roughly (and I really mean _roughly_) mimick the Windows 10 UI. Very functional while meeting a minimum aesthetic threshold, for me at least. Main WM is Sway but has Niri support. Bear in mind the Niri config has sway-like keybinds.
+If you want to use these, remember to edit the wallpaper paths in wpaperd, swaylock, and the `swaybg -i` line in the main config.
 
-### Why did you switch away from everforest if it looks better?
-Two reasons:
-- If I use even a single application that doesn't fall in line with the theme, it honestly gets annoying.
-- I felt that in terms of a daily driver, I should focus mainly on functionality more than aesthetic.
+## Deps
+- alacritty
+- fuzzel
+- GTK 3.0 and 4.0
+- swaylock-effects
+- swaync
+- swaywm + its deps
+- waybar
+- wlogout
+- zsh w/ oh-my-zsh
+### Optional Deps
+- btop
+- cava
+- htop
+- neovim
+- niri
+- Vesktop or Vencord
+- wpaperd (if you want multiple backgrounds)
 
 ## Features
 - Qogir GTK theme + icons
 - Configured waybar, sway config, etc.
 
-TODO: finish this
+[Wallpaper link](https://wallpaper-a-day.com/2016/06/24/) (remember to click on "1440p version")

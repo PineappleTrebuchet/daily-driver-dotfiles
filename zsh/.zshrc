@@ -98,7 +98,9 @@ export QT_QPA_PLATFORMTHEME='gtk3'
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vbox="VBoxManage"
 alias pcsx2="net.pcsx2.PCSX2"
-alias optk="OpenTaiko-Hub"
+# alias optk="OpenTaiko-Hub"
 alias vim="nvim"
 alias pwdcp="pwd | wl-copy && echo 'current directory copied'"
 alias homelabssh="ssh cocotreb@100.64.237.9"
+
+if [ -e /home/cocotreb/.nix-profile/etc/profile.d/nix.sh ]; then . /home/cocotreb/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer

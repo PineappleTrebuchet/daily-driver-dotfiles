@@ -1,6 +1,22 @@
 return {
-  "numToStr/Comment.nvim",
-  opts = {
-    -- add any options here
+  -- Comment.nvim
+  {
+    "numToStr/Comment.nvim",
+    opts = {},
+  },
+  -- Arduino-Nvim
+  {
+    "yuukiflow/Arduino-Nvim",
+    dependencies = {
+      "nvim-telescope/telescope.nvim",
+      "neovim/nvim-lspconfig",
+    },
+    config = function()
+      -- Load Arduino plugin for .ino files
+      vim.api.nvim_create_autocmd("FileType", {
+        pattern = "arduino",
+        callback = function() require "Arduino-Nvim" end,
+      })
+    end,
   },
 }

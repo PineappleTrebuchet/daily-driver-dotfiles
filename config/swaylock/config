@@ -3,8 +3,8 @@ timestr=%I:%M %p
 datestr=%a %b %d
 
 font=SpaceMonoNerdFont
-#image=~/Pictures/Backgrounds/autumn-river-stream.jpg
-screenshots
+image=~/Pictures/Backgrounds/mluka.png
+#screenshots
 effect-blur=6x3
 #effect-vignette=0.75:0.75
 ignore-empty-password
@@ -13,33 +13,33 @@ indicator
 indicator-radius=225
 indicator-thickness=18
 
-inside-color=#000000CC
-inside-clear-color=#000000CC
-inside-ver-color=#000000CC
-inside-wrong-color=#000000CC
+inside-color=#00000000
+inside-clear-color=#00000000
+inside-ver-color=#00000000
+inside-wrong-color=#00000000
 
 line-uses-inside
-#line-color=#e6e6e6
-#line-clear-color=#e6e6e6
-#line-ver-color=#e6e6e6
-#line-wrong-color=#e6e6e6
+line-color=#ffffff
+line-clear-color=#ffffff
+line-ver-color=#ffffff
+line-wrong-color=#ffffff
 
 text-clear=Cleared
 text-ver=...
 text-wrong=Incorrect
 
-text-color=#e6e6e6
-text-clear-color=#e6e6e6
-text-ver-color=#e6e6e6
-text-wrong-color=#e6e6e6
-text-caps-lock-color=#e6e6e6
+text-color=#ffffff
+text-clear-color=#ffffff
+text-ver-color=#ffffff
+text-wrong-color=#ffffff
+text-caps-lock-color=#ffffff
 
-ring-color=#000000CC
-ring-clear-color=#000000CC
-ring-ver-color=#000000CC
-ring-wrong-color=#000000CC
+ring-color=#00000000
+ring-clear-color=#00000000
+ring-ver-color=#00000000
+ring-wrong-color=#00000000
 
-bs-hl-color=#e6e6e6
-key-hl-color=#e6e6e6
+bs-hl-color=#ffffff
+key-hl-color=#ffffff
 
-separator-color=#e6e6e600
+separator-color=#ffffff00
