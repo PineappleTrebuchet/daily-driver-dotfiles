@@ -58,7 +58,7 @@ tooltip {
 }
 
 #power-profiles-daemon, #network, #backlight,
-#pulseaudio, #battery, #cpu, #memory, #temperature {
+#pulseaudio, #battery, #cpu, #memory, #temperature, #custom-weather {
 	margin: 0px 12px 0px 12px;
 }
 
@@ -98,7 +98,3 @@ tooltip {
   color: @red;
 }
 
-#custom-cava {
-	color: @font-color;
-	margin: 0px 8px 0px 8px;
-}

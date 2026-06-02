@@ -62,7 +62,7 @@ exec swayidle -w \
     bindsym $mod+d exec $menu
     floating_modifier $mod normal
     bindsym $mod+Shift+r reload
-    bindsym $mod+Shift+e exec wlogout -m 325
+    bindsym $mod+Shift+e exec wlogout -m 330
     bindsym $mod+m exec killall -SIGUSR1 waybar
     bindsym $mod+n exec swaync-client -t -sw
 

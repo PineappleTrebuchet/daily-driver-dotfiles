@@ -18,7 +18,8 @@
         "power-profiles-daemon",
         //"memory", 
         "network",
-        "cpu", 
+        "custom/weather",
+        // "cpu", 
         // "temperature", 
         "backlight",
         "pulseaudio",
@@ -140,12 +141,6 @@
         }, 
     },
 
-    //this cava module for some reason causes my CPU temperature to explode
-    "custom/cava": {
-        "format": "{}",
-        "exec": "~/.config/waybar/scripts/cava.sh"
-    },
-
     "idle_inhibitor": {
     "format": "{icon}",
     "format-icons": {
@@ -153,4 +148,12 @@
         "deactivated": ""
         }
     },
+    "custom/weather": {
+        "format": "{}",
+        "tooltip": true,
+        "interval": 600,
+        "exec": "$HOME/.config/waybar/scripts/weather.py",
+        "return-type": "json",
+        "on-click": "kweather"
+    }
 }
