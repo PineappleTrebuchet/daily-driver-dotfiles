@@ -22,7 +22,7 @@ tooltip {
 
 #workspaces {
 	margin: 0px 0px 0px 4px;
-	padding: 0px 0px 0px 0px;
+	padding: 0px 0px;
 }
 
 #workspaces button {
@@ -58,8 +58,13 @@ tooltip {
 }
 
 #power-profiles-daemon, #network, #backlight,
-#pulseaudio, #battery, #cpu, #memory, #temperature, #custom-weather {
+#pulseaudio, #battery, #cpu, #memory, #temperature, #custom-weather,
+#custom-audio_idle_inhibitor {
 	margin: 0px 12px 0px 12px;
+}
+
+#custom-audio_idle_inhibitor {
+	min-width: 14px;
 }
 
 #clock.date {
@@ -71,20 +76,20 @@ tooltip {
 }
 
 #tray {
-	margin: 0px 6px 0px 6px;
+	margin: 0px 6px;
 }
 
 #idle_inhibitor {
 	min-width: 25px;
-	padding: 0px 7px 0px 7px;
+	padding: 0px 7px;
 }
 
 #scratchpad {
-  padding: 0px 3px 0px 3px;
+  padding: 0px 3px;
 }
 
 #window {
-  padding: 0px 4px 0px 4px;
+  padding: 0px 4px;
 }
 
 #power-profiles-daemon.performance {

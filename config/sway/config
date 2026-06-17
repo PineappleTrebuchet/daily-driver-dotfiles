@@ -39,7 +39,7 @@ exec swayidle -w \
     }
 
     input type:pointer {
-        scroll_factor 1.2
+        #scroll_factor 1.2
     }
 
     input type:keyboard {
@@ -196,7 +196,8 @@ focus_follows_mouse no
 title_align center
 exec sh -c "$HOME/.config/swaync/swaync.sh"
 seat seat0 xcursor_theme phinger-cursors-dark 24
-exec_always autotiling
+exec autotiling
+exec sway-audio-idle-inhibit
 exec --no-startup-id /usr/bin/gnome-keyring-daemon --start
 exec --no-startup-id /usr/lib/xdg-desktop-portal -r
 font pango:"Inter Regular" 10

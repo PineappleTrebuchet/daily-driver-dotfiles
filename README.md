@@ -7,6 +7,7 @@ If you want to use these, remember to edit the wallpaper paths in wpaperd, swayl
 - alacritty
 - fuzzel
 - GTK 3.0 and 4.0
+- sway-audio-idle-inhibit
 - swaylock-effects
 - swaync
 - swaywm + its deps
@@ -14,6 +15,7 @@ If you want to use these, remember to edit the wallpaper paths in wpaperd, swayl
 - wlogout
 - zsh w/ oh-my-zsh
 ### Optional Deps
+- an autotiling script
 - btop
 - cava
 - htop

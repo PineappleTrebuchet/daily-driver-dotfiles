@@ -81,6 +81,7 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 export EDITOR='nvim'
 export QT_QPA_PLATFORMTHEME='gtk3'
+export LFS=/mnt/lfs
 
 # Compilation flags
 # export ARCHFLAGS="-arch $(uname -m)"
