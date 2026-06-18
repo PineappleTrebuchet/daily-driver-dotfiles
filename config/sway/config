@@ -174,13 +174,13 @@ bindsym $mod+r mode "resize"
 
 # Colors and Aesthetic:
 #
-client.focused          #0099ff #2d5f86 #ffffff #0099ff #0099ff
-client.focused_inactive #454545 #353535 #ffffff #262626 #262626
-client.unfocused        #262626 #1a1a1a #ffffff #262626 #262626
+client.focused          #0099ff #005c99 #ffffff #0099ff #0099ff
+client.focused_inactive #494949 #3c3c3c #ffffff #272727 #272727
+client.unfocused        #272727 #1f1f1f #ffffff #272727 #272727
 client.urgent           #ff0000 #990000 #ffffff #ff0000 #ff0000
 
-default_border pixel 2
-default_floating_border pixel 2
+default_border pixel 1
+default_floating_border pixel 1
 gaps inner 4
 
 # Waybar:

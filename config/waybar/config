@@ -164,6 +164,7 @@
 		"exec": "sway-audio-idle-inhibit --dry-print-both-waybar",
 		"exec-if": "which sway-audio-idle-inhibit",
 		"return-type": "json",
+		"tooltip": false,
 		"format-icons": {
 			"output": "",
 			"input": "",
