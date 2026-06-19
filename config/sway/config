@@ -174,7 +174,7 @@ bindsym $mod+r mode "resize"
 
 # Colors and Aesthetic:
 #
-client.focused          #0099ff #005c99 #ffffff #0099ff #0099ff
+client.focused          #0099ff #0f598a #ffffff #0099ff #0099ff
 client.focused_inactive #494949 #3c3c3c #ffffff #272727 #272727
 client.unfocused        #272727 #1f1f1f #ffffff #272727 #272727
 client.urgent           #ff0000 #990000 #ffffff #ff0000 #ff0000
