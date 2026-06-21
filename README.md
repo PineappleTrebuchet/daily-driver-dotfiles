@@ -29,6 +29,9 @@ If you want to use these, remember to edit the wallpaper paths in wpaperd, swayl
 - Qogir GTK theme + icons
 - Configured waybar, sway config, etc.
 
+## Screenshot
+![Image of my desktop](./image.png)
+
 ## See also
 [Wallpaper link](https://wallpaper-a-day.com/2016/06/24/) (remember to click on "1440p version")
 
