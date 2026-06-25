@@ -6,9 +6,12 @@
     viAlias = true;
     vimAlias = true;
     plugins = with pkgs.vimPlugins; [
-      dracula-nvim
       comment-nvim
 			transparent-nvim
+      tokyonight-nvim
+      nvim-colorizer-lua
+      lualine-nvim
+      nvim-web-devicons
     ];
 
     extraConfig = ''
@@ -23,9 +26,12 @@
       set autoindent
 			set ignorecase
 			set smartcase
+			set cmdheight=0
       syntax on
       set clipboard=unnamedplus
-      colorscheme dracula
-    '';
+      colorscheme tokyonight
+			lua require('colorizer').setup()
+      lua require('lualine').setup() 
+			'';
   };
 }

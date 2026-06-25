@@ -6,10 +6,12 @@
 		package = pkgs.vscodium;
 		profiles.default.extensions = with pkgs.vscode-extensions; [
 			vscodevim.vim
-      dracula-theme.theme-dracula
 			oracle.oracle-java
 			ms-python.python
 			ms-vscode.cpptools
+			jnoortheen.nix-ide
+      catppuccin.catppuccin-vsc
+			catppuccin.catppuccin-vsc-icons
 		];
 	};
 }

@@ -10,6 +10,9 @@
 		wl-clipboard
 		autotiling
 		sway-audio-idle-inhibit
+		grim
+		slurp
+		libnotify
 	];
 
 	# programs.swaylock.enable = false;

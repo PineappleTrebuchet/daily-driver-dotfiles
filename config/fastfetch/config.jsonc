@@ -1,5 +1,8 @@
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+	"logo": {
+		"source": "NixOS2"
+	},
   "modules": [
     "title",
     "os",
@@ -13,6 +16,7 @@
     "wmtheme",
     "theme",
     "terminal",
+    "terminalfont",
     "cpu",
     "gpu",
     "memory",

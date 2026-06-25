@@ -1,5 +1,5 @@
 {
-	description = "Personal KDE configuration";
+	description = "Personal configuration for desktop use";
 
 	inputs = {
 		nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
