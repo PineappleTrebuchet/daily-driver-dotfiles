@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # This script is intended to let me toggle my power profiles with
 # my F8 ("Mode") key. 
 current=$(powerprofilesctl get)

@@ -3,7 +3,6 @@
 {
 	environment.systemPackages = with pkgs; [
     killall
-		python3
 		home-manager
 		openjdk
 		ntfs3g # NTFS support
@@ -12,6 +11,10 @@
 		unzip
 		wget
 		feh
+
+		(python3.withPackages (python-pkgs: with python-pkgs; [
+			requests
+		]))
 	];
 
 	services.gvfs.enable = true;

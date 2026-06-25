@@ -19,6 +19,9 @@
 		options = "--delete-older-than 30d";
 	};
 
+	# Someone tell me why the f#ck this isn't on by default
+	services.envfs.enable = true;
+
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;

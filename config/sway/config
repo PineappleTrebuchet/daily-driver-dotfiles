@@ -194,7 +194,8 @@ bar {
 xwayland enable
 focus_follows_mouse no
 title_align center
-exec sh -c "$HOME/.config/swaync/swaync.sh"
+# exec sh -c "$HOME/.config/swaync/swaync.sh"
+exec swaync
 seat seat0 xcursor_theme phinger-cursors-dark 24
 exec autotiling
 exec sway-audio-idle-inhibit
