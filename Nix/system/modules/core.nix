@@ -2,6 +2,7 @@
 
 {
 	environment.systemPackages = with pkgs; [
+		alacritty
     killall
 		home-manager
 		openjdk
@@ -11,6 +12,7 @@
 		unzip
 		wget
 		feh
+		rustc
 
 		(python3.withPackages (python-pkgs: with python-pkgs; [
 			requests

@@ -163,9 +163,9 @@
   # Greetd + TUIGreet
   services.greetd = {
   enable = true;
-  settings = {                                                 
+  settings = {
     default_session = {
-      command = "${pkgs.tuigreet}/bin/tuigreet --time --cmd ${pkgs.writeShellScript "start-sway" ''
+      command = "${pkgs.tuigreet}/bin/tuigreet --time -r --cmd ${pkgs.writeShellScript "start-sway" ''
         export XDG_CURRENT_DESKTOP=sway
 				export XDG_SESSION_TYPE=wayland
         exec ${pkgs.sway}/bin/sway "$@"

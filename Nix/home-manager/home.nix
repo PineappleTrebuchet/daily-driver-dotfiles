@@ -1,8 +1,7 @@
-{ config, pkgs, lib, ... }: {
+{ pkgs, ... }: {
 	imports = [
 		./zsh.nix
-		./vscodium.nix
-		./nvim.nix
+		./nixvim/main.nix
 	];
 
 	nixpkgs.config.allowUnfree = true;
@@ -11,6 +10,10 @@
 		username = "cocotreb";
 		homeDirectory = "/home/cocotreb";
 		stateVersion = "26.11";
+
+		packages = with pkgs; [
+			gnome-weather
+		];
 
 		pointerCursor = {
 			name = "phinger-cursors-dark";

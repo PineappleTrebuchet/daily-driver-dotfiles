@@ -8,9 +8,10 @@
 		fastfetch
 		fzf
 		yazi
+		vim
 		git
-		neovim
 		nvtopPackages.intel
 		yt-dlp
+		wine
 	];
 }
