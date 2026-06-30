@@ -3,10 +3,6 @@
 	programs.nixvim = {
 		plugins.lsp = {
 			enable = true;
-			# TODO: figure out why the capabilities aren't being loaded
-			capabilities = ''
-				capabilities = require('cmp_nvim_lsp').default_capabilities()
-			'';
 			servers = {
 				arduino_language_server.enable = true;
 				lua_ls.enable = true;
@@ -33,7 +29,9 @@
 			treesitter.enable = true;
 			diffview.enable = true;
 			which-key.enable = true;
+			yazi.enable = true;
 
+			# Cmp
 			cmp_luasnip.enable = true;
 			cmp.enable = true;
 			cmp-buffer.enable = true;
@@ -63,7 +61,36 @@
 					['<Esc>'] = cmp.mapping.abort(),
 					['<CR>'] = cmp.mapping.confirm({ select = true }),
 				}),
+
+				window = {
+						-- completion = cmp.config.window.bordered(),
+						-- documentation = cmp.config.window.bordered(),
+				},
+
+				sources = cmp.config.sources({
+						{ name = 'nvim_lsp' },
+						{ name = 'luasnip' },
+				}, {
+						{ name = 'buffer' },
+						{ name = 'path' },
+				}),
 			})
+
+			local capabilities = require('cmp_nvim_lsp').default_capabilities()
+			local servers = {
+				'clangd',
+				'basedpyright',
+				'nil_ls',
+				'lua_ls',
+				'arduino_language_server',
+				'jdtls',
+			}
+
+			for _, server in ipairs(servers) do
+				vim.lsp.config(server, {
+					capabilities = capabilities,
+				})
+			end
 		'';
 
 		# BUG: this plugin breaks because it cannot find cmp

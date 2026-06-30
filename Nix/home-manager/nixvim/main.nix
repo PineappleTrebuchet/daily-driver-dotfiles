@@ -8,6 +8,7 @@
 	home.packages = with pkgs; [
 		fd
 		cargo
+		luaPackages.tree-sitter-cli
 	];
 
   programs.nixvim = {

@@ -6,39 +6,44 @@
 		{
 			mode = "n";
 			action = "<cmd>Telescope live_grep<CR>";
-			key = "<leader>fw";
+			key = "<leader>tl";
 		}
 		{
 			mode = "n";
 			action = "<cmd>Telescope find_files<CR>";
-			key = "<leader>ff";
+			key = "<leader>tf";
 		}
 		{
 			mode = "n";
 			action = "<cmd>Telescope git_commits<CR>";
-			key = "<leader>fg";
+			key = "<leader>tg";
 		}
 		{
 			mode = "n";
 			action = "<cmd>Telescope oldfiles<CR>";
-			key = "<leader>fh";
+			key = "<leader>to";
 		}
 		{
 			mode = "n";
 			action = "<cmd>Telescope colorscheme<CR>";
-			key = "<leader>ch";
+			key = "<leader>tc";
 		}
 		{
 			mode = "n";
 			action = "<cmd>Telescope man_pages<CR>";
-			key = "<leader>fm";
+			key = "<leader>tm";
 		}
 		# INFO: other keybinds
     {
-			key = "<Esc>";
-			action = "<cmd>nohlsearch<CR>";
 			mode = "n";
+			action = "<cmd>nohlsearch<CR>";
+			key = "<Esc>";
     }
+		{
+			mode = "n";
+			action = "<cmd>Yazi<CR>";
+			key = "<leader>y";
+		}
 	];
 
 		# INFO: cmp keybinds, which aren't working
