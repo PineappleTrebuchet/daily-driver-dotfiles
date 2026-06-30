@@ -30,6 +30,15 @@
 			which-key.enable = true;
 			cmp-nvim-ultisnips.enable = true;
 			cmp.enable = true;
+			cmp-buffer.enable = true;
+			cmp-path.enable = true;
     };
+
+		# BUG: loading this plugin fails because of missing CMP dependency (?)
+
+		# plugins.lazy = {
+		# 		enable = true;
+		# 		plugins = [{ name = "yuukiflow/Arduino-Nvim"; }];
+		# };
 	};
 }

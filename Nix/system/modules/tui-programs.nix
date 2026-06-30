@@ -13,5 +13,6 @@
 		nvtopPackages.intel
 		yt-dlp
 		wine
+		arduino-cli
 	];
 }

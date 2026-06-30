@@ -2,6 +2,7 @@
 {
 	programs.nixvim.globals.mapleader = " ";
 	programs.nixvim.keymaps = [
+		# INFO: Telescope keybinds
 		{
 			mode = "n";
 			action = "<cmd>Telescope live_grep<CR>";
@@ -32,5 +33,11 @@
 			action = "<cmd>Telescope man_pages<CR>";
 			key = "<leader>fm";
 		}
+		# INFO: other keybinds
+    {
+			key = "<Esc>";
+			action = "<cmd>nohlsearch<CR>";
+			mode = "n";
+    }
 	];
 }
