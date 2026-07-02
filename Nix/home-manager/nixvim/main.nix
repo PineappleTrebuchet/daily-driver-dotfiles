@@ -1,19 +1,16 @@
-{ pkgs, ... }:
+{ ... }:
 {
 	imports = [
 		./modules/bundle.nix
 	];
 
-	# plugin dependencies
-	home.packages = with pkgs; [
-		fd
-		cargo
-		luaPackages.tree-sitter-cli
-	];
-
   programs.nixvim = {
     enable = true;
-    colorschemes.tokyonight.enable = true;
+		colorschemes.onedark = {
+			enable = true;
+			settings.style = "deep";
+			settings.cmp_itemkind_reverse = false;
+		};
     viAlias = true;
     vimAlias = true;
 
@@ -32,10 +29,10 @@
 			expandtab = false;
 			signcolumn = "yes";
 			statuscolumn = "%s%{v:relnum?v:relnum:v:lnum}%= ";
+			termguicolors = true;
 		};
 
     extraConfigVim = ''
-			colorscheme tokyonight-night
 			set undofile
 			set undodir=$HOME/.cache/nvim/undo//
 			set clipboard=unnamedplus

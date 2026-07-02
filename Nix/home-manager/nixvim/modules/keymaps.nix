@@ -5,33 +5,38 @@
 		# INFO: Telescope keybinds
 		{
 			mode = "n";
+			action = "<cmd>Telescope<CR>";
+			key = "<leader>ft";
+		}
+		{
+			mode = "n";
 			action = "<cmd>Telescope live_grep<CR>";
-			key = "<leader>tl";
+			key = "<leader>fl";
 		}
 		{
 			mode = "n";
 			action = "<cmd>Telescope find_files<CR>";
-			key = "<leader>tf";
+			key = "<leader>ff";
 		}
 		{
 			mode = "n";
 			action = "<cmd>Telescope git_commits<CR>";
-			key = "<leader>tg";
+			key = "<leader>fg";
 		}
 		{
 			mode = "n";
 			action = "<cmd>Telescope oldfiles<CR>";
-			key = "<leader>to";
+			key = "<leader>fo";
 		}
 		{
 			mode = "n";
 			action = "<cmd>Telescope colorscheme<CR>";
-			key = "<leader>tc";
+			key = "<leader>fc";
 		}
 		{
 			mode = "n";
 			action = "<cmd>Telescope man_pages<CR>";
-			key = "<leader>tm";
+			key = "<leader>fm";
 		}
 		# INFO: other keybinds
     {
@@ -43,6 +48,16 @@
 			mode = "n";
 			action = "<cmd>Yazi<CR>";
 			key = "<leader>y";
+		}
+		{
+			mode = "n";
+			action = "<cmd>Neotree<CR>";
+			key = "<leader>t";
+		}
+		{
+			mode = "t";
+			action = "<C-\\><C-n>";
+			key = "<Esc>";
 		}
 	];
 

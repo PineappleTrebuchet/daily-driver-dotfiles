@@ -217,7 +217,8 @@ for_window [title="Qalculate!"] floating enable
 for_window [title="zoom"] floating enable
 for_window [title="Choose a profile"] floating enable
 for_window [title="Library"] floating enable
-for_window [app_id=".exe"] floating enable
+for_window [class=".*\.exe"] floating enable
+for_window [app_id=".*\.exe"] floating enable
 
 
 # END

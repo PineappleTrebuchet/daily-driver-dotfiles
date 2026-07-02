@@ -16,5 +16,6 @@
 		networkmanagerapplet
 		qalculate-gtk
 		pcsx2
+		gimp
 	];
 }

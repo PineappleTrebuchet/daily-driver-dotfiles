@@ -10,5 +10,6 @@
 	environment.systemPackages = with pkgs; [
 		font-awesome
 		notonoto
+		noto-fonts
 	];
 }

@@ -24,6 +24,7 @@
 			size = 24;
 		};
 	};
+
 		gtk = {
 			enable = true;
 			theme = {
