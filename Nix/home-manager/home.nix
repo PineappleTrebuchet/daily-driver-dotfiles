@@ -25,23 +25,23 @@
 		};
 	};
 
-		gtk = {
-			enable = true;
-			theme = {
-				name = "Qogir-Dark";
-				package = pkgs.qogir-theme;
-			};
-			iconTheme = {
-				name = "Qogir-Dark";
-				package = pkgs.qogir-icon-theme;
-			};
+	gtk = {
+		enable = true;
+		theme = {
+			name = "Qogir-Dark";
+			package = pkgs.qogir-theme;
 		};
+		iconTheme = {
+			name = "Qogir-Dark";
+			package = pkgs.qogir-icon-theme;
+		};
+	};
 
-		# User directories
-		xdg.userDirs = {
-			enable = true;
-			createDirectories = true;
-		};		
+	# User directories
+	xdg.userDirs = {
+		enable = true;
+		createDirectories = true;
+	};		
 
   programs.git = {
     enable = true;

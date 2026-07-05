@@ -198,7 +198,7 @@ title_align center
 exec swaync
 seat seat0 xcursor_theme phinger-cursors-dark 24
 exec autotiling
-exec sway-audio-idle-inhibit
+# exec sway-audio-idle-inhibit
 exec --no-startup-id /usr/bin/gnome-keyring-daemon --start
 # exec --no-startup-id /usr/lib/xdg-desktop-portal -r
 font pango:"Inter Regular" 10
@@ -206,14 +206,13 @@ output * scale 1
 # Force my laptop's built-in monitor be the default
 output eDP-1 position 0 0
 workspace 1 output eDP-1
-# for_window [app_id="^.*"] inhibit_idle fullscreen
+for_window [app_id="^.*"] inhibit_idle fullscreen
 
 # Force floating mode on specific windows:
 # 
 for_window [title="File Operation Progress"] floating enable
 for_window [title="Confirm to replace files"] floating enable
 for_window [title="Rename "] floating enable
-for_window [title="nwg-look"] floating enable
 for_window [title="Qalculate!"] floating enable
 for_window [title="zoom"] floating enable
 for_window [title="Choose a profile"] floating enable
