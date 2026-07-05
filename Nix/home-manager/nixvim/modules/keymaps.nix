@@ -59,6 +59,11 @@
 			action = "<C-\\><C-n>";
 			key = "<Esc>";
 		}
+		{
+			mode = "n";
+			action = "<cmd>DiffviewOpen<CR>";
+			key = "<leader>d";
+		}
 	];
 
 		# INFO: cmp keybinds, which aren't working

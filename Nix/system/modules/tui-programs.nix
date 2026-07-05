@@ -16,5 +16,6 @@
 		arduino-cli
 		pipes
 		tty-solitaire
+		bat
 	];
 }

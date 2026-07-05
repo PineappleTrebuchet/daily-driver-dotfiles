@@ -6,7 +6,6 @@
 		nerd-fonts.geist-mono
 		nerd-fonts.space-mono
 		font-awesome
-		notonoto
 		noto-fonts
 	];
 

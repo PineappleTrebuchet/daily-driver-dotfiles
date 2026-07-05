@@ -5,7 +5,7 @@
 @define-color red #ff0000;
 
 * {
-  font-family: "Inter Regular";
+  font-family: "Inter Regular", "Font Awesome";
   font-size: 18px;
 }
 

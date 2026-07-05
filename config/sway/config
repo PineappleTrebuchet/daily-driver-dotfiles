@@ -206,6 +206,7 @@ output * scale 1
 # Force my laptop's built-in monitor be the default
 output eDP-1 position 0 0
 workspace 1 output eDP-1
+# for_window [app_id="^.*"] inhibit_idle fullscreen
 
 # Force floating mode on specific windows:
 # 

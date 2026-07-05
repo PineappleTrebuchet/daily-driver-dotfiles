@@ -5,7 +5,7 @@ opacity = 0.88
 dimensions = { columns = 95, lines = 28 }
 
 [font]
-normal = {family = "GeistMonoNerdFont"}
+normal = {family = "HackNerdFont"}
 size = 14
 
 # XTerm's default colors

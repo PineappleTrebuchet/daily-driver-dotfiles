@@ -3,7 +3,7 @@
     "position": "top",
     "height": 28,
     "modules-left": [
-        "idle_inhibitor",
+        // "idle_inhibitor",
         "sway/workspaces",
         "niri/workspaces",
         "tray",

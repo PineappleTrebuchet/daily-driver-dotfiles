@@ -133,7 +133,7 @@
     isNormalUser = true;
 		shell = pkgs.zsh;
     description = "cocotreb";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "render" "video" ];
     packages = with pkgs; [
     #  thunderbird
     ];
@@ -193,6 +193,15 @@
 
 	# Power profiles
 	services.power-profiles-daemon.enable = true;
+
+
+	# allow btop to see GPU
+	security.wrappers.btop = {
+		owner = "root";
+		group = "root";
+		capabilities = "cap_perfmon,cap_dac_read_search,cap_sys_ptrace=+ep";
+		source = "${pkgs.btop}/bin/btop";
+	};
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.

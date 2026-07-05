@@ -28,7 +28,7 @@
 			cursorline = true;
 			expandtab = false;
 			signcolumn = "yes";
-			statuscolumn = "%s%{v:relnum?v:relnum:v:lnum}%= ";
+			# statuscolumn = "%s%{v:relnum?v:relnum:v:lnum}%= ";
 			termguicolors = true;
 		};
 

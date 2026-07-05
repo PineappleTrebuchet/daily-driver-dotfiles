@@ -23,27 +23,32 @@
     plugins = {
 			# Look & Feel
     	web-devicons.enable = true;
-			comment.enable = true;
 			gitsigns.enable = true;
 			todo-comments.enable = true;
 			colorizer.enable = true;
 			render-markdown.enable = true;
-			nvim-autopairs.enable = true;
+			navic = { # FIXME: navic doesn't work
+				enable = true;
+				settings.lsp.auto_attach = true;
+			};
     	bufferline = {
 				enable = true;
 				settings.options.separator_style = "slant";
-				};
+			};
     	lualine = {
 				enable = true;
 				settings = {
-					sections.lualine_c = [ "filename" "searchcount" ];
-					sections.lualine_x = [ "lsp_status" "filetype" ];
+					sections.lualine_b = [ "filetype" ];
+					sections.lualine_c = [ "branch" "diff" "diagnostics" "searchcount" ];
+					sections.lualine_x = [ "lsp_status" ];
 					options.component_separators = { left = ""; right = ""; };
 					options.section_separators = { left = ""; right = ""; };
 				};
 			};
 
 			# Tools
+			nvim-autopairs.enable = true;
+			comment.enable = true;
 			telescope.enable = true;
 			treesitter.enable = true;
 			diffview.enable = true;
@@ -55,13 +60,5 @@
 				settings.window.width = 30;
 			};
     };
-
-
-		# BUG: this plugin breaks because it cannot find cmp
-		# plugins.lazy = {
-		# 		enable = true;
-		# 		plugins = [{ name = "yuukiflow/Arduino-Nvim"; }];
-		# };
 	};
-
 }
