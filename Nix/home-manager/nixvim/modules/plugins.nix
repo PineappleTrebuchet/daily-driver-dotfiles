@@ -20,14 +20,14 @@
 			};
 		};
 
+		# look & feel
     plugins = {
-			# Look & Feel
     	web-devicons.enable = true;
 			gitsigns.enable = true;
 			todo-comments.enable = true;
 			colorizer.enable = true;
 			render-markdown.enable = true;
-			navic = { # FIXME: navic doesn't work
+			navic = {
 				enable = true;
 				settings.lsp.auto_attach = true;
 			};
@@ -45,8 +45,10 @@
 					options.section_separators = { left = ""; right = ""; };
 				};
 			};
+		};
 
-			# Tools
+		# tools
+		plugins = {
 			nvim-autopairs.enable = true;
 			comment.enable = true;
 			telescope.enable = true;
@@ -54,11 +56,15 @@
 			diffview.enable = true;
 			which-key.enable = true;
 			yazi.enable = true;
+			toggleterm.enable = true;
 			neo-tree = {
 				enable = true;
 				settings.close_if_last_window = true;
 				settings.window.width = 30;
 			};
     };
+		extraConfigLua = ''
+			vim.o.winbar = "%{%v:lua.require'nvim-navic'.get_location()%}"
+		'';
 	};
 }
