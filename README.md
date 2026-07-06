@@ -3,8 +3,6 @@ Very simplistic dotfiles for NixOS that roughly (and I really mean _roughly_) mi
 
 If you want to use these, remember to edit the wallpaper paths in wpaperd, swaylock, and the `swaybg -i` line in the main config.
 
-**NOTE:** the [Inter](https://fonts.google.com/specimen/Inter) font will have to be imperatively installed in `.local/share/fonts/` since I couldn't find it with Nix's package manager :P
-
 ## Screenshot
 ![Image of my desktop](./image.png)
 

@@ -5,10 +5,9 @@
 @define-color red #ff0000;
 
 * {
-  font-family: "Inter Regular", "Font Awesome";
+  font-family: "Adwaita Sans", "Font Awesome";
   font-size: 18px;
 }
-
 
 window#waybar { 
   background-color: @black; 
@@ -102,4 +101,5 @@ tooltip {
 #battery.critical:not(.charging), #network.disconnected, #pulseaudio.muted, #temperature.critical {
   color: @red;
 }
+
 

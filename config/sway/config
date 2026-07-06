@@ -201,7 +201,7 @@ exec autotiling
 # exec sway-audio-idle-inhibit
 exec --no-startup-id /usr/bin/gnome-keyring-daemon --start
 # exec --no-startup-id /usr/lib/xdg-desktop-portal -r
-font pango:"Inter Regular" 10
+font pango:"Adwaita Sans" 10
 output * scale 1
 # Force my laptop's built-in monitor be the default
 output eDP-1 position 0 0

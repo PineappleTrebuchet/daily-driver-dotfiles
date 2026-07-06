@@ -14,7 +14,7 @@
 }
 
 * {
-    font-family: "Inter Regular";
+    font-family: "Adwaita Sans";
     font-weight: normal;
 	font-size: 17px;
 	color: @text-color;

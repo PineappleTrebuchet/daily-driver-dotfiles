@@ -398,7 +398,7 @@
                         "id": "w1g35gly94m",
                         "name": "College Friends",
                         "color": 15844367,
-                        "collapsed": true,
+                        "collapsed": false,
                         "channels": [
                             "1485446208947228703",
                             "1478440359338971391",
@@ -732,7 +732,7 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1782790410592
+        "settingsSyncVersion": 1783312664198
     },
     "uiElements": {
         "chatBarButtons": {},
