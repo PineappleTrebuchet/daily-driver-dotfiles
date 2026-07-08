@@ -6,7 +6,6 @@ cp ~/.config/alacritty config/ -r
 cp ~/.config/btop config/ -r
 cp ~/.config/fuzzel config/ -r
 cp ~/.config/fastfetch/ config/ -r
-cp ~/.config/htop config/ -r
 cp ~/.config/niri config/ -r
 cp ~/.config/sway config/ -r
 cp ~/.config/swaylock config/ -r
