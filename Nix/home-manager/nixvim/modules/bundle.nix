@@ -2,6 +2,6 @@
 	imports = [
 		./keymaps.nix
 		./plugins.nix
-		./cmp.nix
+		./blink-cmp.nix
 	];
 }

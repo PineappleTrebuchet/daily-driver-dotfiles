@@ -2,6 +2,63 @@
 {
 	programs.nixvim.globals.mapleader = " ";
 	programs.nixvim.keymaps = [
+
+		# INFO: general keybind customization
+    { # cancel highlight search
+			mode = "n";
+			action = "<cmd>nohlsearch<CR>";
+			key = "<Esc>";
+    }
+		{ # enter normal mode from terminal mode
+			mode = "t";
+			action = "<C-\\><C-n>";
+			key = "<Esc>";
+		}
+
+		# INFO: split resize keybinds
+		{
+			mode = "n";
+			action = "<cmd>vertical resize +1<CR>";
+			key = "<C-h>";
+		}
+		{
+			mode = "n";
+			action = "<cmd>resize +1<CR>";
+			key = "<C-j>";
+		}
+		{
+			mode = "n";
+			action = "<cmd>resize -1<CR>";
+			key = "<C-k>";
+		}
+		{
+			mode = "n";
+			action = "<cmd>vertical resize -1<CR>";
+			key = "<C-l>";
+		}
+
+		# INFO: custom leader keybinds
+		{
+			mode = "n";
+			action = "<cmd>Yazi<CR>";
+			key = "<leader>y";
+		}
+		{
+			mode = "n";
+			action = "<cmd>Neotree<CR>";
+			key = "<leader>n";
+		}
+		{
+			mode = "n";
+			action = "<cmd>ToggleTerm<CR>";
+			key = "<leader>t";
+		}
+		{
+			mode = "n";
+			action = "<cmd>DiffviewOpen<CR>";
+			key = "<leader>d";
+		}
+
 		# INFO: Telescope keybinds
 		{
 			mode = "n";
@@ -37,38 +94,6 @@
 			mode = "n";
 			action = "<cmd>Telescope man_pages<CR>";
 			key = "<leader>fm";
-		}
-
-		# INFO: other keybinds
-    {
-			mode = "n";
-			action = "<cmd>nohlsearch<CR>";
-			key = "<Esc>";
-    }
-		{
-			mode = "n";
-			action = "<cmd>Yazi<CR>";
-			key = "<leader>y";
-		}
-		{
-			mode = "n";
-			action = "<cmd>Neotree<CR>";
-			key = "<leader>n";
-		}
-		{
-			mode = "n";
-			action = "<cmd>ToggleTerm<CR>";
-			key = "<leader>t";
-		}
-		{
-			mode = "t";
-			action = "<C-\\><C-n>";
-			key = "<Esc>";
-		}
-		{
-			mode = "n";
-			action = "<cmd>DiffviewOpen<CR>";
-			key = "<leader>d";
 		}
 	];
 }

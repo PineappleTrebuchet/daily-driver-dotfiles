@@ -28,7 +28,7 @@
     shellAliases = {
       pwdcp = "pwd | wl-copy && echo 'current directory copied'";
       homelabssh = "ssh cocotreb@100.64.237.9";
-      wttr = "curl wttr.in";
+      wttr = "curl wttr.in | less";
       listgens = "sudo nix-env --list-generations --profile /nix/var/nix/profiles/system";
       switchgen = "sudo nix-env --switch-generation --profile /nix/var/nix/profiles/system";
     };

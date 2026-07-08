@@ -13,11 +13,7 @@
 		wget
 		feh
 		rustc
-
-		# intel stuff
-		intel-gpu-tools
-		intel-media-driver
-		libva
+		glib # required to launch gtk apps with gapplication
 
 		(python3.withPackages (python-pkgs: with python-pkgs; [
 			requests

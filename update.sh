@@ -4,7 +4,6 @@ rm config/* -r
 
 cp ~/.config/alacritty config/ -r
 cp ~/.config/btop config/ -r
-cp ~/.config/cava config/ -r
 cp ~/.config/fuzzel config/ -r
 cp ~/.config/fastfetch/ config/ -r
 cp ~/.config/htop config/ -r

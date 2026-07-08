@@ -17,5 +17,6 @@
 		pipes
 		tty-solitaire
 		bat
+		kittysay
 	];
 }

@@ -10,6 +10,7 @@
       ./hardware-configuration.nix
 			./modules/bundle.nix
 			./firewall.nix
+			./printing.nix
 		];
 
 	# Delete packages older than 30d
@@ -79,9 +80,6 @@
   # You can disable this if you're only using the Wayland session.
   # services.xserver.enable = true;
 	programs.xwayland.enable = true;
-
-  # Enable CUPS to print documents.
-  services.printing.enable = true;
 
   # Enable sound with pipewire.
 	services.pulseaudio.enable = false;

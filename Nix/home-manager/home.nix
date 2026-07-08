@@ -35,6 +35,9 @@
 			name = "Qogir-Dark";
 			package = pkgs.qogir-icon-theme;
 		};
+		font = {
+			name = "Adwaita Sans 11";
+		};
 	};
 
 	# User directories
