@@ -1,4 +1,4 @@
-{ pkgs, ... }: {
+{ pkgs, lib, ... }: {
 	imports = [
 		./zsh.nix
 		./nixvim/main.nix
@@ -24,6 +24,28 @@
 			x11.enable = true;
 			size = 24;
 		};
+
+		# explicitly pin fuzzel menu entries
+		file.".cache/fuzzel".text = lib.concatStringsSep "\n" [
+			"waterfox.desktop|20000"
+			"vesktop.desktop|19000"
+			"thunar.desktop|18000"
+			"steam.desktop|17000"
+			"org.gnome.Weather.desktop|16000"
+			"startcenter.desktop|15000"
+			"spotify.desktop|14000"
+			"org.pulseaudio.pavucontrol.desktop|13000"
+			"nm-connection-editor.desktop|12000"
+			"blueman-manager.desktop|11000"
+			"org.kde.kdeconnect.app.desktop|10000"
+			"PCSX2.desktop|9000"
+			"gimp.desktop|8000"
+			"qalculate-gtk.desktop|7000"
+			"librewolf.desktop|6000"
+			"com.obsproject.Studio.desktop|5000"
+			"ipscan.desktop|4000"
+			""
+		];
 	};
 
 	gtk = {

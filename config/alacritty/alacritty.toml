@@ -6,7 +6,7 @@ dimensions = { columns = 82, lines = 28 }
 
 [font]
 normal = {family = "HackNerdFont"}
-size = 15
+size = 14
 
 # XTerm's default colors
 

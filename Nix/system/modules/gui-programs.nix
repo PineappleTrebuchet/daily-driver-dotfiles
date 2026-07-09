@@ -23,7 +23,8 @@
 			extraPolicies = {
 					DisableAppUpdate = true;
 					DisableTelemetry = true;
-					GenerativeAI = false;
+					OfferToSaveLogins = false;
+					PasswordManagerEnabled = false;
 			};
 		})
 	];

@@ -11,6 +11,7 @@
 			settings.style = "deep";
 			settings.cmp_itemkind_reverse = false;
 		};
+		colorschemes.vague.enable = true;
     viAlias = true;
     vimAlias = true;
 
@@ -34,6 +35,7 @@
 		};
 
     extraConfigVim = ''
+			colorscheme onedark
 			set undofile
 			set undodir=$HOME/.cache/nvim/undo//
 			set clipboard=unnamedplus

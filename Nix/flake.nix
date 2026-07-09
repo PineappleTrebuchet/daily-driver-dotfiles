@@ -12,6 +12,7 @@
 		};
 
 		nixvim.url = "github:nix-community/nixvim";
+
 		waterfox = {
 			url = "github:realitymolder/waterfox-flake";
 			inputs.nixpkgs.follows = "nixpkgs";
