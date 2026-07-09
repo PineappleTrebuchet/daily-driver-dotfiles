@@ -9,7 +9,6 @@
 			};
 
 			completion = {
-				ghost_text.enabled = true;
 				documentation.auto_show = false;
 				accept = {
 					auto_brackets = {

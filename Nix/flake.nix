@@ -11,18 +11,20 @@
 			inputs.nixpkgs.follows = "nixpkgs";
 		};
 
-		nixvim = {
-			url = "github:nix-community/nixvim";
+		nixvim.url = "github:nix-community/nixvim";
+		waterfox = {
+			url = "github:realitymolder/waterfox-flake";
+			inputs.nixpkgs.follows = "nixpkgs";
 		};
-
 	};
 
-	outputs = {nixpkgs, home-manager, nixvim, ... }: 
+	outputs = {nixpkgs, home-manager, nixvim, ... } @ inputs: 
 	let
 		system = "x86_64-linux";
 	in {
 		nixosConfigurations.tpt14g5 = nixpkgs.lib.nixosSystem {
 			inherit system;
+			specialArgs = { inherit inputs; };
 			modules = [
 				./system/configuration.nix
 			];
@@ -31,9 +33,10 @@
 		homeConfigurations.cocotreb = home-manager.lib.homeManagerConfiguration {
 			pkgs = nixpkgs.legacyPackages.${system};
 			modules = [
-				nixvim.homeModules.nixvim
 				./home-manager/home.nix
+				nixvim.homeModules.nixvim
 			];
 		};
+
 	};
 }

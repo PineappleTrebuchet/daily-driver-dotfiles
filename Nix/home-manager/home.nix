@@ -9,14 +9,15 @@
 	home = {
 		username = "cocotreb";
 		homeDirectory = "/home/cocotreb";
-		# stateVersion = "26.11";
-		stateVersion = "26.05";
+		stateVersion = "26.11";
+		# stateVersion = "26.05";
 
 		packages = with pkgs; [
 			gnome-weather
 		];
 
 		pointerCursor = {
+			enable = true;
 			name = "phinger-cursors-dark";
 			package = pkgs.phinger-cursors;
 			gtk.enable = true;
@@ -40,7 +41,6 @@
 		};
 	};
 
-	# User directories
 	xdg.userDirs = {
 		enable = true;
 		createDirectories = true;

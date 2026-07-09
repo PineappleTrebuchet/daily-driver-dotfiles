@@ -1,10 +1,9 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 
 {
 	environment.systemPackages = with pkgs; [
 		pavucontrol
 		steam
-		floorp-bin
 		vesktop
 		spotify
 		vlc
@@ -18,5 +17,14 @@
 		pcsx2
 		gimp
 		angryipscanner
+		librewolf
+	] ++ [
+		(inputs.waterfox.packages.${pkgs.stdenv.hostPlatform.system}.default.override {
+			extraPolicies = {
+					DisableAppUpdate = true;
+					DisableTelemetry = true;
+					GenerativeAI = false;
+			};
+		})
 	];
 }
