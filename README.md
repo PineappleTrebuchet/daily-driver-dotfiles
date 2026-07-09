@@ -9,4 +9,6 @@ If you want to use these, remember to edit the wallpaper paths in wpaperd, swayl
 ## See also
 [Wallpaper link](https://wallpaper-a-day.com/2016/06/24/) (remember to click on "1440p version")
 
+[Swaylock wallpaper link](https://wallpaper-a-day.com/2025/12/11/22411/#respond)
+
 [tdelamater1's dotfiles](https://github.com/tdelamater1/dots/tree/master) (thx for the weather waybar module)

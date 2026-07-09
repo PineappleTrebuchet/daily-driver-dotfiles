@@ -25,27 +25,17 @@
 			size = 24;
 		};
 
-		# explicitly pin fuzzel menu entries
-		file.".cache/fuzzel".text = lib.concatStringsSep "\n" [
-			"waterfox.desktop|20000"
-			"vesktop.desktop|19000"
-			"thunar.desktop|18000"
-			"steam.desktop|17000"
-			"org.gnome.Weather.desktop|16000"
-			"startcenter.desktop|15000"
-			"spotify.desktop|14000"
-			"org.pulseaudio.pavucontrol.desktop|13000"
-			"nm-connection-editor.desktop|12000"
-			"blueman-manager.desktop|11000"
-			"org.kde.kdeconnect.app.desktop|10000"
-			"PCSX2.desktop|9000"
-			"gimp.desktop|8000"
-			"qalculate-gtk.desktop|7000"
-			"librewolf.desktop|6000"
-			"com.obsproject.Studio.desktop|5000"
-			"ipscan.desktop|4000"
-			""
-		];
+		# Main wallpaper
+		file."Pictures/Backgrounds/mluka.png".source = pkgs.fetchurl {
+			url = "https://i.imgur.com/83dlM5y.png";
+			hash = "sha256-TT7YIGjuBHA57aHEJ65EhhiqcjXVQbdW1nZ/1Ai/dNw=";
+		};
+		# Swaylock wallpaper
+		file."Pictures/Backgrounds/hmiku.png".source = pkgs.fetchurl {
+			url = "https://i.imgur.com/iQNsuIC.png";
+			hash = "sha256-ACldC3Hlg8jtWG3pc0D6UJF7FiWVl95bhhsrM0OVqcc=";
+		};
+
 	};
 
 	gtk = {
@@ -77,4 +67,26 @@
         defaultBranch = "main";
     };
   };
+
+	# explicitly pin fuzzel menu entries
+	home.file.".cache/fuzzel".text = lib.concatStringsSep "\n" [
+		"waterfox.desktop|20000"
+		"vesktop.desktop|19000"
+		"thunar.desktop|18000"
+		"steam.desktop|17000"
+		"org.gnome.Weather.desktop|16000"
+		"startcenter.desktop|15000"
+		"org.kde.kdeconnect.app.desktop|14000"
+		"spotify.desktop|13000"
+		"org.pulseaudio.pavucontrol.desktop|12000"
+		"nm-connection-editor.desktop|11000"
+		"blueman-manager.desktop|10000"
+		"PCSX2.desktop|9000"
+		"gimp.desktop|8000"
+		"qalculate-gtk.desktop|7000"
+		"librewolf.desktop|6000"
+		"com.obsproject.Studio.desktop|5000"
+		"ipscan.desktop|4000"
+		""
+	];
 }
