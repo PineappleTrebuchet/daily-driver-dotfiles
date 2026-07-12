@@ -15,28 +15,6 @@
 			key = "<Esc>";
 		}
 
-		# INFO: split resize keybinds
-		{
-			mode = "n";
-			action = "<cmd>vertical resize +1<CR>";
-			key = "<C-h>";
-		}
-		{
-			mode = "n";
-			action = "<cmd>resize +1<CR>";
-			key = "<C-j>";
-		}
-		{
-			mode = "n";
-			action = "<cmd>resize -1<CR>";
-			key = "<C-k>";
-		}
-		{
-			mode = "n";
-			action = "<cmd>vertical resize -1<CR>";
-			key = "<C-l>";
-		}
-
 		# INFO: custom leader keybinds
 		{
 			mode = "n";

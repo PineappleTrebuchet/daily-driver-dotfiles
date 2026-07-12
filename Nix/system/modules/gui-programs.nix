@@ -17,7 +17,6 @@
 		pcsx2
 		gimp
 		angryipscanner
-		librewolf
 	] ++ [
 		(inputs.waterfox.packages.${pkgs.stdenv.hostPlatform.system}.default.override {
 			extraPolicies = {

@@ -30,6 +30,7 @@
 			navic = {
 				enable = true;
 				settings.lsp.auto_attach = true;
+				settings.separator = "  ";
 			};
     	bufferline = {
 				enable = true;
@@ -63,6 +64,7 @@
 				settings.window.width = 30;
 			};
     };
+
 		extraConfigLua = ''
 			vim.o.winbar = "%{%v:lua.require'nvim-navic'.get_location()%}"
 		'';

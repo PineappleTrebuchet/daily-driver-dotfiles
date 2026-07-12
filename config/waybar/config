@@ -3,7 +3,6 @@
     "position": "top",
     "height": 28,
     "modules-left": [
-        // "idle_inhibitor",
         "sway/workspaces",
         "niri/workspaces",
         "tray",
@@ -25,6 +24,7 @@
         "backlight",
         "pulseaudio",
         "battery",
+        "idle_inhibitor",
     ],	
 
     "workspaces": {
@@ -151,7 +151,7 @@
     "custom/weather": {
         "format": "{}",
         "tooltip": true,
-        "interval": 600,
+        "interval": 300,
         "exec": "$HOME/.config/waybar/scripts/weather.py",
         "return-type": "json",
         "on-click": "gnome-weather"

@@ -14,6 +14,8 @@
 
 		packages = with pkgs; [
 			gnome-weather
+			librewolf
+			ungoogled-chromium
 		];
 
 		pointerCursor = {
@@ -87,6 +89,7 @@
 		"librewolf.desktop|6000"
 		"com.obsproject.Studio.desktop|5000"
 		"ipscan.desktop|4000"
+		"chromium-browser.desktop|3000"
 		""
 	];
 }
