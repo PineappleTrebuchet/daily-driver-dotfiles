@@ -18,6 +18,7 @@ cp ~/.config/waybar config/ -r
 cp ~/.config/wlogout config/ -r
 cp ~/.config/wpaperd config/ -r
 cp ~/.config/yazi config/ -r
+cp ~/.config/mimeapps.list config/
 cp ~/Nix . -r
 
 # cp ~/.zshrc zsh/ -r

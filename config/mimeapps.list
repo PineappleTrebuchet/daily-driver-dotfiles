@@ -1,0 +1,34 @@
+[Default Applications]
+x-scheme-handler/discord=vesktop.desktop
+x-scheme-handler/http=waterfox.desktop
+x-scheme-handler/https=waterfox.desktop
+x-scheme-handler/chrome=waterfox.desktop
+text/html=waterfox.desktop
+application/x-extension-htm=waterfox.desktop
+application/x-extension-html=waterfox.desktop
+application/x-extension-shtml=waterfox.desktop
+application/xhtml+xml=waterfox.desktop
+application/x-extension-xhtml=waterfox.desktop
+application/x-extension-xht=waterfox.desktop
+image/png=feh.desktop
+image/jpeg=feh.desktop
+image/gif=feh.desktop
+image/bmp=feh.desktop
+image/webp=feh.desktop
+image/tiff=feh.desktop
+image/x-portable-pixmap=feh.desktop
+image/x-portable-bitmap=feh.desktop
+image/svg+xml5=feh.desktop
+
+[Added Associations]
+image/png=gimp.desktop;
+x-scheme-handler/http=waterfox.desktop;
+x-scheme-handler/https=waterfox.desktop;
+x-scheme-handler/chrome=waterfox.desktop;
+text/html=waterfox.desktop;
+application/x-extension-htm=waterfox.desktop;
+application/x-extension-html=waterfox.desktop;
+application/x-extension-shtml=waterfox.desktop;
+application/xhtml+xml=waterfox.desktop;
+application/x-extension-xhtml=waterfox.desktop;
+application/x-extension-xht=waterfox.desktop;
