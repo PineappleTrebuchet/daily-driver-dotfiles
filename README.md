@@ -6,7 +6,7 @@ If you want to use these, remember to edit the wallpaper paths in wpaperd, swayl
 ## List of stuff that is imperatively added
 - Kicad libraries
 - PCSX2 games and saves
-- Steam compatability tools added with protonup-rs
+- Steam compatibility tools added with protonup-rs
 - Settings and profiles in Waterfox
 
 ## Screenshot
