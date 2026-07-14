@@ -60,16 +60,6 @@
 		createDirectories = true;
 	};		
 
-  programs.git = {
-    enable = true;
-    settings.user = {
-        name  = "CoconutTrebuchet";
-        email = "72771141+PineappleTrebuchet@users.noreply.github.com";
-        editor = "nvim";
-        defaultBranch = "main";
-    };
-  };
-
 	# explicitly pin fuzzel menu entries
 	home.file.".cache/fuzzel".text = lib.concatStringsSep "\n" [
 		"waterfox.desktop|20000"
