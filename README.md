@@ -3,6 +3,12 @@ Very simplistic dotfiles for NixOS that roughly (and I really mean _roughly_) mi
 
 If you want to use these, remember to edit the wallpaper paths in wpaperd, swaylock, and the `swaybg -i` line in the main config.
 
+## List of stuff that is imperatively added
+- Kicad libraries
+- PCSX2 games and saves
+- Steam compatability tools added with protonup-rs
+- Settings and profiles in Waterfox
+
 ## Screenshot
 ![Image of my desktop](./image.png)
 

@@ -18,5 +18,7 @@
 		tty-solitaire
 		bat
 		kittysay
+		tokei
+		protonup-rs
 	];
 }

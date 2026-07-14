@@ -28,12 +28,12 @@
 		};
 
 		# Main wallpaper
-		file."Pictures/Backgrounds/mluka.png".source = pkgs.fetchurl {
+		file."Pictures/Wallpapers/mluka.png".source = pkgs.fetchurl {
 			url = "https://i.imgur.com/83dlM5y.png";
 			hash = "sha256-TT7YIGjuBHA57aHEJ65EhhiqcjXVQbdW1nZ/1Ai/dNw=";
 		};
 		# Swaylock wallpaper
-		file."Pictures/Backgrounds/hmiku.png".source = pkgs.fetchurl {
+		file."Pictures/Wallpapers/hmiku.png".source = pkgs.fetchurl {
 			url = "https://i.imgur.com/iQNsuIC.png";
 			hash = "sha256-ACldC3Hlg8jtWG3pc0D6UJF7FiWVl95bhhsrM0OVqcc=";
 		};
@@ -80,16 +80,17 @@
 		"startcenter.desktop|15000"
 		"org.kde.kdeconnect.app.desktop|14000"
 		"spotify.desktop|13000"
-		"org.pulseaudio.pavucontrol.desktop|12000"
-		"nm-connection-editor.desktop|11000"
-		"blueman-manager.desktop|10000"
-		"PCSX2.desktop|9000"
-		"gimp.desktop|8000"
-		"qalculate-gtk.desktop|7000"
-		"librewolf.desktop|6000"
-		"com.obsproject.Studio.desktop|5000"
-		"ipscan.desktop|4000"
-		"chromium-browser.desktop|3000"
+		"org.kicad.kicad.desktop|12000"
+		"org.pulseaudio.pavucontrol.desktop|11000"
+		"nm-connection-editor.desktop|10000"
+		"blueman-manager.desktop|9000"
+		"PCSX2.desktop|8000"
+		"gimp.desktop|7000"
+		"qalculate-gtk.desktop|6000"
+		"librewolf.desktop|5000"
+		"com.obsproject.Studio.desktop|4000"
+		"ipscan.desktop|3000"
+		"chromium-browser.desktop|2000"
 		""
 	];
 }

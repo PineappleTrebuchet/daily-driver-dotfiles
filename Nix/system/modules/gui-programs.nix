@@ -17,6 +17,7 @@
 		pcsx2
 		gimp
 		angryipscanner
+		kicad
 	] ++ [
 		(inputs.waterfox.packages.${pkgs.stdenv.hostPlatform.system}.default.override {
 			extraPolicies = {
