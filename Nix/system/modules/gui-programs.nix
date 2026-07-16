@@ -1,14 +1,15 @@
 { pkgs, inputs, ... }:
 
 {
+	programs.steam.enable = true;
+	programs.obs-studio.enable = true;
+
 	environment.systemPackages = with pkgs; [
 		pavucontrol
-		steam
 		vesktop
 		spotify
 		vlc
     libreoffice-fresh
-    obs-studio
 		kdePackages.kdeconnect-kde
 		thunar
 		blueman
@@ -28,4 +29,5 @@
 			};
 		})
 	];
+
 }

@@ -11,12 +11,26 @@
 		plugins.lsp = {
 			enable = true;
 			servers = {
-				arduino_language_server.enable = true;
 				lua_ls.enable = true;
 				nil_ls.enable = true;
 				basedpyright.enable = true;
 				clangd.enable = true;
 				jdtls.enable = true;
+				arduino_language_server = {
+					enable = true;
+					cmd = [
+						"clangd"
+						"--background-index"
+					];
+					filetypes = [
+						"c"
+						"cpp"
+					];
+					rootMarkers = [
+						"compile_commands.json"
+						"compile_flags.txt"
+					];
+				};
 			};
 		};
 

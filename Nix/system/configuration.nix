@@ -130,7 +130,7 @@
     isNormalUser = true;
 		shell = pkgs.zsh;
     description = "cocotreb";
-    extraGroups = [ "networkmanager" "wheel" "render" "video" ];
+    extraGroups = [ "networkmanager" "wheel" "render" "video" "dialout" ];
   };
 
   # Allow unfree packages
