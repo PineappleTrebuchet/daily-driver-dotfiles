@@ -8,7 +8,7 @@
 	imports =
 		[ # Include the results of the hardware scan.
       ./hardware-configuration.nix
-			./modules/bundle.nix
+			./modules/_imports.nix
 			./firewall.nix
 			./printing.nix
 		];

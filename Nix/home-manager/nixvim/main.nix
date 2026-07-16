@@ -1,7 +1,7 @@
 { config, ... }:
 {
 	imports = [
-		./modules/bundle.nix
+		./modules/_imports.nix
 	];
 
   programs.nixvim = {

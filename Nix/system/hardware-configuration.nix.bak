@@ -20,12 +20,6 @@
 
   boot.initrd.luks.devices."luks-3c636557-1cbd-4da6-850a-3b843b0a2aeb".device = "/dev/disk/by-uuid/3c636557-1cbd-4da6-850a-3b843b0a2aeb";
 
-  fileSystems."/bin" =
-    { device = "/usr/bin";
-      fsType = "none";
-      options = [ "bind" ];
-    };
-
   fileSystems."/boot" =
     { device = "/dev/disk/by-uuid/DB76-19B3";
       fsType = "vfat";

@@ -19,6 +19,6 @@
 		bat
 		kittysay
 		tokei
-		protonup-rs
+		dysk
 	];
 }
