@@ -66,7 +66,7 @@
 		"vesktop.desktop|19000"
 		"thunar.desktop|18000"
 		"steam.desktop|17000"
-		"blueman-manager|16000"
+		"blueman-manager.desktop|16000"
 		"startcenter.desktop|15000"
 		"org.kde.kdeconnect.app.desktop|14000"
 		"spotify.desktop|13000"
