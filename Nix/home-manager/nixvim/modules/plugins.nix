@@ -26,7 +26,7 @@
 			todo-comments.enable = true;
 			colorizer.enable = true;
 			render-markdown.enable = true;
-			statuscol.enable = true;
+			# statuscol.enable = true;
 			navic = {
 				enable = true;
 				settings.lsp.auto_attach = true;
