@@ -22,6 +22,7 @@
 		gimp
 		angryipscanner
 		kicad
+		arduino-ide
 	] ++ [
 		(inputs.waterfox.packages.${pkgs.stdenv.hostPlatform.system}.default.override {
 			extraPolicies = {

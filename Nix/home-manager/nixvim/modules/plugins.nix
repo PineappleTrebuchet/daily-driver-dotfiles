@@ -16,21 +16,6 @@
 				basedpyright.enable = true;
 				clangd.enable = true;
 				jdtls.enable = true;
-				arduino_language_server = {
-					enable = true;
-					cmd = [
-						"clangd"
-						"--background-index"
-					];
-					filetypes = [
-						"c"
-						"cpp"
-					];
-					rootMarkers = [
-						"compile_commands.json"
-						"compile_flags.txt"
-					];
-				};
 			};
 		};
 
@@ -41,6 +26,7 @@
 			todo-comments.enable = true;
 			colorizer.enable = true;
 			render-markdown.enable = true;
+			statuscol.enable = true;
 			navic = {
 				enable = true;
 				settings.lsp.auto_attach = true;

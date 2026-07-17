@@ -13,7 +13,7 @@
 		# stateVersion = "26.05";
 
 		packages = with pkgs; [
-			gnome-weather
+			# gnome-weather
 			librewolf
 			ungoogled-chromium
 		];
@@ -66,21 +66,21 @@
 		"vesktop.desktop|19000"
 		"thunar.desktop|18000"
 		"steam.desktop|17000"
-		"org.gnome.Weather.desktop|16000"
+		"blueman-manager|16000"
 		"startcenter.desktop|15000"
 		"org.kde.kdeconnect.app.desktop|14000"
 		"spotify.desktop|13000"
 		"org.kicad.kicad.desktop|12000"
 		"org.pulseaudio.pavucontrol.desktop|11000"
 		"nm-connection-editor.desktop|10000"
-		"blueman-manager.desktop|9000"
-		"PCSX2.desktop|8000"
-		"gimp.desktop|7000"
-		"qalculate-gtk.desktop|6000"
-		"librewolf.desktop|5000"
-		"com.obsproject.Studio.desktop|4000"
-		"ipscan.desktop|3000"
-		"chromium-browser.desktop|2000"
+		# "blueman-manager.desktop|9000"
+		"PCSX2.desktop|9000"
+		"gimp.desktop|8000"
+		"qalculate-gtk.desktop|7000"
+		"librewolf.desktop|6000"
+		"com.obsproject.Studio.desktop|5000"
+		"ipscan.desktop|4000"
+		"chromium-browser.desktop|3000"
 		""
 	];
 }

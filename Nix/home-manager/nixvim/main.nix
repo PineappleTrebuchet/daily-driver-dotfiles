@@ -29,8 +29,7 @@
 			cursorline = true;
 			expandtab = false;
 			signcolumn = "yes";
-			# foldcolumn = "1";
-			statuscolumn = "%s%{v:relnum?v:relnum:v:lnum}%= ";
+			# statuscolumn = "%s%{v:relnum?v:relnum:v:lnum}%= ";
 			termguicolors = true;
 		};
 
