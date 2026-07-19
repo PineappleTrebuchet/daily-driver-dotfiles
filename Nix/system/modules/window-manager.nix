@@ -9,7 +9,6 @@
 		swaylock-effects
 		wl-clipboard
 		autotiling
-		sway-audio-idle-inhibit
 		grim
 		slurp
 		libnotify

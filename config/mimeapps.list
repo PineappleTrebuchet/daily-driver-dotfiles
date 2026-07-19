@@ -32,3 +32,4 @@ application/x-extension-shtml=waterfox.desktop;
 application/xhtml+xml=waterfox.desktop;
 application/x-extension-xhtml=waterfox.desktop;
 application/x-extension-xht=waterfox.desktop;
+application/pdf=draw.desktop;

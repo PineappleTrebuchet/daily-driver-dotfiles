@@ -14,7 +14,6 @@
 
     "modules-center": ["clock#date", "clock#time"],
     "modules-right": [
-        // "custom/audio_idle_inhibitor",
         "power-profiles-daemon",
         //"memory", 
         "network",
@@ -151,23 +150,9 @@
     "custom/weather": {
         "format": "{}",
         "tooltip": true,
-        "interval": 300,
+        "interval": 600,
         "exec": "$HOME/.config/waybar/scripts/weather.py",
         "return-type": "json",
         "on-click": "gnome-weather"
     },
-
-	"custom/audio_idle_inhibitor": {
-		"format": "{icon}",
-		"exec": "sway-audio-idle-inhibit --dry-print-both-waybar",
-		"exec-if": "which sway-audio-idle-inhibit",
-		"return-type": "json",
-		"tooltip": false,
-		"format-icons": {
-			"output": "",
-			"input": "",
-			"output-input": " / ",
-			"none": ""
-		}
-	},
 }

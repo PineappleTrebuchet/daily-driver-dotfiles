@@ -1,10 +1,6 @@
 { pkgs, inputs, ... }:
 
 {
-	# WARN: REMOVE THIS ASAP, this is for vesktop
-	nixpkgs.config.permittedInsecurePackages = [
-		"electron-40.10.5"
-	];
 
 	programs.obs-studio.enable = true;
 
