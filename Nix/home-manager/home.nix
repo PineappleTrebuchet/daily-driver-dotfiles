@@ -14,7 +14,6 @@
 
 		packages = with pkgs; [
 			gnome-weather
-			librewolf
 			ungoogled-chromium
 		];
 
@@ -39,6 +38,22 @@
 		};
 
 	};
+
+		programs.librewolf = {
+			enable = true;
+			# bro wtf
+			# settings = {
+			# 	"browser.privatebrowsing.autostart" = true;
+			# 	"middlemouse.paste" = false;
+			# 	"general.autoScroll" = true;
+			# };
+		};
+		# TODO: scrap this whenever they fix the config being written to ~/.librewolf
+		home.file.".config/librewolf/librewolf/librewolf.overrides.cfg".text = ''
+			defaultPref("browser.privatebrowsing.autostart", true);
+			defaultPref("middlemouse.paste", false);
+			defaultPref("general.autoScroll", true);
+		'';
 
 	gtk = {
 		enable = true;
