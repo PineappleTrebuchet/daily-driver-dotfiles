@@ -24,9 +24,12 @@
     	web-devicons.enable = true;
 			gitsigns.enable = true;
 			todo-comments.enable = true;
-			colorizer.enable = true;
 			render-markdown.enable = true;
 			# statuscol.enable = true;
+			colorizer = {
+				enable = true;
+				settings.user_default_options.names = false;
+			};
 			navic = {
 				enable = true;
 				settings.lsp.auto_attach = true;
@@ -58,15 +61,23 @@
 			which-key.enable = true;
 			yazi.enable = true;
 			toggleterm.enable = true;
-			neo-tree = {
-				enable = true;
-				settings.close_if_last_window = true;
-				settings.window.width = 30;
-			};
+			nvim-tree.enable = true;
     };
 
 		extraConfigLua = ''
+			-- initalize nvim-navic
 			vim.o.winbar = "%{%v:lua.require'nvim-navic'.get_location()%}"
+
+			-- quit nvim-tree if it's the last buffer open
+			-- by beauwilliams
+			vim.api.nvim_create_autocmd("BufEnter", {
+				group = vim.api.nvim_create_augroup("NvimTreeClose", {clear = true}),
+				pattern = "NvimTree_*",
+				callback = function()
+					local layout = vim.api.nvim_call_function("winlayout", {})
+					if layout[1] == "leaf" and vim.api.nvim_buf_get_option(vim.api.nvim_win_get_buf(layout[2]), "filetype") == "NvimTree" and layout[3] == nil then vim.cmd("confirm quit") end
+				end
+			})
 		'';
 	};
 }

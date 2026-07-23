@@ -45,10 +45,15 @@
 				event = "TextYankPost";
 				callback.__raw = "function() vim.highlight.on_yank() end";
 			}
-			{ # turn on wrap in .txt and .md files
+			{ # turn on wrap & spellcheck in .txt and .md files
 				event = [ "BufEnter" "BufWinEnter" ];
 				pattern = [ "*.md" "*.txt" ];
 				command = "set wrap";
+			}
+			{
+				event = [ "BufEnter" "BufWinEnter" ];
+				pattern = [ "*.md" "*.txt" ];
+				command = "setlocal spell spelllang=en_us";
 			}
 		];
 

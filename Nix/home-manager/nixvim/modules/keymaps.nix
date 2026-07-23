@@ -23,7 +23,7 @@
 		}
 		{
 			mode = "n";
-			action = "<cmd>Neotree<CR>";
+			action = "<cmd>NvimTreeToggle<CR>";
 			key = "<leader>n";
 		}
 		{

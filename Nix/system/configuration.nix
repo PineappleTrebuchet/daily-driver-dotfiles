@@ -13,11 +13,11 @@
 			./printing.nix
 		];
 
-	# Delete generations older than 30d
+	# Delete generations older than 7d
 	nix.gc = {
 		automatic = true;
 		dates = "weekly";
-		options = "--delete-older-than 30d";
+		options = "--delete-older-than 7d";
 	};
 
 	# Someone tell me why the f#ck this isn't on by default
