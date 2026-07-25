@@ -14,10 +14,10 @@
 }
 
 * {
-    font-family: "Adwaita Sans";
-    font-weight: normal;
-	font-size: 17px;
-	color: @text-color;
+		font-family: "Adwaita Sans";
+		font-weight: normal;
+		font-size: 17px;
+		color: @text-color;
 }
 
 /* Control Center */
@@ -59,7 +59,7 @@
 .notification-content:hover {
     background: transparent;
 }
- 
+
 .close-button {
     color: @accent-color;
     background: transparent;

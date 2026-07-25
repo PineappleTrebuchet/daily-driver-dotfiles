@@ -8,16 +8,16 @@
 	imports =
 		[ # Include the results of the hardware scan.
       ./hardware-configuration.nix
-			./modules/_imports.nix
+			./packages/_imports.nix
 			./firewall.nix
 			./printing.nix
 		];
 
-	# Delete generations older than 7d
+	# Delete generations older than 30d
 	nix.gc = {
 		automatic = true;
 		dates = "weekly";
-		options = "--delete-older-than 7d";
+		options = "--delete-older-than 30d";
 	};
 
 	# Someone tell me why the f#ck this isn't on by default
