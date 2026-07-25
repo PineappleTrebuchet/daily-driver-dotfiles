@@ -1,6 +1,7 @@
 #!/bin/sh
 
 rm config/* -r
+rm Nix/ -r
 
 cp ~/.config/alacritty config/ -r
 cp ~/.config/btop config/ -r
