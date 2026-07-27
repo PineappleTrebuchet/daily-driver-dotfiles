@@ -2,16 +2,17 @@
 
 {
 	environment.systemPackages = with pkgs; [
-		fuzzel
-		waybar
-		swaynotificationcenter
-		wlogout
-		swaylock-effects
-		wl-clipboard
 		autotiling
+		fuzzel
 		grim
-		slurp
 		libnotify
+		slurp
+		swaylock-effects
+		swaynotificationcenter
+		waybar
+		wev
+		wl-clipboard
+		wlogout
 	];
 
 	programs.sway = {

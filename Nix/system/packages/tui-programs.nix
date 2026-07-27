@@ -2,24 +2,24 @@
 
 {
 	environment.systemPackages = with pkgs; [
+		arduino-cli
+		bat
 		btop
 		cmatrix
-		tmux
+		dysk
 		fastfetch
 		fzf
-		yazi
-		vim
 		git
-		nvtopPackages.intel
-		yt-dlp
-		wine
-		arduino-cli
-		pipes
-		tty-solitaire
-		bat
-		kittysay
-		tokei
-		dysk
 		github-cli
+		kittysay
+		nvtopPackages.intel
+		pipes
+		tmux
+		tokei
+		tty-solitaire
+		vim
+		wine
+		yazi
+		yt-dlp
 	];
 }

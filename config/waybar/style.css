@@ -1,11 +1,11 @@
 @define-color font-color #e6e6e6;
 @define-color black #0d0d0d;
 @define-color grey #262626;
-@define-color light-grey #404040;
+@define-color light-grey #424242;
 @define-color red #ff0000;
 
 * {
-  font-family: "Adwaita Sans", "Font Awesome";
+  font-family: "Adwaita Sans";
   font-size: 18px;
 }
 
@@ -29,7 +29,7 @@ tooltip {
 	background: transparent;
 	border: none;
 	padding: 0px 8px 0px 8px;
- 	min-width: 1px;
+ 	min-width: 8px;
 	color: @font-color;
 	border-radius: 0px;
 }
@@ -57,13 +57,9 @@ tooltip {
 }
 
 #power-profiles-daemon, #network, #backlight,
-#pulseaudio, #battery, #cpu, #memory, #temperature, #custom-weather,
-#custom-audio_idle_inhibitor {
+#pulseaudio, #battery, #cpu, #memory,
+#temperature, #custom-weather {
 	margin: 0px 12px 0px 12px;
-}
-
-#custom-audio_idle_inhibitor {
-	min-width: 14px;
 }
 
 #clock.date {

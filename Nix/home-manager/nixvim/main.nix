@@ -29,7 +29,7 @@
 			cursorline = true;
 			expandtab = false;
 			signcolumn = "yes";
-			statuscolumn = "%s %{v:relnum?v:relnum:v:lnum}%= ";
+			statuscolumn=" %{&nu?(&rnu&&v:relnum?v:relnum:v:lnum):''}%=%s ";
 			termguicolors = true;
 		};
 

@@ -206,6 +206,7 @@ exec autotiling
 font pango:"Adwaita Sans" 10
 for_window [app_id="^.*"] inhibit_idle fullscreen
 for_window [shell="xwayland"] title_format "%title (%shell)"
+exec --no-startup-id /usr/bin/gnome-keyring-daemon --start
 
 # These lines are useless (or cause problems) on NixOS
 # so they are commented out
@@ -213,7 +214,6 @@ for_window [shell="xwayland"] title_format "%title (%shell)"
 # seat seat0 xcursor_theme phinger-cursors-dark 24
 # exec --no-startup-id /usr/lib/xdg-desktop-portal -r
 # exec sh -c "$HOME/.config/swaync/swaync.sh"
-# exec --no-startup-id /usr/bin/gnome-keyring-daemon --start
 
 # Force floating mode on specific windows:
 # 

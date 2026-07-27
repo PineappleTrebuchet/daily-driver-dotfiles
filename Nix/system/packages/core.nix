@@ -3,21 +3,20 @@
 {
 	environment.systemPackages = with pkgs; [
 		alacritty
-    killall
-		home-manager
-		openjdk
-		ntfs3g # NTFS support
+		feh
 		gcc
+		glib # required to launch gtk apps with gapplication
 		gnumake
+		home-manager
+		ntfs3g # NTFS support
+		openjdk
+		rustc
 		unzip
 		wget
-		feh
-		rustc
-		glib # required to launch gtk apps with gapplication
+    killall
 
 		(python3.withPackages (python-pkgs: with python-pkgs; [
 			requests
 		]))
-
 	];
 }
