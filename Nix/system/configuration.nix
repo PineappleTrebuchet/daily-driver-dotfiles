@@ -13,18 +13,21 @@
 			./printing.nix
 		];
 
-	# Delete generations older than 30d
+	# Storage optimization
 	nix.gc = {
 		automatic = true;
 		dates = "weekly";
-		options = "--delete-older-than 30d";
+		options = "--delete-older-than 7d";
 	};
+
+	nix.settings.auto-optimise-store = true;
 
 	# Someone tell me why the f#ck this isn't on by default
 	services.envfs.enable = true;
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
+  boot.loader.systemd-boot.configurationLimit = 15;
   boot.loader.efi.canTouchEfiVariables = true;
 
   # Use latest kernel.
@@ -177,7 +180,7 @@
   # Fprintd
   services.fprintd.enable = true;
 	security.pam.services.swaylock.fprintAuth = false;
-	security.pam.services.greetd.fprintAuth = false;
+	security.pam.services.login.fprintAuth = false;
 
 	# Other services
   services.gnome.gnome-keyring.enable = true;

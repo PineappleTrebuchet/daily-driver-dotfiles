@@ -12,10 +12,11 @@
 		git
 		github-cli
 		kittysay
+		nvd # nix version diff
 		nvtopPackages.intel
 		pipes
 		tmux
-		tokei
+		tokei # code summary
 		tty-solitaire
 		vim
 		wine

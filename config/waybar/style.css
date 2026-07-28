@@ -29,7 +29,7 @@ tooltip {
 	background: transparent;
 	border: none;
 	padding: 0px 8px 0px 8px;
- 	min-width: 8px;
+ 	min-width: 12px;
 	color: @font-color;
 	border-radius: 0px;
 }
