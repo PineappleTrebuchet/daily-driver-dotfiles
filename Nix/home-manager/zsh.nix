@@ -3,7 +3,7 @@
 {
   programs.zsh = {
     enable = true;
-		# fastSyntaxHighlighting.enable = true;
+    # fastSyntaxHighlighting.enable = true;
 
     history = {
       path = "${config.home.homeDirectory}/.histfile";
@@ -21,8 +21,8 @@
       COMPLETION_WAITING_DOTS = "true";
       DISABLE_UNTRACKED_FILES_DIRTY = "true";
       HIST_STAMPS = "yyyy-mm-dd";
-      QT_QPA_PLATFORMTHEME="gtk3";
-			GTK_THEME = "Qogir-dark";
+      QT_QPA_PLATFORMTHEME = "gtk3";
+      GTK_THEME = "Qogir-dark";
     };
 
     shellAliases = {
@@ -34,25 +34,25 @@
     };
 
     initContent = ''
-			# Unset beep
-			unsetopt beep
+      			# Unset beep
+      			unsetopt beep
 
-			# PATH
-			export PATH="$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH"
+      			# PATH
+      			export PATH="$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH"
 
-			# Oh My Zsh update reminder
-			zstyle ':omz:update' mode reminder
+      			# Oh My Zsh update reminder
+      			zstyle ':omz:update' mode reminder
 
-			# Source Nix profile if present
-			if [ -e "$HOME/.nix-profile/etc/profile.d/nix.sh" ]; then
-				. "$HOME/.nix-profile/etc/profile.d/nix.sh"
-				fi
+      			# Source Nix profile if present
+      			if [ -e "$HOME/.nix-profile/etc/profile.d/nix.sh" ]; then
+      				. "$HOME/.nix-profile/etc/profile.d/nix.sh"
+      				fi
 
-			HYPHEN_INSENSITIVE="true"
-			ENABLE_CORRECTION="true"
-			COMPLETION_WAITING_DOTS="true"
-			DISABLE_UNTRACKED_FILES_DIRTY="true"
-			HIST_STAMPS="yyyy-mm-dd"
+      			HYPHEN_INSENSITIVE="true"
+      			ENABLE_CORRECTION="true"
+      			COMPLETION_WAITING_DOTS="true"
+      			DISABLE_UNTRACKED_FILES_DIRTY="true"
+      			HIST_STAMPS="yyyy-mm-dd"
     '';
 
     oh-my-zsh = {
@@ -61,7 +61,7 @@
       plugins = [
         "git"
         "colored-man-pages"
-				"arduino-cli"
+        "arduino-cli"
       ];
     };
   };

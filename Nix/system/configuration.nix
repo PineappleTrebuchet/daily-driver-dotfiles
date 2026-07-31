@@ -5,25 +5,25 @@
 { config, pkgs, ... }:
 
 {
-	imports =
-		[ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
-			./packages/_imports.nix
-			./firewall.nix
-			./printing.nix
-		];
+  imports = [
+    # Include the results of the hardware scan.
+    ./hardware-configuration.nix
+    ./packages/_imports.nix
+    ./firewall.nix
+    ./printing.nix
+  ];
 
-	# Storage optimization
-	nix.gc = {
-		automatic = true;
-		dates = "weekly";
-		options = "--delete-older-than 7d";
-	};
+  # Storage optimization
+  nix.gc = {
+    automatic = true;
+    dates = "weekly";
+    options = "--delete-older-than 7d";
+  };
 
-	nix.settings.auto-optimise-store = true;
+  nix.settings.auto-optimise-store = true;
 
-	# Someone tell me why the f#ck this isn't on by default
-	services.envfs.enable = true;
+  # Someone tell me why the f#ck this isn't on by default
+  services.envfs.enable = true;
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
@@ -33,7 +33,8 @@
   # Use latest kernel.
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
-  boot.initrd.luks.devices."luks-ba619d24-5e08-479f-b4ca-e93e54087ae7".device = "/dev/disk/by-uuid/ba619d24-5e08-479f-b4ca-e93e54087ae7";
+  boot.initrd.luks.devices."luks-ba619d24-5e08-479f-b4ca-e93e54087ae7".device =
+    "/dev/disk/by-uuid/ba619d24-5e08-479f-b4ca-e93e54087ae7";
   networking.hostName = "tpt14g5"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
@@ -44,21 +45,24 @@
   # Enable networking
   networking.networkmanager.enable = true;
 
-	# Tailscale
-	services.tailscale.enable = true;
+  # Tailscale
+  services.tailscale.enable = true;
 
-	# Nix flakes
-	nix.settings.experimental-features = [ "nix-command" "flakes"];
+  # Nix flakes
+  nix.settings.experimental-features = [
+    "nix-command"
+    "flakes"
+  ];
 
-	# graphics
-	hardware.graphics = {
-		enable = true;
-		enable32Bit = true;
-		extraPackages = with pkgs; [
-			intel-media-driver
-			vpl-gpu-rt
-		];
-	};
+  # graphics
+  hardware.graphics = {
+    enable = true;
+    enable32Bit = true;
+    extraPackages = with pkgs; [
+      intel-media-driver
+      vpl-gpu-rt
+    ];
+  };
 
   # Set your time zone.
   time.timeZone = "America/New_York";
@@ -81,45 +85,45 @@
   # Enable the X11 windowing system.
   # You can disable this if you're only using the Wayland session.
   # services.xserver.enable = true;
-	programs.xwayland.enable = true;
+  programs.xwayland.enable = true;
 
   # Enable sound with pipewire.
-	services.pulseaudio.enable = false;
-	security.rtkit.enable = true;
-	 services.pipewire = {
-			enable = true;
-			alsa.enable = true;
-			alsa.support32Bit = true;
-			pulse.enable = true;
-			wireplumber.enable = true;
-	   # If you want to use JACK applications, uncomment this
-	   # jack.enable = true;
+  services.pulseaudio.enable = false;
+  security.rtkit.enable = true;
+  services.pipewire = {
+    enable = true;
+    alsa.enable = true;
+    alsa.support32Bit = true;
+    pulse.enable = true;
+    wireplumber.enable = true;
+    # If you want to use JACK applications, uncomment this
+    # jack.enable = true;
 
-	   # use the example session manager (no others are packaged yet so this is enabled by default,
-	   # no need to redefine it in your config for now)
-	   #media-session.enable = true;
-	};
+    # use the example session manager (no others are packaged yet so this is enabled by default,
+    # no need to redefine it in your config for now)
+    #media-session.enable = true;
+  };
 
-	xdg.portal = {
-		enable = true;
-		wlr = {
-			enable = true;
-			settings = {
-				screencast = {
-					max_fps = 30;
-					chooser_type = "dmenu";
-					chooser_cmd = "${pkgs.fuzzel}/bin/fuzzel --dmenu --prompt \"share> \"";
-					exec_before = "${pkgs.swaynotificationcenter}/bin/swaync-client -dnd-on";
-					exec_after = "${pkgs.swaynotificationcenter}/bin/swaync-client -dnd-off";
-				};
-			};
-		};
-	};
+  xdg.portal = {
+    enable = true;
+    wlr = {
+      enable = true;
+      settings = {
+        screencast = {
+          max_fps = 30;
+          chooser_type = "dmenu";
+          chooser_cmd = "${pkgs.fuzzel}/bin/fuzzel --dmenu --prompt \"share> \"";
+          exec_before = "${pkgs.swaynotificationcenter}/bin/swaync-client -dnd-on";
+          exec_after = "${pkgs.swaynotificationcenter}/bin/swaync-client -dnd-off";
+        };
+      };
+    };
+  };
 
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
 
-	# Enable zsh
+  # Enable zsh
   programs.zsh = {
     enable = true;
     shellAliases = {
@@ -131,15 +135,21 @@
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users."cocotreb" = {
     isNormalUser = true;
-		shell = pkgs.zsh;
+    shell = pkgs.zsh;
     description = "cocotreb";
-    extraGroups = [ "networkmanager" "wheel" "render" "video" "dialout" ];
+    extraGroups = [
+      "networkmanager"
+      "wheel"
+      "render"
+      "video"
+      "dialout"
+    ];
   };
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
-	# Bluetooth
+  # Bluetooth
   hardware.bluetooth = {
     enable = true;
     powerOnBoot = true;
@@ -164,40 +174,40 @@
 
   # Greetd + TUIGreet
   services.greetd = {
-  enable = true;
-  settings = {
-    default_session = {
-      command = "${pkgs.tuigreet}/bin/tuigreet --time -r --cmd ${pkgs.writeShellScript "start-sway" ''
-        export XDG_CURRENT_DESKTOP=sway
-				export XDG_SESSION_TYPE=wayland
-        exec ${pkgs.sway}/bin/sway "$@"
-      ''}";
-      user = "greeter";
+    enable = true;
+    settings = {
+      default_session = {
+        command = "${pkgs.tuigreet}/bin/tuigreet --time -r --cmd ${pkgs.writeShellScript "start-sway" ''
+                  export XDG_CURRENT_DESKTOP=sway
+          				export XDG_SESSION_TYPE=wayland
+                  exec ${pkgs.sway}/bin/sway "$@"
+        ''}";
+        user = "greeter";
+      };
     };
   };
-};
 
   # Fprintd
   services.fprintd.enable = true;
-	security.pam.services.swaylock.fprintAuth = false;
-	security.pam.services.login.fprintAuth = false;
+  security.pam.services.swaylock.fprintAuth = false;
+  security.pam.services.login.fprintAuth = false;
 
-	# Other services
+  # Other services
   services.gnome.gnome-keyring.enable = true;
-	security.polkit.enable = true;
-	services.gvfs.enable = true;
-	services.tumbler.enable = true;
+  security.polkit.enable = true;
+  services.gvfs.enable = true;
+  services.tumbler.enable = true;
 
-	# Power profiles
-	services.power-profiles-daemon.enable = true;
+  # Power profiles
+  services.power-profiles-daemon.enable = true;
 
-	# allow btop to see GPU
-	security.wrappers.btop = {
-		owner = "root";
-		group = "root";
-		capabilities = "cap_perfmon,cap_dac_read_search,cap_sys_ptrace=+ep";
-		source = "${pkgs.btop}/bin/btop";
-	};
+  # allow btop to see GPU
+  security.wrappers.btop = {
+    owner = "root";
+    group = "root";
+    capabilities = "cap_perfmon,cap_dac_read_search,cap_sys_ptrace=+ep";
+    source = "${pkgs.btop}/bin/btop";
+  };
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
