@@ -5,8 +5,8 @@
 @define-color red #ff0000;
 
 * {
-  font-family: "Adwaita Sans";
-  font-size: 18px;
+  font-family: "Adwaita Sans", "Font Awesome";
+  font-size: 19px;
 }
 
 window#waybar { 
@@ -53,7 +53,7 @@ tooltip {
 
 #mode {
 	color: @red;
-	margin: 0px 3px 0px 3px;
+	margin: 0px 4px 0px 4px;
 }
 
 #power-profiles-daemon, #network, #backlight,
@@ -97,5 +97,3 @@ tooltip {
 #battery.critical:not(.charging), #network.disconnected, #pulseaudio.muted, #temperature.critical {
   color: @red;
 }
-
-

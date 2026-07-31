@@ -3,6 +3,7 @@
 {
 	environment.systemPackages = with pkgs; [
 		alacritty
+		cargo
 		feh
 		gcc
 		glib # required to launch gtk apps with gapplication

@@ -1,14 +1,14 @@
 {
     "layer": "top",	
     "position": "top",
-    "height": 28,
+    "height": 30,
     "modules-left": [
         "sway/workspaces",
-        "niri/workspaces",
+        // "niri/workspaces",
         "tray",
         "sway/scratchpad",
         "sway/window",
-        "niri/window",
+        // "niri/window",
         "sway/mode",
     ],
 

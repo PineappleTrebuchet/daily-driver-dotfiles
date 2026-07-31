@@ -3,7 +3,6 @@
 	# plugin dependencies
 	home.packages = with pkgs; [
 		fd
-		cargo
 		luaPackages.tree-sitter-cli
 	];
 
@@ -11,11 +10,16 @@
 		plugins.lsp = {
 			enable = true;
 			servers = {
-				lua_ls.enable = true;
-				nil_ls.enable = true;
 				basedpyright.enable = true;
 				clangd.enable = true;
 				jdtls.enable = true;
+				lua_ls.enable = true;
+				nil_ls.enable = true;
+				rust_analyzer = {
+					enable = true;
+					installCargo = false;
+					installRustc = false;
+				};
 			};
 		};
 

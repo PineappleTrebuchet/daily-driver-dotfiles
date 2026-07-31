@@ -1,4 +1,4 @@
-@define-color border-color #202020;
+@define-color border-color #242424;
 @define-color active-color #005c99;
 
 * {
@@ -30,6 +30,7 @@ button {
 button:focus, button:active {
 	outline-style: none;
 	background-color: @active-color;
+	border-color: @active-color;
 }
 
 #lock {
