@@ -3,11 +3,10 @@
 
 	inputs = {
 		nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-		# nixpkgs.url = "github:nixos/nixpkgs/26.05";
+		nixpkgs-stable.url = "github:nixos/nixpkgs/26.05";
 
 		home-manager = {
 			url = "github:nix-community/home-manager";
-			# url = "github:nix-community/home-manager/release-26.05";
 			inputs.nixpkgs.follows = "nixpkgs";
 		};
 
@@ -19,13 +18,19 @@
 		};
 	};
 
-	outputs = {nixpkgs, home-manager, nixvim, ... } @ inputs: 
+	outputs = { home-manager, nixpkgs, nixpkgs-stable, nixvim, ... } @ inputs: 
 	let
 		system = "x86_64-linux";
+
+		pkgs-stable = import nixpkgs-stable {
+			inherit system;
+			config.allowUnfree = true;
+		};
+
 	in {
 		nixosConfigurations.tpt14g5 = nixpkgs.lib.nixosSystem {
 			inherit system;
-			specialArgs = { inherit inputs; };
+			specialArgs = { inherit inputs pkgs-stable; };
 			modules = [
 				./system/configuration.nix
 			];
@@ -33,11 +38,11 @@
 
 		homeConfigurations.cocotreb = home-manager.lib.homeManagerConfiguration {
 			pkgs = nixpkgs.legacyPackages.${system};
+			extraSpecialArgs = { inherit pkgs-stable; };
 			modules = [
 				./home-manager/home.nix
 				nixvim.homeModules.nixvim
 			];
 		};
-
 	};
 }

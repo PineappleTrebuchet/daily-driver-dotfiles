@@ -1,4 +1,4 @@
-{ pkgs, lib, ... }: {
+{ config, lib, pkgs, pkgs-stable, ... }: {
 	imports = [
 		./zsh.nix
 		./nixvim/main.nix
@@ -36,30 +36,22 @@
 			url = "https://i.imgur.com/iQNsuIC.png";
 			hash = "sha256-ACldC3Hlg8jtWG3pc0D6UJF7FiWVl95bhhsrM0OVqcc=";
 		};
-
 	};
 
-		programs.librewolf = {
-			enable = true;
-			# bro wtf
-			# settings = {
-			# 	"browser.privatebrowsing.autostart" = true;
-			# 	"middlemouse.paste" = false;
-			# 	"general.autoScroll" = true;
-			# };
+	programs.librewolf = {
+		enable = true;
+		settings = {
+			"browser.privatebrowsing.autostart" = true;
+			"middlemouse.paste" = false;
+			"general.autoScroll" = true;
 		};
-		# TODO: scrap this whenever they fix the config being written to ~/.librewolf
-		home.file.".config/librewolf/librewolf/librewolf.overrides.cfg".text = ''
-			defaultPref("browser.privatebrowsing.autostart", true);
-			defaultPref("middlemouse.paste", false);
-			defaultPref("general.autoScroll", true);
-		'';
+	};
 
 	gtk = {
 		enable = true;
 		theme = {
 			name = "Qogir-Dark";
-			package = pkgs.qogir-theme;
+			package = pkgs-stable.qogir-theme;
 		};
 		iconTheme = {
 			name = "Qogir-Dark";
@@ -68,6 +60,17 @@
 		font = {
 			name = "Adwaita Sans 11";
 		};
+		gtk3.bookmarks = [
+			"file:///home/cocotreb/Documents"
+			"file:///home/cocotreb/Downloads"
+			"file:///home/cocotreb/Music"
+			"file:///home/cocotreb/Nix"
+			"file:///home/cocotreb/Pictures"
+			"file:///home/cocotreb/Projects"
+			"file:///home/cocotreb/Videos"
+			"file:///home/cocotreb/.local/share/Steam/steamapps/compatdata/799600/pfx/dosdevices/c:/users/steamuser/Saved%20Games/Cosmoteer"
+		];
+		gtk4.theme = config.gtk.theme;
 	};
 
 	xdg.userDirs = {

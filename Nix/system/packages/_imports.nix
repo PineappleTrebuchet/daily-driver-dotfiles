@@ -1,10 +1,10 @@
 {
 	imports = [
+		./cli-programs.nix
 		./core.nix
-		./themes-fonts.nix
-		./tui-programs.nix
-		./gui-programs.nix
-		./window-manager.nix
 		./gaming.nix
+		./gui-programs.nix
+		./themes-fonts.nix
+		./window-manager.nix
 	];
 }
