@@ -48,7 +48,7 @@
         pkgs = nixpkgs.legacyPackages.${system};
         extraSpecialArgs = { inherit pkgs-stable; };
         modules = [
-          ./home-manager/home.nix
+          ./home-manager/default.nix
           nixvim.homeModules.nixvim
         ];
       };

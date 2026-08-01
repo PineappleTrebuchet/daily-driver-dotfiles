@@ -6,24 +6,7 @@
   ...
 }:
 {
-  imports = [
-    ./zsh.nix
-    ./nixvim/main.nix
-  ];
-
-  nixpkgs.config.allowUnfree = true;
-
   home = {
-    username = "cocotreb";
-    homeDirectory = "/home/cocotreb";
-    stateVersion = "26.11";
-    # stateVersion = "26.05";
-
-    packages = with pkgs; [
-      gnome-weather
-      ungoogled-chromium
-    ];
-
     pointerCursor = {
       enable = true;
       name = "phinger-cursors-dark";
@@ -42,15 +25,6 @@
     file."Pictures/wallpapers/hmiku.png".source = pkgs.fetchurl {
       url = "https://i.imgur.com/iQNsuIC.png";
       hash = "sha256-ACldC3Hlg8jtWG3pc0D6UJF7FiWVl95bhhsrM0OVqcc=";
-    };
-  };
-
-  programs.librewolf = {
-    enable = true;
-    settings = {
-      "browser.privatebrowsing.autostart" = true;
-      "middlemouse.paste" = false;
-      "general.autoScroll" = true;
     };
   };
 
@@ -78,11 +52,6 @@
       "file:///home/cocotreb/.local/share/Steam/steamapps/compatdata/799600/pfx/dosdevices/c:/users/steamuser/Saved%20Games/Cosmoteer"
     ];
     gtk4.theme = config.gtk.theme;
-  };
-
-  xdg.userDirs = {
-    enable = true;
-    createDirectories = true;
   };
 
   # explicitly pin fuzzel menu entries

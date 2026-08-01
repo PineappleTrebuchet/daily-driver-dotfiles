@@ -13,6 +13,7 @@
     wev
     wl-clipboard
     wlogout
+    swayosd
   ];
 
   programs.sway = {

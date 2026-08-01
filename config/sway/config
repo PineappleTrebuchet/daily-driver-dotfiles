@@ -159,12 +159,12 @@ bindsym $mod+r mode "resize"
 # Utilities:
 #
     # Audio
-    bindsym --locked XF86AudioMute exec pactl set-sink-mute \@DEFAULT_SINK@ toggle
-    bindsym --locked XF86AudioMicMute exec pactl set-source-mute \@DEFAULT_SOURCE@ toggle
-    bindsym --locked XF86AudioLowerVolume exec pactl set-sink-volume \@DEFAULT_SINK@ -5%
-    bindsym --locked Shift+XF86AudioLowerVolume exec pactl set-sink-volume \@DEFAULT_SINK@ -1%
-    bindsym --locked XF86AudioRaiseVolume exec $HOME/.config/sway/scripts/volume-up.sh 5
-    bindsym --locked Shift+XF86AudioRaiseVolume exec $HOME/.config/sway/scripts/volume-up.sh 1
+    bindsym --locked XF86AudioMute exec swayosd-client --output-volume mute-toggle
+		bindsym --locked XF86AudioMicMute exec pactl set-source-mute \@DEFAULT_SOURCE@ toggle
+    bindsym --locked XF86AudioLowerVolume exec swayosd-client --output-volume -5
+    bindsym --locked Shift+XF86AudioLowerVolume exec swayosd-client --output-volume -1
+    bindsym --locked XF86AudioRaiseVolume exec swayosd-client --output-volume 5 --max-volume 100
+    bindsym --locked Shift+XF86AudioRaiseVolume exec swayosd-client --output-volume 1 --max-volume 100
 
     # Brightness
     bindsym --locked XF86MonBrightnessDown exec $HOME/.config/sway/scripts/brightness-down.sh 5
@@ -201,8 +201,9 @@ bar {
 xwayland enable
 focus_follows_mouse no
 title_align center
-exec_always swaync
+exec swaync
 exec autotiling
+exec swayosd-server
 font pango:"Adwaita Sans" 10
 for_window [app_id="^.*"] inhibit_idle fullscreen
 for_window [shell="xwayland"] title_format "%title (%shell)"
@@ -228,7 +229,6 @@ for_window [class="(?i)\.exe$"] floating enable
 for_window [app_id="(?i)\.exe$"] floating enable
 for_window [class="steam_app"] floating enable
 for_window [app_id="steam_app"] floating enable
-
 
 # END
 include /etc/sway/config.d/*
