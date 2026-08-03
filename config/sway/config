@@ -229,6 +229,7 @@ for_window [class="(?i)\.exe$"] floating enable
 for_window [app_id="(?i)\.exe$"] floating enable
 for_window [class="steam_app"] floating enable
 for_window [app_id="steam_app"] floating enable
+for_window [app_id="org.prismlauncher.PrismLauncher"] floating enable
 
 # END
 include /etc/sway/config.d/*

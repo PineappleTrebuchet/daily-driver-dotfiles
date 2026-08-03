@@ -2,7 +2,6 @@
   config,
   lib,
   pkgs,
-  pkgs-stable,
   ...
 }:
 {
@@ -32,7 +31,7 @@
     enable = true;
     theme = {
       name = "Qogir-Dark";
-      package = pkgs-stable.qogir-theme;
+      package = pkgs.qogir-theme;
     };
     iconTheme = {
       name = "Qogir-Dark";
@@ -54,6 +53,11 @@
     gtk4.theme = config.gtk.theme;
   };
 
+  qt = {
+    enable = true;
+    platformTheme.name = "gtk3";
+  };
+
   # explicitly pin fuzzel menu entries
   home.file.".cache/fuzzel".text = lib.concatStringsSep "\n" [
     "waterfox.desktop|20000"
@@ -73,8 +77,9 @@
     "qalculate-gtk.desktop|6000"
     "librewolf.desktop|5000"
     "com.obsproject.Studio.desktop|4000"
-    "ipscan.desktop|3000"
+    "org.prismlauncher.PrismLauncher.desktop|3000"
     "chromium-browser.desktop|2000"
+    "org.kde.krita.desktop|1000"
     ""
   ];
 }

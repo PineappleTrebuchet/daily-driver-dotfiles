@@ -64,8 +64,8 @@
             right = "";
           };
           options.section_separators = {
-            left = "";
-            right = "";
+            left = "";
+            right = "";
           };
         };
       };

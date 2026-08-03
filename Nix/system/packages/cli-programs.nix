@@ -18,7 +18,7 @@
     tmux
     tokei # code summary
     tty-solitaire
-    vim
+    neovim
     wine
     yazi
     yt-dlp

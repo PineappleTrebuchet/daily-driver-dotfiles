@@ -11,7 +11,7 @@
       save = 1000;
     };
 
-    defaultKeymap = "emacs"; # bindkey -e
+    defaultKeymap = "emacs";
 
     sessionVariables = {
       EDITOR = "nvim";
@@ -21,8 +21,8 @@
       COMPLETION_WAITING_DOTS = "true";
       DISABLE_UNTRACKED_FILES_DIRTY = "true";
       HIST_STAMPS = "yyyy-mm-dd";
-      QT_QPA_PLATFORMTHEME = "gtk3";
-      GTK_THEME = "Qogir-dark";
+      # QT_QPA_PLATFORMTHEME = "gtk3";
+      # GTK_THEME = "Qogir-dark";
     };
 
     shellAliases = {

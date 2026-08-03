@@ -17,6 +17,7 @@
     packages = with pkgs; [
       gnome-weather
       ungoogled-chromium
+      krita
     ];
   };
 

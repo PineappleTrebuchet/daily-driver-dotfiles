@@ -9,11 +9,11 @@
     slurp
     swaylock-effects
     swaynotificationcenter
+    swayosd
     waybar
     wev
     wl-clipboard
     wlogout
-    swayosd
   ];
 
   programs.sway = {

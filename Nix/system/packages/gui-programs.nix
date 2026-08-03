@@ -7,13 +7,13 @@
   environment.systemPackages =
     with pkgs;
     [
-      angryipscanner
       arduino-ide
       blueman
       freetube
       gimp
       kdePackages.kdeconnect-kde
       kicad
+      libreoffice-fresh
       networkmanagerapplet
       pavucontrol
       qalculate-gtk
@@ -21,7 +21,6 @@
       thunar
       vesktop
       vlc
-      libreoffice-fresh
     ]
     ++ [
       (inputs.waterfox.packages.${pkgs.stdenv.hostPlatform.system}.default.override {
