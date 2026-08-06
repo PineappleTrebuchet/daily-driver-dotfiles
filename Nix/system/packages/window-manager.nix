@@ -7,6 +7,7 @@
     grim
     libnotify
     slurp
+    swaybg
     swaylock-effects
     swaynotificationcenter
     swayosd

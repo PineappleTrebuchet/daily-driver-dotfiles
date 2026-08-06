@@ -14,17 +14,6 @@
       x11.enable = true;
       size = 24;
     };
-
-    # Main wallpaper
-    file."Pictures/wallpapers/mluka.png".source = pkgs.fetchurl {
-      url = "https://i.imgur.com/83dlM5y.png";
-      hash = "sha256-TT7YIGjuBHA57aHEJ65EhhiqcjXVQbdW1nZ/1Ai/dNw=";
-    };
-    # Swaylock wallpaper
-    file."Pictures/wallpapers/hmiku.png".source = pkgs.fetchurl {
-      url = "https://i.imgur.com/iQNsuIC.png";
-      hash = "sha256-ACldC3Hlg8jtWG3pc0D6UJF7FiWVl95bhhsrM0OVqcc=";
-    };
   };
 
   gtk = {

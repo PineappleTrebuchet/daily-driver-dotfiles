@@ -10,7 +10,7 @@ set $menu fuzzel
 
 # Wallpaper
 #
-output * bg $HOME/Pictures/wallpapers/mluka.png fill
+output * bg $HOME/Pictures/wallpapers/nature/moraine-lake2.jpg fill
 #exec wpaperd -d
 
 # Outputs
