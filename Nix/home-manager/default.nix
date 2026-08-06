@@ -34,4 +34,26 @@
     enable = true;
     createDirectories = true;
   };
+
+  programs.git = {
+    enable = true;
+
+    includes = [
+      {
+        condition = "gitdir:~/Projects/personal/";
+        path = "~/Projects/personal/.gitconfig-personal";
+      }
+      {
+        condition = "gitdir:~/Projects/professional/";
+        path = "~/Projects/work/.gitconfig-professional";
+      }
+    ];
+
+    lfs.enable = true;
+
+    settings = {
+      credential."https://github.com".helper = "!gh auth git-credential";
+      credential."https://gist.github.com".helper = "!gh auth git-credential";
+    };
+  };
 }
