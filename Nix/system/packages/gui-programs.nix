@@ -11,6 +11,7 @@
       blueman
       freetube
       gimp
+      gnome-text-editor
       kdePackages.kdeconnect-kde
       kicad
       libreoffice-fresh

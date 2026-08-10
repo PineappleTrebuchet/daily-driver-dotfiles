@@ -22,8 +22,16 @@
 
   nix.settings.auto-optimise-store = true;
 
-  # Someone tell me why the f#ck this isn't on by default
+  # Parity with non-nix systems
   services.envfs.enable = true;
+  # programs.nix-ld.enable = true;
+  # programs.nix-ld.libraries = with pkgs; [
+  #   # for .NET apps
+  #   icu
+  #   openssl
+  #   zlib
+  #   stdenv.cc.cc.lib
+  # ];
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;

@@ -6,16 +6,17 @@
     cargo
     feh
     gcc
+    git
     glib # required to launch gtk apps with gapplication
     gnumake
     home-manager
+    killall
+    nixfmt
     ntfs3g # NTFS support
     openjdk
     rustc
     unzip
     wget
-    killall
-    nixfmt
 
     (python3.withPackages (
       python-pkgs: with python-pkgs; [

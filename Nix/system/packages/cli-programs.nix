@@ -9,7 +9,6 @@
     dysk
     fastfetch
     fzf
-    git
     github-cli
     kittysay
     nvd # nix version diff

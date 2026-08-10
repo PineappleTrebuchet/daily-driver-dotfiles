@@ -6,8 +6,6 @@
     ./zsh.nix
   ];
 
-  nixpkgs.config.allowUnfree = true;
-
   home = {
     username = "cocotreb";
     homeDirectory = "/home/cocotreb";
