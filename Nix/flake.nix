@@ -5,7 +5,7 @@
     # nixpkgs
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 
-    # nixpkgs stable, for when packages break
+    # nixpkgs stable, for when individual packages break
     nixpkgs-stable.url = "github:nixos/nixpkgs/26.05";
 
     # home manager

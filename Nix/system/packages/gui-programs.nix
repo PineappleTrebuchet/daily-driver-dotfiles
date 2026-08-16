@@ -17,6 +17,7 @@
       libreoffice-fresh
       networkmanagerapplet
       pavucontrol
+      peazip
       qalculate-gtk
       spotify
       thunar

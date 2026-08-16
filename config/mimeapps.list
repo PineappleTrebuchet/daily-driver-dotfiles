@@ -36,3 +36,5 @@ application/xhtml+xml=waterfox.desktop;
 application/x-extension-xhtml=waterfox.desktop;
 application/x-extension-xht=waterfox.desktop;
 application/pdf=draw.desktop;
+text/plain=org.gnome.TextEditor.desktop;
+application/zip=peazip-extract.desktop;userapp-alacritty -e unzip-5E6KT3.desktop;

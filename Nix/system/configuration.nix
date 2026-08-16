@@ -20,7 +20,7 @@
     options = "--delete-older-than 7d";
   };
 
-  nix.settings.auto-optimise-store = true;
+  nix.settings.auto-optimise-store = false;
 
   # Parity with non-nix systems
   services.envfs.enable = true;
