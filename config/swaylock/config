@@ -3,7 +3,7 @@ timestr=%I:%M %p
 datestr=%a %b %d
 
 font=SpaceMonoNerdFont
-image=~/Pictures/wallpapers/nature/snow-mountains.jpg
+image=~/Pictures/wallpapers/nature/braided-river.jpg
 #screenshots
 #effect-blur=6x3
 effect-vignette=0.75:0.75
