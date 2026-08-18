@@ -20,7 +20,7 @@ tooltip {
 }
 
 #workspaces {
-	margin: 0px 2px 0px 0px;
+	margin: 0px 5px 0px 0px;
 	padding: 0px 0px;
 }
 
@@ -71,7 +71,7 @@ tooltip {
 }
 
 #tray {
-	margin: 0px 6px;
+	margin: 0px 4px;
 }
 
 #idle_inhibitor {
@@ -80,11 +80,11 @@ tooltip {
 }
 
 #scratchpad {
-  padding: 0px 3px;
+  padding: 0px 4px;
 }
 
 #window {
-  padding: 0px 6px;
+  padding: 0px 6px 0px 4px;
 }
 
 #power-profiles-daemon.performance {

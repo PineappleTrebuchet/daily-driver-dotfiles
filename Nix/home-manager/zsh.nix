@@ -21,7 +21,7 @@
       COMPLETION_WAITING_DOTS = "true";
       DISABLE_UNTRACKED_FILES_DIRTY = "true";
       HIST_STAMPS = "yyyy-mm-dd";
-      # QT_QPA_PLATFORMTHEME = "gtk3";
+      QT_QPA_PLATFORMTHEME = "gtk3";
     };
 
     shellAliases = {

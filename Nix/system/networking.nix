@@ -11,6 +11,11 @@
   # Enable networking
   networking.networkmanager.enable = true;
 
+  # restart tailscale after resume, since it breaks DNS resolution
+  powerManagement.resumeCommands = ''
+    		systemctl restart tailscaled.service
+    	'';
+
   networking.firewall = {
     enable = true;
     allowedTCPPorts = [ ];
