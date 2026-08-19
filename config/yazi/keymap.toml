@@ -1,4 +1,5 @@
-[manager]
+[mgr]
 prepend_keymap = [
-  { on = ["<C-n>"], run = "shell 'nvim \"$0\"' --block", desc = "Open file in Neovim" },
+  { on = ["<C-n>"], run = "shell '$EDITOR' --block", desc = "Open $EDITOR here" },
+  { on = ["!"], run = "shell '$SHELL' --block", desc = "Open $SHELL here" },
 ]

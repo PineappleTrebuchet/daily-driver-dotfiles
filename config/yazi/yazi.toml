@@ -9,7 +9,6 @@ runsh = [
 
 [open]
 prepend_rules = [
-	{ url = "*.toml", use = "edit" }, # TODO: add Reval and Show EXIF tools
 	{ url = "*.exe", use = "runwin" },
 	{ url = "*.sh", use = ["edit", "runsh"] },
 ]
