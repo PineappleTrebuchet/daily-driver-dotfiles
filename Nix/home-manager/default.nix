@@ -2,6 +2,7 @@
 {
   imports = [
     ./gui.nix
+    # ./itsc-3146.nix
     ./nixvim/main.nix
     ./zsh.nix
   ];
@@ -15,7 +16,6 @@
     packages = with pkgs; [
       gnome-weather
       ungoogled-chromium
-      krita
     ];
   };
 

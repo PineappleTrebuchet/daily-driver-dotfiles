@@ -60,7 +60,7 @@
       plugins = [
         "git"
         "colored-man-pages"
-        "arduino-cli"
+        # "arduino-cli"
       ];
     };
   };

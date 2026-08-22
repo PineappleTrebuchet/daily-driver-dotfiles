@@ -7,13 +7,25 @@
   ];
 
   programs.nixvim = {
+    # tools
+    plugins = {
+      nvim-autopairs.enable = true;
+      comment.enable = true;
+      telescope.enable = true;
+      treesitter.enable = true;
+      diffview.enable = true;
+      which-key.enable = true;
+      yazi.enable = true;
+      toggleterm.enable = true;
+      nvim-tree.enable = true;
+    };
+
     # look & feel
     plugins = {
       web-devicons.enable = true;
       gitsigns.enable = true;
       todo-comments.enable = true;
       render-markdown.enable = true;
-      # statuscol.enable = true;
       colorizer = {
         enable = true;
         settings.user_default_options.names = false;
@@ -48,19 +60,6 @@
           };
         };
       };
-    };
-
-    # tools
-    plugins = {
-      nvim-autopairs.enable = true;
-      comment.enable = true;
-      telescope.enable = true;
-      treesitter.enable = true;
-      diffview.enable = true;
-      which-key.enable = true;
-      yazi.enable = true;
-      toggleterm.enable = true;
-      nvim-tree.enable = true;
     };
 
     extraConfigLua = ''

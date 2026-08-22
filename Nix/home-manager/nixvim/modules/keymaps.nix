@@ -16,6 +16,19 @@
       action = "<C-\\><C-n>";
       key = "<Esc>";
     }
+    # INFO: buffer line moving
+    {
+      # previous
+      mode = "n";
+      action = "<cmd>BufferLineMovePrev<CR>";
+      key = "<leader><";
+    }
+    {
+      # next
+      mode = "n";
+      action = "<cmd>BufferLineMoveNext<CR>";
+      key = "<leader>>";
+    }
 
     # INFO: custom leader keybinds
     {
