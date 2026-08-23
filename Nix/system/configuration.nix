@@ -35,14 +35,11 @@
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
-  boot.loader.systemd-boot.configurationLimit = 15;
+  boot.loader.systemd-boot.configurationLimit = 10;
   boot.loader.efi.canTouchEfiVariables = true;
 
   # Use latest kernel.
   boot.kernelPackages = pkgs.linuxPackages_latest;
-
-  boot.initrd.luks.devices."luks-ba619d24-5e08-479f-b4ca-e93e54087ae7".device =
-    "/dev/disk/by-uuid/ba619d24-5e08-479f-b4ca-e93e54087ae7";
 
   # Tailscale
   services.tailscale.enable = true;
@@ -207,6 +204,14 @@
     capabilities = "cap_perfmon,cap_dac_read_search,cap_sys_ptrace=+ep";
     source = "${pkgs.btop}/bin/btop";
   };
+
+  # swap
+  swapDevices = [
+    {
+      device = "/var/lib/swapfile";
+      size = 16 * 1024; # 16 GiB
+    }
+  ];
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.

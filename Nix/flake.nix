@@ -17,9 +17,9 @@
     # nixvim
     nixvim.url = "github:nix-community/nixvim";
 
-    # waterfox (web browser)
-    waterfox = {
-      url = "github:realitymolder/waterfox-flake";
+    # helium (web browser)
+    helium = {
+      url = "github:FKouhai/helium2nix/main";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };

@@ -24,13 +24,6 @@
       vlc
     ]
     ++ [
-      (inputs.waterfox.packages.${pkgs.stdenv.hostPlatform.system}.default.override {
-        extraPolicies = {
-          DisableAppUpdate = true;
-          DisableTelemetry = true;
-          OfferToSaveLogins = false;
-          PasswordManagerEnabled = false;
-        };
-      })
+      inputs.helium.defaultPackage.${pkgs.stdenv.hostPlatform.system}
     ];
 }

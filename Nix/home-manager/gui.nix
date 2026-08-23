@@ -39,7 +39,13 @@
       "file:///home/cocotreb/Videos"
       "file:///home/cocotreb/.local/share/Steam/steamapps/compatdata/799600/pfx/dosdevices/c:/users/steamuser/Saved%20Games/Cosmoteer"
     ];
+    gtk3.extraConfig = {
+      gtk-application-prefer-dark-theme = 1;
+    };
     gtk4.theme = config.gtk.theme;
+    gtk4.extraConfig = {
+      gtk-application-prefer-dark-theme = 1;
+    };
   };
 
   qt = {
@@ -49,7 +55,7 @@
 
   # explicitly pin fuzzel menu entries
   home.file.".cache/fuzzel".text = lib.concatStringsSep "\n" [
-    "waterfox.desktop|20000"
+    "helium.desktop|20000"
     "vesktop.desktop|19000"
     "thunar.desktop|18000"
     "steam.desktop|17000"
