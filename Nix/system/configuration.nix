@@ -114,6 +114,7 @@
         };
       };
     };
+    extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
   };
 
   # Enable touchpad support (enabled default in most desktopManager).

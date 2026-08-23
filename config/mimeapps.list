@@ -40,3 +40,5 @@ application/x-extension-xht=helium.desktop;
 application/pdf=draw.desktop;
 text/plain=org.gnome.TextEditor.desktop;
 application/zip=peazip-extract.desktop;userapp-alacritty -e unzip-5E6KT3.desktop;
+application/x-shellscript=org.gnome.TextEditor.desktop;
+application/vnd.microsoft.portable-executable=wine.desktop;

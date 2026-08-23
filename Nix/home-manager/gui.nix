@@ -14,6 +14,11 @@
       x11.enable = true;
       size = 24;
     };
+    sessionVariables = {
+      GTK_THEME = "Qogir-Dark";
+      QT_QPA_PLATFORMTHEME = "gtk3";
+      NIXOS_OZONE_WL = "1";
+    };
   };
 
   gtk = {
@@ -22,13 +27,16 @@
       name = "Qogir-Dark";
       package = pkgs.qogir-theme;
     };
+
     iconTheme = {
       name = "Qogir-Dark";
       package = pkgs.qogir-icon-theme;
     };
+
     font = {
       name = "Adwaita Sans 11";
     };
+
     gtk3.bookmarks = [
       "file:///home/cocotreb/Documents"
       "file:///home/cocotreb/Downloads"
@@ -39,12 +47,19 @@
       "file:///home/cocotreb/Videos"
       "file:///home/cocotreb/.local/share/Steam/steamapps/compatdata/799600/pfx/dosdevices/c:/users/steamuser/Saved%20Games/Cosmoteer"
     ];
+    gtk4.theme = config.gtk.theme;
+
     gtk3.extraConfig = {
       gtk-application-prefer-dark-theme = 1;
     };
-    gtk4.theme = config.gtk.theme;
     gtk4.extraConfig = {
       gtk-application-prefer-dark-theme = 1;
+    };
+  };
+
+  dconf.settings = {
+    "org/gnome/desktop/interface" = {
+      color-scheme = "prefer-dark";
     };
   };
 
