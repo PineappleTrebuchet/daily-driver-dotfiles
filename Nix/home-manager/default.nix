@@ -12,10 +12,8 @@
     homeDirectory = "/home/cocotreb";
     stateVersion = "26.11";
     # stateVersion = "26.05";
-
     packages = with pkgs; [
       gnome-weather
-      ungoogled-chromium
     ];
   };
 

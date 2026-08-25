@@ -15,7 +15,8 @@
     nvtopPackages.intel
     pipes
     tmux
-    tokei # code summary
+    # tokei # code summary
+    tree
     tty-solitaire
     wine
     yazi

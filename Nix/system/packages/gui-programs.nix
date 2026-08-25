@@ -1,7 +1,10 @@
-{ pkgs, inputs, ... }:
-
 {
-
+  pkgs,
+  pkgs-stable,
+  inputs,
+  ...
+}:
+{
   programs.obs-studio.enable = true;
 
   environment.systemPackages =
@@ -20,7 +23,8 @@
       qalculate-gtk
       spotify
       thunar
-      vesktop
+      # vesktop
+      pkgs-stable.vesktop
       vlc
     ]
     ++ [

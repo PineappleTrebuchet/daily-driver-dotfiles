@@ -16,6 +16,19 @@
       action = "<C-\\><C-n>";
       key = "<Esc>";
     }
+
+    # INFO: split keybindings
+    {
+      mode = "n";
+      action = "<cmd>sp<CR>";
+      key = "\\";
+    }
+    {
+      mode = "n";
+      action = "<cmd>vsp<CR>";
+      key = "|";
+    }
+
     # INFO: buffer line moving
     {
       # previous

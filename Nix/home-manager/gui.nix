@@ -14,11 +14,6 @@
       x11.enable = true;
       size = 24;
     };
-    sessionVariables = {
-      GTK_THEME = "Qogir-Dark";
-      QT_QPA_PLATFORMTHEME = "gtk3";
-      NIXOS_OZONE_WL = "1";
-    };
   };
 
   gtk = {
@@ -60,6 +55,7 @@
   dconf.settings = {
     "org/gnome/desktop/interface" = {
       color-scheme = "prefer-dark";
+      gtk-enable-primary-paste = false;
     };
   };
 
