@@ -9,7 +9,4 @@
     noto-fonts
     vista-fonts
   ];
-
-  environment.systemPackages = with pkgs; [
-  ];
 }

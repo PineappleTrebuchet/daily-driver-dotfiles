@@ -14,17 +14,18 @@
       freetube
       gimp
       gnome-text-editor
+      gnome-weather
       kdePackages.kdeconnect-kde
       kicad
-      libreoffice-fresh
+      libreoffice-stable
       networkmanagerapplet
       pavucontrol
       peazip
+      # vesktop
+      pkgs-stable.vesktop
       qalculate-gtk
       spotify
       thunar
-      # vesktop
-      pkgs-stable.vesktop
       vlc
     ]
     ++ [

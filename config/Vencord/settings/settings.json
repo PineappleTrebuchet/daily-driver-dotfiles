@@ -381,7 +381,7 @@
                         "id": "ae3wfyshuaq",
                         "name": "Good Friends",
                         "color": 3447003,
-                        "collapsed": true,
+                        "collapsed": false,
                         "channels": [
                             "1271576140888150159",
                             "895863607441641493",
@@ -739,7 +739,7 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1787671599404
+        "settingsSyncVersion": 1787712559489
     },
     "uiElements": {
         "chatBarButtons": {},

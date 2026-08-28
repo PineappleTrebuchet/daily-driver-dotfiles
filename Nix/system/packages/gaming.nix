@@ -5,7 +5,7 @@
   environment.systemPackages = with pkgs; [
     protonup-rs
     prismlauncher
-    mindustry-wayland
+    # mindustry-wayland
     pcsx2
   ];
 }

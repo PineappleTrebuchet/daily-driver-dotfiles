@@ -1,17 +1,18 @@
 @define-color font-color #e6e6e6;
 @define-color black #0d0d0d;
 @define-color grey #282828;
-@define-color light-grey #424242;
+@define-color light-grey #464646;
 @define-color red #ff0000;
 
 * {
-  font-family: "Adwaita Sans", "Font Awesome";
-  font-size: 19px;
+  font-family: "HackMonoNerdFont";
+  font-size: 18px;
 }
 
 window#waybar { 
   background-color: @black; 
   color: @font-color;
+	border-right: 1px solid @grey;
 }
 
 tooltip {
@@ -20,7 +21,7 @@ tooltip {
 }
 
 #workspaces {
-	margin: 0px 5px 0px 0px;
+	margin: 0px 0px 0px 0px;
 	padding: 0px 0px;
 }
 
@@ -28,8 +29,8 @@ tooltip {
 	transition: none;
 	background: transparent;
 	border: none;
-	padding: 0px 8px 0px 8px;
- 	min-width: 12px;
+	padding: 2px 0px 2px 0px;
+ 	min-height: 12px;
 	color: @font-color;
 	border-radius: 0px;
 }
@@ -53,34 +54,32 @@ tooltip {
 
 #mode {
 	color: @red;
-	margin: 0px 4px 0px 4px;
+	margin: 6px 0px;
 }
 
 #power-profiles-daemon, #network, #backlight,
 #pulseaudio, #battery, #cpu, #memory,
-#temperature, #custom-weather {
-	margin: 0px 12px 0px 12px;
+#temperature, #custom-weather, #clock, #idle_inhibitor {
+	margin: 14px 0px 14px 0px;
 }
 
-#clock.date {
-	margin: 0px 6px 0px 100px;
-}
-
-#clock.time {
-	margin: 0px 100px 0px 6px;
+#clock {
+	margin: 10px 0px;
 }
 
 #tray {
-	margin: 0px 4px;
+	margin: 6px 0px;
 }
 
 #idle_inhibitor {
-	min-width: 25px;
-	padding: 0px 7px;
+	color: @light-grey;
+}
+#idle_inhibitor.activated {
+	color: @font-color;
 }
 
 #scratchpad {
-  padding: 0px 4px;
+  padding: 4px 0px;
 }
 
 #window {

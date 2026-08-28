@@ -1,0 +1,160 @@
+{
+    "layer": "top",
+    "position": "left",
+    "width": 38,
+    "modules-left": [
+				"clock#time",
+				"clock#date",
+        //"memory", 
+        // "custom/weather",
+        // "cpu", 
+        // "temperature", 
+        "battery",
+        "backlight",
+        "pulseaudio",
+        "network",
+        "idle_inhibitor",
+        "power-profiles-daemon"
+				// "clock#date",
+    ],
+
+    "modules-right": [
+        "sway/mode",
+        "sway/scratchpad",
+        // "niri/window",
+        "sway/window",
+        "tray",
+        "sway/workspaces"
+        // "niri/workspaces",
+    ],
+
+    "modules-center": [
+		],
+
+    "workspaces": {
+        "disable-scroll": true,
+        "disable-markup": true,
+        "format": "{index}",
+    },
+
+    "sway/scratchpad": {
+        "format": "[{count}]",
+        "on-click": "swaymsg scratchpad show"
+    },
+
+    "sway/window": {
+        "format": "{}",
+        "tooltip": false,
+        "max-length": 75,
+				"rotate": 90
+    },
+
+    "tray": {
+        "icon-size": 22, 
+        "spacing": 6
+    },
+
+    "clock#date": {
+        "format": "{:%m\n%d}",
+        "interval": 1,
+        "tooltip": false
+    },
+
+    "clock#time": {
+        "format": "{:%I\n%M\n%p}",
+        "interval": 1,
+        "tooltip": false
+    },
+    
+    "battery": {
+        "bat": "BAT0",
+        "states": {
+            "full": 100,
+            "normal": 99,
+            "warn": 20,
+            "critical": 10
+        },
+        "events": {
+            "on-discharging-warn": "notify-send -u normal 'Warning: Low Battery'&& powerprofilesctl set power-saver",
+            "on-discharging-critical": "notify-send -u critical 'WARNING: Critical Battery!'&& powerprofilesctl set power-saver",
+        },
+        "format": "BAT\n{capacity}%",
+        "format-normal": "BAT\n{capacity}%",
+        "format-full": "BAT\nFUL",
+        "format-charging": "CHG\n{capacity}%",
+        "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+        "interval": 3
+    },
+
+    "power-profiles-daemon": {
+        "format": "{icon}",
+        "tooltip-format": "Profile: {profile}\nDriver: {driver}",
+        "format-icons": {       
+            "default": "BAL",
+            "performance": "PER",
+            "balanced:": "BAL",
+            "power-saver": "SAV"
+        }
+    },
+
+    "network": {
+        "format-wifi": "NET\nUP",
+        "tooltip-format-wifi": "{essid} ({signalStrength}%)\n↓{bandwidthDownBits}  ↑{bandwidthUpBits}",
+        "format-ethernet": "ETH",
+        "tooltip-format-ethernet": "{ifname}: {ipaddr}/{cidr}",
+        "format-disconnected": "NET\nDWN",
+        "tooltip-disconnected": false,
+        "family": "ipv4",
+        "interval": 3,
+        "on-click": "nm-connection-editor;",
+    },
+
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "BRI\n{percent}%",
+        "format-icons": ["☾", "☼︎", "☀︎", "󰖨 "],
+        "interval": 60
+    },
+
+    "cpu": {
+        "format": "  {usage}%", 
+        "interval": 3
+    },
+
+    "memory": {
+        "format": "{used}GiB",
+        "tooltip-format": "{percentage}% used",
+        "interval": 3
+    },
+
+    "temperature": {
+	    "thermal-zone": 0,
+	    "format": "{icon} {temperatureC}°C",
+	    "format-icons":[""],
+	    "interval": 3
+    },
+
+    "pulseaudio": {
+        "format": "VOL\n{volume}%",
+        "format-muted":"MUT\n{volume}%",
+        "interval": 60,
+        "on-click": "pavucontrol",
+    },
+
+    "idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+        "activated": "ON ",
+        "deactivated": "OFF"
+        }
+    },
+
+    "custom/weather": {
+        "format": "{}",
+        "tooltip": true,
+        "interval": 600,
+        "exec": "$HOME/.config/waybar/scripts/weather.py",
+        "return-type": "json",
+        "on-click": "gnome-weather"
+    },
+}

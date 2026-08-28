@@ -38,7 +38,7 @@
 
       pkgs-stable = import nixpkgs-stable {
         inherit system;
-        config.allowUnfree = true;
+        # config.allowUnfree = true;
       };
     in
     {

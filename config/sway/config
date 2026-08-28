@@ -69,7 +69,7 @@ client.urgent           #ff0000 #990000 #ffffff #ff0000 #ff0000
 
 default_border pixel 1
 default_floating_border pixel 1
-gaps inner 4
+# gaps inner 4
 
 # Waybar:
 #
