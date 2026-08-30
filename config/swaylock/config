@@ -5,7 +5,7 @@ datestr=%a %b %d
 font=SpaceMonoNerdFont
 image=~/Pictures/wallpapers/nature/moonrise-rolling.jpg
 #screenshots
-effect-blur=5x4
+effect-blur=6x5
 #effect-vignette=0.75:0.75
 ignore-empty-password
 

@@ -4,7 +4,7 @@
     ./core.nix
     ./gaming.nix
     ./gui-programs.nix
-    ./themes-fonts.nix
+    ./fonts.nix
     ./window-manager.nix
   ];
 }

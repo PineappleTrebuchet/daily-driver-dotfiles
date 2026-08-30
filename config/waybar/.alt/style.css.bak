@@ -68,7 +68,7 @@ tooltip {
 }
 
 #tray {
-	margin: 6px 0px;
+	margin: 4px 0px;
 }
 
 #idle_inhibitor {
@@ -79,11 +79,11 @@ tooltip {
 }
 
 #scratchpad {
-  padding: 4px 0px;
+  padding: 0px 0px;
 }
 
 #window {
-  padding: 0px 6px 0px 4px;
+  padding: 6px 0px;
 }
 
 #power-profiles-daemon.performance {

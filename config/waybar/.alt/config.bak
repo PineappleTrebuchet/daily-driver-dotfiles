@@ -14,12 +14,12 @@
         "pulseaudio",
         "network",
         "idle_inhibitor",
-        "power-profiles-daemon"
+        "power-profiles-daemon",
+        "sway/mode"
 				// "clock#date",
     ],
 
     "modules-right": [
-        "sway/mode",
         "sway/scratchpad",
         // "niri/window",
         "sway/window",

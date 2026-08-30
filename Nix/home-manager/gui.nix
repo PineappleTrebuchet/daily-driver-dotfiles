@@ -32,23 +32,27 @@
       name = "Adwaita Sans 11";
     };
 
-    gtk3.bookmarks = [
-      "file:///home/cocotreb/Documents"
-      "file:///home/cocotreb/Downloads"
-      "file:///home/cocotreb/Music"
-      "file:///home/cocotreb/Nix"
-      "file:///home/cocotreb/Pictures"
-      "file:///home/cocotreb/Projects"
-      "file:///home/cocotreb/Videos"
-      "file:///home/cocotreb/.local/share/Steam/steamapps/compatdata/799600/pfx/dosdevices/c:/users/steamuser/Saved%20Games/Cosmoteer"
-    ];
-    gtk4.theme = config.gtk.theme;
-
-    gtk3.extraConfig = {
-      gtk-application-prefer-dark-theme = 1;
+    gtk3 = {
+      bookmarks = [
+        "file:///home/cocotreb/Documents"
+        "file:///home/cocotreb/Downloads"
+        "file:///home/cocotreb/Music"
+        "file:///home/cocotreb/Nix"
+        "file:///home/cocotreb/Pictures"
+        "file:///home/cocotreb/Projects"
+        "file:///home/cocotreb/Videos"
+        "file:///home/cocotreb/.local/share/Steam/steamapps/compatdata/799600/pfx/dosdevices/c:/users/steamuser/Saved%20Games/Cosmoteer"
+      ];
+      extraConfig = {
+        gtk-application-prefer-dark-theme = 1;
+      };
     };
-    gtk4.extraConfig = {
-      gtk-application-prefer-dark-theme = 1;
+
+    gtk4 = {
+      theme = config.gtk.theme;
+      extraConfig = {
+        gtk-application-prefer-dark-theme = 1;
+      };
     };
   };
 

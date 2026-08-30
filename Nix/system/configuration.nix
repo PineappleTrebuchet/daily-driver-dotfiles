@@ -30,6 +30,12 @@
   #   openssl
   #   zlib
   #   stdenv.cc.cc.lib
+  #		# For OPTK
+  #   wayland
+  #   libxkbcommon
+  #   systemd
+  #   libGL
+  #   xorg.libX11
   # ];
 
   # Bootloader.
@@ -139,6 +145,7 @@
       "render"
       "video"
       "dialout"
+      "input"
     ];
   };
 

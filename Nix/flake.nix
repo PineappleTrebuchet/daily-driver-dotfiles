@@ -35,7 +35,7 @@
     let
       # variables
       system = "x86_64-linux";
-
+      hostname = "tpt14g5";
       pkgs-stable = import nixpkgs-stable {
         inherit system;
         # config.allowUnfree = true;
@@ -43,9 +43,9 @@
     in
     {
       # system config
-      nixosConfigurations.tpt14g5 = nixpkgs.lib.nixosSystem {
+      nixosConfigurations.${hostname} = nixpkgs.lib.nixosSystem {
         inherit system;
-        specialArgs = { inherit inputs pkgs-stable; };
+        specialArgs = { inherit inputs pkgs-stable hostname; };
         modules = [
           ./system/configuration.nix
         ];
@@ -54,7 +54,7 @@
       # home-manager config
       homeConfigurations.cocotreb = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.${system};
-        extraSpecialArgs = { inherit pkgs-stable; };
+        extraSpecialArgs = { inherit pkgs-stable inputs; };
         modules = [
           ./home-manager/default.nix
           nixvim.homeModules.nixvim
