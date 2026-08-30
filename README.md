@@ -13,8 +13,13 @@ If you want to use these, remember to edit the wallpaper paths in wpaperd, swayl
 ![Image of my desktop](./image.png)
 
 ## See also
-[Wallpaper link](https://wallpaper-a-day.com/2016/06/24/) (remember to click on "1440p version")
+<!-- [Wallpaper link](https://wallpaper-a-day.com/2016/06/24/) (remember to click on "1440p version") -->
+<!-- [Swaylock wallpaper link](https://wallpaper-a-day.com/2025/12/11/22411/#respond) -->
 
-[Swaylock wallpaper link](https://wallpaper-a-day.com/2025/12/11/22411/#respond)
+(The actual wallpaper I use is subject to change!)
+
+[Wallpaper link](https://4kwallpapers.com/nature/moraine-lake-landscape-sunrise-mountains-54.html)
+
+[Swaylock wallpaper link](https://4kwallpapers.com/nature/moonrise-rolling-25877.html)
 
 [tdelamater1's dotfiles](https://github.com/tdelamater1/dots/tree/master) (thx for the weather waybar module)
