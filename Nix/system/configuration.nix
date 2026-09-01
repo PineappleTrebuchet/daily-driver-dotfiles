@@ -22,7 +22,7 @@
   nix.settings.auto-optimise-store = true;
 
   # Parity with non-nix systems
-  services.envfs.enable = true;
+  # services.envfs.enable = true;
   # programs.nix-ld.enable = true;
   # programs.nix-ld.libraries = with pkgs; [
   #   # for .NET apps

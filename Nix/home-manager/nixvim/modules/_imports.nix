@@ -1,5 +1,6 @@
 {
   imports = [
+    ./autocmd.nix
     ./blink-cmp.nix
     ./keymaps.nix
     ./lsp.nix

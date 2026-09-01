@@ -33,11 +33,14 @@
       navic = {
         enable = true;
         settings.lsp.auto_attach = true;
-        settings.separator = "  ";
+        # settings.separator = "  ";
       };
       bufferline = {
         enable = true;
-        settings.options.separator_style = "slant";
+        settings.options = {
+          indicator.style = "none";
+          # separator_style = "slant";
+        };
       };
       lualine = {
         enable = true;
@@ -55,11 +58,19 @@
             right = "";
           };
           options.section_separators = {
-            left = "";
-            right = "";
+            # left = "";
+            # right = "";
+            left = "";
+            right = "";
           };
         };
       };
+    };
+
+    # force the winbar to not be a different color than the bg
+    highlight = {
+      WinBar.bg = "NONE";
+      WinBarNC.bg = "NONE";
     };
 
     extraConfigLua = ''

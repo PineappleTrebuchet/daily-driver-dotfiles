@@ -16,8 +16,8 @@
     vimAlias = true;
 
     opts = {
-      number = true;
-      relativenumber = true;
+      # number = true;
+      # relativenumber = true;
       shiftwidth = 2;
       tabstop = 2;
       softtabstop = 2;
@@ -34,55 +34,26 @@
     };
 
     extraConfigVim = ''
-      			colorscheme onedark
       			set undofile
       			set undodir=$HOME/.cache/nvim/undo//
       			set clipboard=unnamedplus
+      			set rnu
+      			set nu
+      			colorscheme onedark
     '';
-
-    autoCmd = [
-      {
-        # highlight yank
-        event = "TextYankPost";
-        callback.__raw = "function() vim.highlight.on_yank() end";
-      }
-      {
-        # turn on wrap & spellcheck in .txt and .md files
-        event = [
-          "BufEnter"
-          "BufWinEnter"
-        ];
-        pattern = [
-          "*.md"
-          "*.txt"
-        ];
-        command = "set wrap";
-      }
-      {
-        event = [
-          "BufEnter"
-          "BufWinEnter"
-        ];
-        pattern = [
-          "*.md"
-          "*.txt"
-        ];
-        command = "setlocal spell spelllang=en_us";
-      }
-    ];
 
     diagnostic = {
       settings = {
         virtual_text = true;
         signs = {
           text = config.lib.nixvim.mkRaw ''
-            					{
-            						[vim.diagnostic.severity.ERROR] = "",
-            						[vim.diagnostic.severity.WARN] = "",
-            						[vim.diagnostic.severity.HINT] = "",
-            						[vim.diagnostic.severity.INFO] = "",
-            					}
-            				'';
+            			{
+            				[vim.diagnostic.severity.ERROR] = "",
+            				[vim.diagnostic.severity.WARN] = "",
+            				[vim.diagnostic.severity.HINT] = "",
+            				[vim.diagnostic.severity.INFO] = "",
+            			}
+          '';
         };
         update_in_insert = true;
       };
