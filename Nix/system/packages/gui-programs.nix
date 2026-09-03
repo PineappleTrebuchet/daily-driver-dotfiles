@@ -17,13 +17,14 @@
       gnome-weather
       kdePackages.kdeconnect-kde
       kicad
-      libreoffice-stable
+      libreoffice
       networkmanagerapplet
       pavucontrol
       peazip
       # vesktop
       pkgs-stable.vesktop
       qalculate-gtk
+      seahorse
       spotify
       thunar
       vlc

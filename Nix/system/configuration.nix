@@ -45,6 +45,7 @@
 
   # Use latest kernel.
   boot.kernelPackages = pkgs.linuxPackages_latest;
+  # boot.kernelPackages = pkgs.linuxPackages;
 
   # Tailscale
   services.tailscale.enable = true;
@@ -175,19 +176,22 @@
     };
   };
 
-  # Greetd + TUIGreet
   services.greetd = {
-    enable = true;
+    enable = false;
     settings = {
       default_session = {
         command = "${pkgs.tuigreet}/bin/tuigreet --time -r --cmd ${pkgs.writeShellScript "start-sway" ''
-                  export XDG_CURRENT_DESKTOP=sway
-          				export XDG_SESSION_TYPE=wayland
-                  exec ${pkgs.sway}/bin/sway "$@"
+          export XDG_CURRENT_DESKTOP=sway
+          export XDG_SESSION_TYPE=wayland
+          exec ${pkgs.sway}/bin/sway "$@"
         ''}";
         user = "greeter";
       };
     };
+  };
+  services.displayManager.sddm = {
+    enable = true;
+    wayland.enable = true;
   };
 
   # Fprintd

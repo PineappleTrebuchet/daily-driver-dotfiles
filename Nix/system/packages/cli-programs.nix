@@ -1,25 +1,33 @@
 { pkgs, ... }:
 
 {
-  environment.systemPackages = with pkgs; [
-    bat
-    btop
-    cmatrix
-    dysk
-    fastfetch
-    fzf
-    github-cli
-    kittysay
-    neovim
-    nvd # nix version diff
-    nvtopPackages.intel
-    pipes
-    tmux
-    # tokei # code summary
-    tree
-    tty-solitaire
-    wine
-    yazi
-    yt-dlp
-  ];
+  environment.systemPackages =
+    with pkgs;
+    [
+      # useful stuff
+      bat
+      btop
+      dysk
+      fzf
+      github-cli
+      neovim
+      nvd # nix version diff
+      nvtopPackages.intel
+      tldr
+      tmux
+      # tokei # code summary
+      tree
+      wine
+      yazi
+      yt-dlp
+    ]
+    ++ [
+      # shenanigans
+      activate-linux
+      cmatrix
+      fastfetch
+      kittysay
+      pipes
+      tty-solitaire
+    ];
 }
