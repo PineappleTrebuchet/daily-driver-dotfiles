@@ -64,11 +64,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1788182858,
-        "narHash": "sha256-inflJfn6lh8AKosr3iBl3LI3lIp0G2YLaZAbbb/OA7E=",
+        "lastModified": 1788463757,
+        "narHash": "sha256-OG1IMURWnCoi/lB3OnqSbjrU2jC8yqoP65O5KCrFinY=",
         "owner": "FKouhai",
         "repo": "helium2nix",
-        "rev": "b45d67e80f436ae4cdeaf2f259140414f9bb5887",
+        "rev": "2b2188543828ca296f6e3f30a1de08596368f792",
         "type": "github"
       },
       "original": {
@@ -85,11 +85,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1788355065,
-        "narHash": "sha256-gAz5oTI7ur34CfuakQduiQd/2ZhO62Bn2XXg08nZYYQ=",
+        "lastModified": 1788487777,
+        "narHash": "sha256-Ro/e1N4ZR8/XaFF+sF9SgfPK79HM5YNEppzFj8p+0Ak=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "d9d750e4fc11c10cab2da677bdd31e427f3a3a71",
+        "rev": "693e8ce0fb240a73c116a03cfd7b19269c87af88",
         "type": "github"
       },
       "original": {

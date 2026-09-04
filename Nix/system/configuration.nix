@@ -22,7 +22,7 @@
   nix.settings.auto-optimise-store = true;
 
   # Parity with non-nix systems
-  # services.envfs.enable = true;
+  services.envfs.enable = true;
   # programs.nix-ld.enable = true;
   # programs.nix-ld.libraries = with pkgs; [
   #   # for .NET apps
@@ -120,7 +120,10 @@
         };
       };
     };
-    extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+    extraPortals = with pkgs; [
+      xdg-desktop-portal-gtk
+      xdg-desktop-portal-wlr
+    ];
   };
 
   # Enable touchpad support (enabled default in most desktopManager).
@@ -146,7 +149,6 @@
       "render"
       "video"
       "dialout"
-      "input"
     ];
   };
 

@@ -94,7 +94,7 @@
     "network": {
         "format-wifi": "󰖩  WiFi",
         "tooltip-format-wifi": "{essid} ({signalStrength}%)\n↓{bandwidthDownBits}  ↑{bandwidthUpBits}",
-        "format-ethernet": "󰈀  Eth",
+        "format-ethernet": "󰈀  Ethernet",
         "tooltip-format-ethernet": "{ifname}: {ipaddr}/{cidr}",
         "format-disconnected": "󰖪  Down",
         "tooltip-disconnected": false,
@@ -106,7 +106,7 @@
     "backlight": {
         "device": "intel_backlight",
         "format": "{icon} {percent}%",
-        "format-icons": ["☾", "☼︎", "☀︎", "󰖨 "],
+        "format-icons": ["", "󰃞 ", "󰃟 ", "󰃠 "],
         "interval": 60
     },
 

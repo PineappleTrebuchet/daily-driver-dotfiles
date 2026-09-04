@@ -4,7 +4,7 @@
   environment.systemPackages =
     with pkgs;
     [
-      # useful stuff
+      # INFO: useful stuff
       bat
       btop
       dysk
@@ -22,7 +22,7 @@
       yt-dlp
     ]
     ++ [
-      # shenanigans
+      # INFO: shenanigans
       activate-linux
       cmatrix
       fastfetch
