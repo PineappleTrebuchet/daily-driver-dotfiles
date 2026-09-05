@@ -38,13 +38,15 @@
   };
 
   fileSystems."/boot" = {
-    device = "/dev/disk/by-uuid/2041-FC34";
+    device = "/dev/disk/by-uuid/F60B-B3E0";
     fsType = "vfat";
     options = [
       "fmask=0077"
       "dmask=0077"
     ];
   };
+
+
 
   swapDevices = [ ];
 
