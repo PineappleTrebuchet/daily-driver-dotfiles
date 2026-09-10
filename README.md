@@ -3,7 +3,7 @@ My NixOS dotfiles for both gaming and development. Uses [Qogir](https://github.c
 
 **If you want to use these:**
 - Remember to edit the wallpaper paths in wpaperd, swaylock, and the swaywm config as you will get errors if you don't update them yourself.
-- The "config" folder has the files in .config required for both NixOS and non-NixOS (I was too lazy to port them to home manager on NixOS :P)
+- The "config" folder has the files in .config required for both NixOS and non-NixOS (I was too lazy to port them to home manager :P)
 
 ## List of stuff that is imperatively added
 - Kicad libraries
