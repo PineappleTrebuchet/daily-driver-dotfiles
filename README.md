@@ -1,7 +1,9 @@
 # Daily Driver Dotfiles
-NixOS dotfiles for both gaming and development. Uses [Qogir](https://github.com/vinceliuice/Qogir-theme) GTK theme. Very functional while meeting a minimum aesthetic threshold, for me at least. Main WM is Sway but has Niri support. Bear in mind the Niri config has sway-like keybinds *and does not get updated*. This config is also ported to non-NixOS distros.
+My NixOS dotfiles for both gaming and development. Uses [Qogir](https://github.com/vinceliuice/Qogir-theme) GTK theme. Very functional while meeting a minimum aesthetic threshold, for me at least. Main WM is Sway but has Niri support. Bear in mind the Niri config has sway-like keybinds *and does not get updated*. This config is also ported to non-NixOS distros.
 
-If you want to use these, remember to edit the wallpaper paths in wpaperd, swaylock, and the swaywm config as you will get errors if you don't update them yourself.
+**If you want to use these:**
+- Remember to edit the wallpaper paths in wpaperd, swaylock, and the swaywm config as you will get errors if you don't update them yourself.
+- The "config" folder has the files in .config required for both NixOS and non-NixOS (I was too lazy to port them to home manager :P)
 
 ## List of stuff that is imperatively added
 - Kicad libraries
@@ -17,6 +19,7 @@ If you want to use these, remember to edit the wallpaper paths in wpaperd, swayl
 [Current wallpaper](https://wallhaven.cc/w/r2qqlj)
 
 [tdelamater1's dotfiles](https://github.com/tdelamater1/dots/tree/master) (thx for the weather waybar module)
+
 
 **Old wallpaper links**
 
