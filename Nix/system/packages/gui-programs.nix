@@ -21,8 +21,8 @@
       networkmanagerapplet
       pavucontrol
       peazip
-      # vesktop
-      pkgs-stable.vesktop
+      vesktop
+      # pkgs-stable.vesktop
       qalculate-gtk
       seahorse
       spotify

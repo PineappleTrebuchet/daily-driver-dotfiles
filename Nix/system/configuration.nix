@@ -23,7 +23,7 @@
 
   # Parity with non-nix systems
   services.envfs.enable = true;
-  # programs.nix-ld.enable = true;
+  programs.nix-ld.enable = true;
   # programs.nix-ld.libraries = with pkgs; [
   #   # for .NET apps
   #   icu
@@ -44,8 +44,7 @@
   boot.loader.efi.canTouchEfiVariables = true;
 
   # Use latest kernel.
-  # boot.kernelPackages = pkgs.linuxPackages_latest;
-  boot.kernelPackages = pkgs.linuxPackages_xanmod_latest;
+  boot.kernelPackages = pkgs.linuxPackages_latest;
 
   # Tailscale
   services.tailscale.enable = true;

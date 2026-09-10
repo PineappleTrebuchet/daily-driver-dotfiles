@@ -15,7 +15,7 @@
       nvtopPackages.intel
       tldr
       tmux
-      # tokei # code summary
+      tokei # code summary
       tree
       wine
       yazi

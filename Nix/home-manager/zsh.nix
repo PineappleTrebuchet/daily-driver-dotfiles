@@ -28,9 +28,6 @@
       			# PATH
       			export PATH="$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH"
 
-      			# Oh My Zsh update reminder
-      			zstyle ':omz:update' mode reminder
-
       			# Source Nix profile if present
       			if [ -e "$HOME/.nix-profile/etc/profile.d/nix.sh" ]; then
       				. "$HOME/.nix-profile/etc/profile.d/nix.sh"

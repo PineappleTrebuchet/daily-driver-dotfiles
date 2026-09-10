@@ -29,7 +29,8 @@
       cursorline = true;
       expandtab = false;
       signcolumn = "yes";
-      statuscolumn = " %{&nu?(&rnu&&v:relnum?v:relnum:v:lnum):''}%=%s ";
+      # statuscolumn = " %{&nu?(&rnu&&v:relnum?v:relnum:v:lnum):''}%=%s ";
+      statuscolumn = "%s%{&nu?(&rnu&&v:relnum?v:relnum:v:lnum):''} ";
       termguicolors = true;
     };
 

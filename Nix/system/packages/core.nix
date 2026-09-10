@@ -4,7 +4,6 @@
   environment.systemPackages = with pkgs; [
     alacritty
     cargo
-    doas
     feh
     gcc
     git
