@@ -64,10 +64,10 @@ exec swayidle -w \
 # Read `man 5 sway-input` for more information about this section.
 # Colors and Aesthetic:
 #
-client.focused          #008ae6 #1b6698 #ffffff #008ae6 #008ae6
-client.focused_inactive #4c4c4c #3c3c3c #ffffff #272727 #272727
-client.unfocused        #272727 #1f1f1f #ffffff #272727 #272727
-client.urgent           #ff0000 #990000 #ffffff #ff0000 #ff0000
+client.focused          #3a7099 #2a536f #e6e6e6 #3f7aa6 #3f7aa6
+client.focused_inactive #4e4e4e #3c3c3c #e6e6e6 #272727 #272727
+client.unfocused        #272727 #1f1f1f #e6e6e6 #272727 #272727
+client.urgent           #a32929 #772222 #e6e6e6 #a32929 #a32929
 
 default_border pixel 1
 default_floating_border pixel 1

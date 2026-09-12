@@ -7,7 +7,7 @@
 @define-color noti-bg #353535;
 @define-color noti-bg-darker #242424;
 @define-color text-color #e6e6e6;
-@define-color accent-color #0099ff;
+@define-color accent-color #3a7099;
 
 :root {
   --border-radius: 0px;
